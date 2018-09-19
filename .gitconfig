@@ -1,0 +1,9 @@
+[alias]
+st = status
+br = branch
+co = commit
+ch = checkout
+ad = add
+[user]
+	name = takeokunn
+	email = bararararatty@gmail.com
