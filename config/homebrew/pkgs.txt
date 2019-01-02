@@ -27,4 +27,4 @@ the_silver_searcher
 tmux
 unar
 wget
-youtube-dl
+fish
