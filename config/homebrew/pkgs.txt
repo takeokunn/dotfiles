@@ -28,3 +28,4 @@ tmux
 unar
 wget
 fish
+editorconfig

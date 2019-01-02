@@ -1,3 +1,6 @@
+[core]
+    excludesfile = ~/.gitignore
+
 [alias]
     st = status
     br = branch
@@ -8,6 +11,3 @@
 [user]
     name = takeokunn
     email = bararararatty@gmail.com
-
-[core]
-    excludesfile = ~/.gitignore

@@ -6,6 +6,8 @@ BIN_DIR = $(TOP_DIR)/bin
 CONFIG_DIR = $(TOP_DIR)/config
 MODULE_DIR = $(TOP_DIR)/modules
 SOURCE_DIR = $(TOP_DIR)/src
+VAR_DIR = $(TOP_DIR)/var
+VENDOR_DIR = $(VAR_DIR)/vendor
 
 CLEAN_TARGETS +=
 DISTCLEAN_TARGETS += clean
