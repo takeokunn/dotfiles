@@ -5,5 +5,5 @@ set PATH $PATH $HOME/.composer/vendor/bin
 set -x GOPATH $HOME/projects/go
 set -x PATH $PATH $GOPATH/bin
 
-# balias
-# balias cdd 'cd ~/Desktop'
+# alias
+alias cdd 'cd ~/Desktop'
