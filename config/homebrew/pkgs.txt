@@ -29,5 +29,3 @@ unar
 wget
 fish
 editorconfig
-sbcl
-emacs

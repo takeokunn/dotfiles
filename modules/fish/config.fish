@@ -6,4 +6,4 @@ set -x GOPATH $HOME/projects/go
 set -x PATH $PATH $GOPATH/bin
 
 # balias
-balias cdd 'cd ~/Desktop'
+# balias cdd 'cd ~/Desktop'

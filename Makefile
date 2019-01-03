@@ -6,8 +6,7 @@ BIN_DIR = $(TOP_DIR)/bin
 CONFIG_DIR = $(TOP_DIR)/config
 MODULE_DIR = $(TOP_DIR)/modules
 SOURCE_DIR = $(TOP_DIR)/src
-VAR_DIR = $(TOP_DIR)/var
-VENDOR_DIR = $(VAR_DIR)/vendor
+TMP_DIR = $(TOP_DIR)/tmp
 
 CLEAN_TARGETS +=
 DISTCLEAN_TARGETS += clean
@@ -25,7 +24,6 @@ clean: $(CLEAN_TARGETS)
 
 .PHONY: distclean
 distclean: $(DISTCLEAN_TARGETS)
-	rm -rf $(VAR_DIR)/*
 
 .PHONY: initialize
 initialize: $(INITIALIZE_TARGETS)
