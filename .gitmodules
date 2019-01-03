@@ -1,0 +1,3 @@
+[submodule "modules/emacs/.emacs.d"]
+	path = modules/emacs/.emacs.d
+	url = git@github.com:takeokunn/.emacs.d.git
