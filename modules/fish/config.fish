@@ -1,3 +1,8 @@
+# load local.fish
+if test -e "~/.config/fish/local.fish";
+    source ~/.config/fish/local.fish
+end
+
 # for composer
 set PATH $PATH $HOME/.composer/vendor/bin
 
@@ -25,3 +30,4 @@ end
 
 # alias
 alias cdd 'cd ~/Desktop'
+alias e 'emacs'

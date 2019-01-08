@@ -18,3 +18,4 @@ fish-install: $(FISH_DIR)
 $(FISH_DIR):
 	mkdir -p $(FISH_DIR)
 	ln -sf $(SELF_FISH_DIR)/config.fish $(FISH_DIR)/config.fish
+	ln -sf $(SELF_FISH_DIR)/local.fish $(FISH_DIR)/local.fish

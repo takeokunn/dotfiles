@@ -1,4 +1,6 @@
 package balias
 package cd
 package docker-machine
+package peco
+
 theme default
