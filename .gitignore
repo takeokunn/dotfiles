@@ -4,3 +4,5 @@
 
 tmp/*
 !tmp/.gitkeep
+
+modules/fish/local.fish
