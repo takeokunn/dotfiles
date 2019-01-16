@@ -13,7 +13,10 @@ fish-clean:
 	rm -rf $(FISH_DIR)
 
 .PHONY: fish-install
-fish-install: $(FISH_DIR)
+fish-install: $(SELF_FISH_DIR/local.fish) $(FISH_DIR)
+
+$(SELF_FISH_DIR/local.fish):
+	cp $(SELF_FISH_DIR/local.fish.sample) $(SELF_FISH_DIR/local.fish)
 
 $(FISH_DIR):
 	mkdir -p $(FISH_DIR)
