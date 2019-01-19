@@ -4,15 +4,11 @@ source ~/.config/fish/local.fish
 # initialize
 function fish_prompt
     if [ $status -eq 0 ]
-        set status_face (set_color green)"(*'-') < "
+        set status_face (set_color green)"(*´ω｀*) < "
     else
-        set status_face (set_color red)"(*;-;) < "
+        set status_face (set_color red)"｡+ﾟ(∩´﹏`∩)ﾟ+｡ < "
     end
-
-    set prompt (set_color yellow)(prompt_pwd)
-
-    echo $prompt
-    echo $status_face
+    printf '%s %s' (set_color yellow)(prompt_pwd) $status_face
 end
 
 # for composer
