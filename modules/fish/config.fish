@@ -4,6 +4,9 @@ source ~/.config/fish/local.fish
 # for composer
 set PATH $PATH $HOME/.composer/vendor/bin
 
+# for gem
+set -x GEM_HOME $HOME/.gem
+
 # fo golang
 set -x GOPATH $HOME/projects/go
 set -x PATH $PATH $GOPATH/bin
