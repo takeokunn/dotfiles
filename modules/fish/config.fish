@@ -1,6 +1,20 @@
 # load local.fish
 source ~/.config/fish/local.fish
 
+# initialize
+function fish_prompt
+    if [ $status -eq 0 ]
+        set status_face (set_color green)"(*'-') < "
+    else
+        set status_face (set_color red)"(*;-;) < "
+    end
+
+    set prompt (set_color yellow)(prompt_pwd)
+
+    echo $prompt
+    echo $status_face
+end
+
 # for composer
 set PATH $PATH $HOME/.composer/vendor/bin
 
