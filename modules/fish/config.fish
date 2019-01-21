@@ -16,6 +16,7 @@ set PATH $PATH $HOME/.composer/vendor/bin
 
 # for gem
 set -x GEM_HOME $HOME/.gem
+set -x PATH $PATH $GEM_HOME/bin
 
 # fo golang
 set -x GOPATH $HOME/projects/go
@@ -42,3 +43,4 @@ end
 # alias
 alias cdd 'cd ~/Desktop'
 alias e 'emacs'
+alias ss 'open /System/Library/CoreServices/ScreenSaverEngine.app'
