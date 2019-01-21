@@ -23,6 +23,5 @@ $(FISH_DIR): $(LOCAL_FILE)
 	ln -sf $(SELF_FISH_DIR)/config.fish $(FISH_DIR)/config.fish
 	ln -sf $(SELF_FISH_DIR)/local.fish $(FISH_DIR)/local.fish
 
-
 $(LOCAL_FILE):
 	cp $(LOCAL_FILE_SAMPLE) $(LOCAL_FILE)
