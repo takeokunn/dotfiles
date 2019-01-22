@@ -18,9 +18,12 @@ set PATH $PATH $HOME/.composer/vendor/bin
 set -x GEM_HOME $HOME/.gem
 set -x PATH $PATH $GEM_HOME/bin
 
-# fo golang
+# for golang
 set -x GOPATH $HOME/projects/go
 set -x PATH $PATH $GOPATH/bin
+
+# for gcloud
+set -x PATH $PATH $HOME/google-cloud-sdk/bin
 
 function logo
     echo '                 '(set_color F00)'___
@@ -44,3 +47,6 @@ end
 alias cdd 'cd ~/Desktop'
 alias e 'emacs'
 alias ss 'open /System/Library/CoreServices/ScreenSaverEngine.app'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/obara_t/google-cloud-sdk/path.fish.inc' ]; . '/Users/obara_t/google-cloud-sdk/path.fish.inc'; end
