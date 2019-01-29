@@ -30,3 +30,4 @@ wget
 fish
 editorconfig
 mplayer
+asciiquarium
