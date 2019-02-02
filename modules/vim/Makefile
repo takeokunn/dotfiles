@@ -7,11 +7,11 @@ VIM_EDITORCONFIG_URL = https://github.com/editorconfig/editorconfig-vim/archive/
 VIM_EDITORCONFIG_PKG = $(VIM_DIR)/editorconfig-vim-$(VIM_EDITORCONFIG_VERSION).tar.gz
 VIM_EDITORCONFIG_DIR = $(VIM_DIR)/editorconfig-vim-$(VIM_EDITORCONFIG_VERSION)
 
-DISTCLEAN_TARGETS += vim-distclean
+CLEAN_TARGETS += vim-clean
 INSTALL_TARGETS += vim-install
 
-.PHONY: vim-distclean
-vim-distclean:
+.PHONY: vim-clean
+vim-clean:
 	rm -rf $(VIM_DIR)
 
 .PHONY: vim-install

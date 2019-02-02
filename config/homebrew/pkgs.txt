@@ -31,3 +31,4 @@ fish
 editorconfig
 mplayer
 asciiquarium
+coreutils

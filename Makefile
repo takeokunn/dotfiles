@@ -9,11 +9,10 @@ SOURCE_DIR = $(TOP_DIR)/src
 TMP_DIR = $(TOP_DIR)/tmp
 
 CLEAN_TARGETS +=
-DISTCLEAN_TARGETS += clean
 INITIALIZE_TARGETS += install
 INSTALL_TARGETS +=
-TEST_TARGETS +=
 UPDATE_TARGETS +=
+TEST_TARGETS +=
 
 -include $(SOURCE_DIR)/make/*.mk
 -include $(MODULE_DIR)/*/Makefile
@@ -22,17 +21,14 @@ UPDATE_TARGETS +=
 .PHONY: clean
 clean: $(CLEAN_TARGETS)
 
-.PHONY: distclean
-distclean: $(DISTCLEAN_TARGETS)
-
 .PHONY: initialize
 initialize: $(INITIALIZE_TARGETS)
 
 .PHONY: install
 install: $(INSTALL_TARGETS)
 
-.PHONY: test
-test: $(TEST_TARGETS)
-
 .PHONY: update
 update: $(UPDATE_TARGETS)
+
+.PHONY: test
+test: $(TEST_TARGETS)

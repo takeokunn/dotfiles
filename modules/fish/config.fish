@@ -25,6 +25,10 @@ set -x PATH $PATH $GOPATH/bin
 # for gcloud
 set -x PATH $PATH $HOME/google-cloud-sdk/bin
 
+# colorrc
+set -x PATH $PATH (brew --prefix coreutils)/libexec/gnubin
+bass (dircolors ~/.colorrc)
+
 function logo
     echo '                 '(set_color F00)'___
   ___======____='(set_color FF7F00)'-'(set_color FF0)'-'(set_color FF7F00)'-='(set_color F00)')
@@ -47,6 +51,7 @@ end
 alias cdd 'cd ~/Desktop'
 alias e 'emacs'
 alias ss 'open /System/Library/CoreServices/ScreenSaverEngine.app'
+alias ls 'gls --color'
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/obara_t/google-cloud-sdk/path.fish.inc' ]; . '/Users/obara_t/google-cloud-sdk/path.fish.inc'; end

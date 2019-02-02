@@ -8,9 +8,6 @@ CLEAN_TARGETS += fish-clean
 DISTCLEAN_TARGETS += fish-distclean
 INSTALL_TARGETS += fish-install
 
-.PHONY: fish-distclean
-fish-distclean:
-
 .PHONY: fish-clean
 fish-clean:
 	rm -rf $(FISH_DIR)
