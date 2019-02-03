@@ -5,4 +5,5 @@
 * git
 * oh-my-fish
 * tmux
+* colorrc
 * vim
