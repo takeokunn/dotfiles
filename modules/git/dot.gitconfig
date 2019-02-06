@@ -1,6 +1,6 @@
 [core]
     excludesfile = ~/.gitignore
-	editor = emacs
+	editor = vim
 
 [alias]
     st = status
