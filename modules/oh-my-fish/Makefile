@@ -24,8 +24,4 @@ $(OH_MY_FISH_DIR):
 	ln -sf $(OH_MY_FISH_MODULE_DIR)/bundle $(OH_MY_FISH_DIR)/bundle
 	ln -sf $(OH_MY_FISH_MODULE_DIR)/channel $(OH_MY_FISH_DIR)/channel
 	ln -sf $(OH_MY_FISH_MODULE_DIR)/theme $(OH_MY_FISH_DIR)/theme
-
-
-.PHONY: oh-my-fish-update
-oh-my-fish-update:
 	fish $(TMP_DIR)/install -y --path=$(OH_MY_FISH_SHARE_DIR) --config=$(OH_MY_FISH_DIR)
