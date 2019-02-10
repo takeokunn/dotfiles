@@ -32,3 +32,6 @@ editorconfig
 mplayer
 asciiquarium
 coreutils
+ctags
+global
+stunnel

@@ -5,7 +5,6 @@ OH_MY_FISH_MODULE_DIR = $(MODULE_DIR)/oh-my-fish
 
 CLEAN_TARGETS += oh-my-fish-clean
 INITIALIZE_TARGETS += oh-my-fish-initialize
-UPDATE_TARGETS += oh-my-fish-update
 
 .PHONY: oh-my-fish-clean
 oh-my-fish-clean:
