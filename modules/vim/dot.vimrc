@@ -10,6 +10,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'ujihisa/unite-colorscheme'
+NeoBundle 'editorconfig/editorconfig-vim'
 
 call neobundle#end()
 
