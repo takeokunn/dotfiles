@@ -5,7 +5,6 @@ LOCAL_FILE = $(SELF_FISH_DIR)/local.fish
 LOCAL_FILE_SAMPLE = $(SELF_FISH_DIR)/local.fish.sample
 
 CLEAN_TARGETS += fish-clean
-DISTCLEAN_TARGETS += fish-distclean
 INSTALL_TARGETS += fish-install
 
 .PHONY: fish-clean
