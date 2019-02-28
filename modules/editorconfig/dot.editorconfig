@@ -13,11 +13,10 @@ indent_style = tab
 indent_size = 4
 
 [nginx.conf]
-indent_size = 2
+indent_size = 4
 
 [{*.yml, *.yaml}]
 indent_size = 2
-
 
 [*.tf]
 indent_size = 2

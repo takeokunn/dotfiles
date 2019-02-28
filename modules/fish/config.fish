@@ -29,6 +29,9 @@ set -x PATH $PATH $HOME/google-cloud-sdk/bin
 set -x PATH $PATH (brew --prefix coreutils)/libexec/gnubin
 bass (dircolors ~/.colorrc)
 
+# roswell
+set -x PATH $PATH $HOME/.roswell/bin
+
 function logo
     echo '                 '(set_color F00)'___
   ___======____='(set_color FF7F00)'-'(set_color FF0)'-'(set_color FF7F00)'-='(set_color F00)')
