@@ -1,4 +1,7 @@
 set autoindent
+set softwrap
+set smooth
+set suspend
 
 include "~/.nano/apacheconf.nanorc"
 include "~/.nano/arduino.nanorc"
