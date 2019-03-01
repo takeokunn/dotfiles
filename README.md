@@ -7,3 +7,5 @@
 * tmux
 * colorrc
 * vim
+* nano
+* bash
