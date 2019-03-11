@@ -1,1 +1,30 @@
 # write your settings!
+
+# for composer
+# set PATH $PATH $HOME/.composer/vendor/bin
+
+# for gem
+# set -x GEM_HOME $HOME/.gem
+# set -x PATH $PATH $GEM_HOME/bin
+
+# for golang
+# set -x GOPATH $HOME/projects/go
+# set -x PATH $PATH $GOPATH/bin
+
+# for gcloud
+# set -x PATH $PATH $HOME/google-cloud-sdk/bin
+
+# colorrc
+# set -x PATH $PATH (brew --prefix coreutils)/libexec/gnubin
+# bass (dircolors ~/.colorrc)
+
+# cask
+# set -x PATH /home/take/.cask/bin $PATH
+
+# roswell
+# set -x PATH $PATH $HOME/.roswell/bin
+
+# alias emacs 'emacs -nw'
+# alias gnucash 'env LANGUAGE=ja_JP.UTF-8 LANG=ja_JP.UTF-8 LC_ALL=ja_JP.UTF-8 gnucash'
+# alias ss 'open /System/Library/CoreServices/ScreenSaverEngine.app'
+# alias ls 'gls --color'
