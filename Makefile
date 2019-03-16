@@ -12,6 +12,7 @@ CLEAN_TARGETS +=
 INITIALIZE_TARGETS += install
 INSTALL_TARGETS +=
 UPDATE_TARGETS +=
+SERVER_TARGETS +=
 TEST_TARGETS +=
 
 -include $(SOURCE_DIR)/make/*.mk
@@ -29,6 +30,9 @@ install: $(INSTALL_TARGETS)
 
 .PHONY: update
 update: $(UPDATE_TARGETS)
+
+.PHONY: server
+update: $(SERVER_TARGETS)
 
 .PHONY: test
 test: $(TEST_TARGETS)

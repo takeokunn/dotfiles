@@ -6,6 +6,7 @@ BASH_IT_GITHUB = https://github.com/revans/bash-it.git
 
 CLEAN_TARGETS += bash-clean
 INSTALL_TARGETS += bash-install
+SERVER_TARGETS += bash-install
 
 .PHONY: bash-clean
 bash-clean:

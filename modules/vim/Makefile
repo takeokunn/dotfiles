@@ -5,6 +5,7 @@ NEOBUNDLE_URL = https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bi
 
 CLEAN_TARGETS += vim-clean
 INSTALL_TARGETS += vim-install
+SERVER_TARGETS += vim-install
 
 .PHONY: vim-clean
 vim-clean:
