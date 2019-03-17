@@ -32,7 +32,7 @@ install: $(INSTALL_TARGETS)
 update: $(UPDATE_TARGETS)
 
 .PHONY: server
-update: $(SERVER_TARGETS)
+server: $(SERVER_TARGETS)
 
 .PHONY: test
 test: $(TEST_TARGETS)
