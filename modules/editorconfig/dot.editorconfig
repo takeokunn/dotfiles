@@ -21,3 +21,6 @@ indent_size = 2
 
 [*.tf]
 indent_size = 2
+
+[*.scala]
+indent_size = 2
