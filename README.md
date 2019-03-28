@@ -18,7 +18,7 @@
 $ bash bin/brew-init.sh # use homebrew
 $ bash bin/apt-init.sh  # use ubuntu
 
-# useage
+# usage
 
 $ make # full install
 $ make server # server config install
