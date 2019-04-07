@@ -29,5 +29,8 @@ define_keymap(re.compile("Firefox"), {
         # change page
         K("C-b"): K("C-LEFT_BRACE"),
         K("C-f"): K("C-RIGHT_BRACE"),
+
+        K("C-r"): K("Ctrl-r"),
+        K("C-v"): K("Ctrl-v"),
     }
 }, "Firefox")
