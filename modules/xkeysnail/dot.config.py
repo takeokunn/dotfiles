@@ -24,7 +24,7 @@ define_keymap(re.compile("Firefox"), {
     K("C-n"): K("DOWN"),
     K("C-p"): K("UP"),
     K("C-v"): K("SPACE"),
-    K("C-v"): K("SPACE"),
+    K("C-Shift-v"): K("Shift-SPACE"),
 
     K("C-g"): {
         # change page
