@@ -9,6 +9,7 @@
 * vim
 * nano
 * bash
+* xkeysnail
 
 ## Setup
 
