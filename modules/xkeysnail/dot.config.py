@@ -30,7 +30,16 @@ define_keymap(re.compile("Firefox"), {
         K("C-b"): K("C-LEFT_BRACE"),
         K("C-f"): K("C-RIGHT_BRACE"),
 
-        K("C-r"): K("Ctrl-r"),
-        K("C-v"): K("Ctrl-v"),
+        # reload
+        K("C-r"): K("C-r"),
+
+        # paste
+        K("C-v"): K("C-v"),
+
+        # close
+        K("C-w"): K("C-w"),
+
+        # close
+        K("C-t"): K("C-Shift-t"),
     }
 }, "Firefox")
