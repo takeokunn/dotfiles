@@ -10,6 +10,7 @@
 * nano
 * bash
 * xkeysnail
+* hyper
 
 ## Setup
 
