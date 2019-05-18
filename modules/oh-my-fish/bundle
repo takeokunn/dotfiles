@@ -2,6 +2,7 @@ package balias
 package bass
 package cd
 package docker-machine
+package ghq
 package peco
 package z
 theme default

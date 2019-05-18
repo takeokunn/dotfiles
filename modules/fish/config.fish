@@ -53,5 +53,4 @@ function fish_user_key_bindings
   bind \cq peco_z
 end
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/obara_t/google-cloud-sdk/path.fish.inc' ]; . '/Users/obara_t/google-cloud-sdk/path.fish.inc'; end
+# ghq
