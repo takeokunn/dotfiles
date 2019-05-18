@@ -36,3 +36,4 @@ ctags
 global
 stunnel
 nano
+rlwrap
