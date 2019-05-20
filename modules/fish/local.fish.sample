@@ -22,10 +22,10 @@
 # set -x PATH /home/take/.cask/bin $PATH
 
 # for goenv
-# set -x GOENV_ROOT $HOME/.goenv
-# set -x PATH $PATH $GOENV_ROOT/shims
-# goenv rehash >/dev/null ^&1
 
+# set -x GOENV_ROOT $HOME/.goenv
+# set -x PATH $PATH $GOENV_ROOT/bin
+# source (goenv init - | psub)
 # set -x PATH $PATH $GOENV_ROOT/bin
 # set -x PATH $PATH $GOPATH/bin
 
