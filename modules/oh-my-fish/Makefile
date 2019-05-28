@@ -14,17 +14,17 @@ oh-my-fish-clean:
 	rm -fr $(OH_MY_FISH_INSTALL_DIR)
 
 .PHONY: oh-my-fish-initialize
-oh-my-fish-initialize: $(OH_MY_FISH_INSTALL_DIR)
+oh-my-fish-initialize: $(OH_MY_FISH_DIR)
 
-$(OH_MY_FISH_INSTALL_DIR): $(OH_MY_FISH_DIR)
-	curl -L https://get.oh-my.fish > $(TMP_DIR)/install
-
-$(OH_MY_FISH_DIR):
+$(OH_MY_FISH_DIR): $(OH_MY_FISH_INSTALL_DIR)
 	mkdir -p $(OH_MY_FISH_DIR)
 	ln -sf $(OH_MY_FISH_MODULE_DIR)/bundle $(OH_MY_FISH_DIR)/bundle
 	ln -sf $(OH_MY_FISH_MODULE_DIR)/channel $(OH_MY_FISH_DIR)/channel
 	ln -sf $(OH_MY_FISH_MODULE_DIR)/theme $(OH_MY_FISH_DIR)/theme
 	fish $(TMP_DIR)/install -y --path=$(OH_MY_FISH_SHARE_DIR) --config=$(OH_MY_FISH_DIR)
+
+$(OH_MY_FISH_INSTALL_DIR):
+	curl -L https://get.oh-my.fish > $(TMP_DIR)/install
 
 .PHONY: oh-my-fish-update
 oh-my-fish-update:
