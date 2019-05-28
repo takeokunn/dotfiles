@@ -18,6 +18,9 @@
 # set -x PATH $PATH (brew --prefix coreutils)/libexec/gnubin
 # bass (dircolors ~/.colorrc)
 
+# npm
+# set -x PATH /home/take/.npm-global/bin $PATH
+
 # cask
 # set -x PATH /home/take/.cask/bin $PATH
 
