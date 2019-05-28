@@ -1,3 +1,4 @@
 tmux
 build-essential
 rlwrap
+nodejs
