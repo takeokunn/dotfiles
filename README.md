@@ -2,7 +2,7 @@
 
 * editorconfig
 * fish
-* git
+* Git
 * oh-my-fish
 * tmux
 * colorrc

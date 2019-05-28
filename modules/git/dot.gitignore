@@ -1,4 +1,5 @@
 *.swp
+*.save
 *.fasl
 *~
 .DS_Store
