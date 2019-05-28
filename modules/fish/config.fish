@@ -40,7 +40,7 @@ function peco_z
     set peco_flags --query "$query"
   end
 
-  z -l | peco $peco_flags | awk '{ print $2 }' | read recent
+  z -l | peco $peco_flags --layout=bottom-up | awk '{ print $2 }' | read recent
   if [ $recent ]
       cd $recent
       commandline -r ''
