@@ -25,7 +25,6 @@
 # set -x PATH /home/take/.cask/bin $PATH
 
 # for goenv
-
 # set -x GOENV_ROOT $HOME/.goenv
 # set -x PATH $PATH $GOENV_ROOT/bin
 # source (goenv init - | psub)
@@ -34,6 +33,9 @@
 
 # roswell
 # set -x PATH $PATH $HOME/.roswell/bin
+
+# cargo
+# set -x PATH $PATH $HOME/.cargo/bin
 
 # alias emacs 'emacs -nw'
 # alias gnucash 'env LANGUAGE=ja_JP.UTF-8 LANG=ja_JP.UTF-8 LC_ALL=ja_JP.UTF-8 gnucash'
