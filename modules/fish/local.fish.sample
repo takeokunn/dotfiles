@@ -31,11 +31,17 @@
 # set -x PATH $PATH $GOENV_ROOT/bin
 # set -x PATH $PATH $GOPATH/bin
 
+# nodebrew
+# set -x PATH $PATH $HOME/.nodebrew/current/bin
+
 # roswell
 # set -x PATH $PATH $HOME/.roswell/bin
 
 # cargo
 # set -x PATH $PATH $HOME/.cargo/bin
+
+# mac
+set -x PATH $PATH /usr/local/sbin
 
 # alias emacs 'emacs -nw'
 # alias gnucash 'env LANGUAGE=ja_JP.UTF-8 LANG=ja_JP.UTF-8 LC_ALL=ja_JP.UTF-8 gnucash'
