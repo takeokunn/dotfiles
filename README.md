@@ -11,6 +11,7 @@
 * bash
 * xkeysnail
 * hyper
+* textlint
 
 ## Setup
 
