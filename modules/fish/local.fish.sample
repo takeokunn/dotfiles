@@ -19,10 +19,10 @@
 # bass (dircolors ~/.colorrc)
 
 # npm
-# set -x PATH /home/take/.npm-global/bin $PATH
+# set -x PATH $HOME/.npm-global/bin $PATH
 
 # cask
-# set -x PATH /home/take/.cask/bin $PATH
+# set -x PATH $HOME/.cask/bin $PATH
 
 # for goenv
 # set -x GOENV_ROOT $HOME/.goenv
@@ -42,6 +42,9 @@
 
 # mac
 set -x PATH $PATH /usr/local/sbin
+
+# direnv
+# eval (direnv hook fish)
 
 # alias emacs 'emacs -nw'
 # alias gnucash 'env LANGUAGE=ja_JP.UTF-8 LANG=ja_JP.UTF-8 LC_ALL=ja_JP.UTF-8 gnucash'

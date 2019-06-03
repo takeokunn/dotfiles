@@ -38,3 +38,4 @@ stunnel
 nano
 rlwrap
 node
+direnv
