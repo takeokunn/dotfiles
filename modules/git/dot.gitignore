@@ -3,3 +3,4 @@
 *.fasl
 *~
 .DS_Store
+.envrc
