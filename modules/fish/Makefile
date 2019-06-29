@@ -6,18 +6,17 @@ LOCAL_FILE_SAMPLE = $(SELF_FISH_DIR)/local.fish.sample
 FUNCTIONS_FILE = $(SELF_FISH_DIR)/functions.fish
 FUNCTIONS_FILE_SAMPLE = $(SELF_FISH_DIR)/functions.fish.sample
 
+FISH_CLEAN_TARGETS += fish-shell-clean
+FISH_TARGETS += fish-shell-install
 
-CLEAN_TARGETS += fish-clean
-INSTALL_TARGETS += fish-install
-
-.PHONY: fish-clean
-fish-clean:
+.PHONY: fish-shell-clean
+fish-shell-clean:
 	rm -rf $(FISH_DIR)
 
-.PHONY: fish-install
-fish-install: $(FISH_DIR)
+.PHONY: fish-shell-install
+fish-shell-install: $(LOCAL_FILE) $(FUNCTIONS_FILE) $(FISH_DIR)
 
-$(FISH_DIR): $(LOCAL_FILE) $(FUNCTIONS_FILE)
+$(FISH_DIR):
 	mkdir -p $(FISH_DIR)
 	ln -sf $(SELF_FISH_DIR)/config.fish $(FISH_DIR)/config.fish
 	ln -sf $(SELF_FISH_DIR)/local.fish $(FISH_DIR)/local.fish

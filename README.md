@@ -18,8 +18,8 @@
 ```
 # initialize
 
-$ bash bin/brew-init.sh # use homebrew
-$ bash bin/apt-init.sh  # use ubuntu
+$ bash bin/brew-init.sh # for homebrew
+$ bash bin/apt-init.sh  # for ubuntu
 
 # usage
 

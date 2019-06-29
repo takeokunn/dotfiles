@@ -4,9 +4,8 @@ BASH_IT_DIR = ~/.bash_it
 BASH_IT_SCRIPT = ~/.bash_it/install.sh
 BASH_IT_GITHUB = https://github.com/revans/bash-it.git
 
-CLEAN_TARGETS += bash-clean
-INSTALL_TARGETS += bash-install
-SERVER_TARGETS += bash-install
+CORE_CLEAN_TARGETS += bash-clean
+CORE_TARGETS += bash-install
 
 .PHONY: bash-clean
 bash-clean:

@@ -3,9 +3,8 @@ VIM_BUNDLE_DIR = ~/.vim/bundle
 
 NEOBUNDLE_URL = https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh
 
-CLEAN_TARGETS += vim-clean
-INSTALL_TARGETS += vim-install
-SERVER_TARGETS += vim-install
+CORE_CLEAN_TARGETS += vim-clean
+CORE_TARGETS += vim-install
 
 .PHONY: vim-clean
 vim-clean:

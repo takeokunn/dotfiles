@@ -39,3 +39,4 @@ nano
 rlwrap
 node
 direnv
+the_silver_searcher

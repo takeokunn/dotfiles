@@ -3,9 +3,9 @@ OH_MY_FISH_SHARE_DIR = ~/.local/share/omf
 OH_MY_FISH_INSTALL_DIR = $(TMP_DIR)/install
 OH_MY_FISH_MODULE_DIR = $(MODULE_DIR)/oh-my-fish
 
-CLEAN_TARGETS += oh-my-fish-clean
-INITIALIZE_TARGETS += oh-my-fish-initialize
-UPDATE_TARGETS += oh-my-fish-update
+FISH_CLEAN_TARGETS += oh-my-fish-clean
+FISH_TARGETS += oh-my-fish-install
+FISH_UPDATE_TARGETS += oh-my-fish-update
 
 .PHONY: oh-my-fish-clean
 oh-my-fish-clean:
@@ -13,8 +13,8 @@ oh-my-fish-clean:
 	rm -fr $(OH_MY_FISH_DIR)
 	rm -fr $(OH_MY_FISH_INSTALL_DIR)
 
-.PHONY: oh-my-fish-initialize
-oh-my-fish-initialize: $(OH_MY_FISH_DIR)
+.PHONY: oh-my-fish-install
+oh-my-fish-install: $(OH_MY_FISH_DIR)
 
 $(OH_MY_FISH_DIR): $(OH_MY_FISH_INSTALL_DIR)
 	mkdir -p $(OH_MY_FISH_DIR)
