@@ -9,6 +9,12 @@ $ bash bin/brew-init.sh # for homebrew
 $ bash bin/apt-init.sh  # for ubuntu
 ```
 
+### Easy Install
+
+```
+$ curl -L https://raw.githubusercontent.com/takeokunn/dotfiles/master/install.sh | bash
+```
+
 ### Core
 
 ```
