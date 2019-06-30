@@ -31,6 +31,10 @@
 # set -x PATH $PATH $GOENV_ROOT/bin
 # set -x PATH $PATH $GOPATH/bin
 
+# for rbenv
+# set -x PATH $PATH $HOME/.rbenv/bin
+# source (rbenv init - | psub)
+
 # nodebrew
 # set -x PATH $PATH $HOME/.nodebrew/current/bin
 
