@@ -50,7 +50,9 @@ source (pyenv init - | psub)
 # set -x PATH $PATH $HOME/.cargo/bin
 
 # mac
-set -x PATH $PATH /usr/local/sbin
+# set -x PATH $PATH /usr/local/sbin
+# set -xg LANG en_US.UTF-8
+# set -xg LC_ALL en_US.UTF-8
 
 # direnv
 # eval (direnv hook fish)
