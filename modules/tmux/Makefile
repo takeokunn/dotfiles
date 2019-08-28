@@ -12,4 +12,3 @@ tmux-install: $(TMUX_DIR)
 
 $(TMUX_DIR):
 	git clone $(TMUX_GITHUB_URL) $(TMUX_DIR)
-	tmux source ~/.tmux.conf
