@@ -57,6 +57,10 @@ source (pyenv init - | psub)
 # direnv
 # eval (direnv hook fish)
 
+# nix
+# set -x PATH $PATH $HOME/.nix-profile/bin
+# set -x NIX_PATH nixpkgs=$HOME/.nix-defexpr/channels/nixpkgs
+
 # alias emacs 'emacs -nw'
 # alias gnucash 'env LANGUAGE=ja_JP.UTF-8 LANG=ja_JP.UTF-8 LC_ALL=ja_JP.UTF-8 gnucash'
 # alias ss 'open /System/Library/CoreServices/ScreenSaverEngine.app'
