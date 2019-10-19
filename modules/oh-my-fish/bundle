@@ -2,6 +2,7 @@ package balias
 package bass
 package cd
 package docker-machine
+package https://github.com/evanlucas/fish-kubectl-completions
 package peco
 package z
 theme default
