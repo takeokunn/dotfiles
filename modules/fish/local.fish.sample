@@ -2,6 +2,7 @@
 
 # for composer
 # set PATH $PATH $HOME/.composer/vendor/bin
+# set -x COMPOSER_MEMORY_LIMIT 4G
 
 # for gem
 # set -x GEM_HOME $HOME/.gem
@@ -76,3 +77,6 @@ source (pyenv init - | psub)
 # alias ss 'open /System/Library/CoreServices/ScreenSaverEngine.app'
 # alias ls 'gls --color'
 # alias sbcl 'rlwrap sbcl'
+# alias pbcopy 'xclip -selection c'
+# alias pbpaste 'xclip -selection c -o'
+# alias make 'make -j'
