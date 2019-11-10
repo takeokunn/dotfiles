@@ -1,8 +1,8 @@
 TMUX_DIR = ~/.tmux/plugins/tpm
 TMUX_GITHUB_URL = https://github.com/tmux-plugins/tpm
 
-CORE_CLEAN_TARGETS += tmux-clean
-CORE_TARGETS += tmux-install
+TMUX_CLEAN_TARGETS += tmux-clean
+TMUX_TARGETS += tmux-install
 
 .PHONY: tmux-clean
 tmux-clean:
