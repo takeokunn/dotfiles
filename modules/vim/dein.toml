@@ -21,3 +21,6 @@ repo = 'ujihisa/unite-colorscheme'
 
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
+repo = 'simeji/winresizer'
