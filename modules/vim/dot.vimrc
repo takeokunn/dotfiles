@@ -52,4 +52,12 @@ nnoremap <silent><C-y> :NERDTreeToggle<CR>
 nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" hardtime
+let g:hardtime_default_on = 1
+let g:hardtime_showmsg = 1
+
 :syntax on
+set t_Co=256
+colorscheme atom-dark-256

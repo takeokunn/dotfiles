@@ -24,3 +24,9 @@ repo = 'editorconfig/editorconfig-vim'
 
 [[plugins]]
 repo = 'simeji/winresizer'
+
+[[plugins]]
+repo = 'takac/vim-hardtime'
+
+[[plugins]]
+repo = 'gosukiwi/vim-atom-dark'
