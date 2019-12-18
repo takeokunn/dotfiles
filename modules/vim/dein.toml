@@ -30,3 +30,6 @@ repo = 'takac/vim-hardtime'
 
 [[plugins]]
 repo = 'gosukiwi/vim-atom-dark'
+
+[[plugins]]
+repo = 'rhysd/vim-syntax-christmas-tree'
