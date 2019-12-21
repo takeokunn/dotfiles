@@ -6,7 +6,6 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 indent_style = space
-indent_size = 4
 
 [{Makefile, *.mk}]
 indent_style = tab
@@ -16,11 +15,14 @@ indent_size = 4
 indent_size = 4
 indent_style = tab
 
-[{*.yml, *.yaml}]
+[*.{yml,yaml}]
 indent_size = 2
 
 [*.tf]
 indent_size = 2
 
 [*.scala]
+indent_size = 2
+
+[*.{el,lisp}]
 indent_size = 2
