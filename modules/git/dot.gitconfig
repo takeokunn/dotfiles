@@ -12,3 +12,6 @@
 [user]
     name = takeokunn
     email = bararararatty@gmail.com
+
+[ghq]
+    root = ~/.ghq
