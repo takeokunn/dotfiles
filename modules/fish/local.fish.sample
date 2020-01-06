@@ -37,9 +37,9 @@
 # source (rbenv init - | psub)
 
 # for pyenv
-set -x PYENV_ROOT $HOME/.pyenv
-set -x PATH $PATH $PYENV_ROOT/bin
-source (pyenv init - | psub)
+# set -x PYENV_ROOT $HOME/.pyenv
+# set -x PATH $PATH $PYENV_ROOT/bin
+# source (pyenv init - | psub)
 
 # nodebrew
 # set -x PATH $PATH $HOME/.nodebrew/current/bin
