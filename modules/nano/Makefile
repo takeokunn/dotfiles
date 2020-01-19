@@ -14,4 +14,3 @@ nano-install: $(NANO_DIR)
 
 $(NANO_DIR):
 	git clone $(NANORC_GITHUB) $(NANO_DIR)
-	ln -s ~/.nano/.nanorc ~/.nanorc
