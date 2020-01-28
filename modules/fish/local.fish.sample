@@ -72,6 +72,9 @@
 # java
 # set -x JAVA_HOME /usr/lib/jvm/java-1.11.0-openjdk-amd64
 
+# openssl
+# set -x PATH $PATH /usr/local/opt/openssl/bin
+
 # alias emacs 'emacs -nw'
 # alias gnucash 'env LANGUAGE=ja_JP.UTF-8 LANG=ja_JP.UTF-8 LC_ALL=ja_JP.UTF-8 gnucash'
 # alias ss 'open /System/Library/CoreServices/ScreenSaverEngine.app'
