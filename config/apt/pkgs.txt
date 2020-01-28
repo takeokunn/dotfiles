@@ -4,3 +4,4 @@ rlwrap
 nodejs
 silversearcher-ag
 xclip
+jq

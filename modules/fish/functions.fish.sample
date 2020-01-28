@@ -19,39 +19,51 @@
 # end
 
 # function peco_z
-#   set -l query (commandline)
+#     set -l query (commandline)
 
-#   if test -n $query
-#     set peco_flags --query "$query"
-#   end
+#     if test -n $query
+#         set peco_flags --query "$query"
+#     end
 
-#   z -l | peco $peco_flags --layout=bottom-up | awk '{ print $2 }' | read recent
-#   if [ $recent ]
-#       cd $recent
-#       commandline -r ''
-#       commandline -f repaint
-#   end
+#     z -l | peco $peco_flags --layout=bottom-up | awk '{ print $2 }' | read recent
+#     if [ $recent ]
+#         cd $recent
+#         commandline -r ''
+#         commandline -f repaint
+#     end
 # end
 
 # function peco_ghq
-#   set -l query (commandline)
+#     set -l query (commandline)
 
-#   if test -n $query
-#     set peco_flags --query "$query"
-#   end
+#     if test -n $query
+#         set peco_flags --query "$query"
+#     end
 
-#   ghq list --full-path | peco $peco_flags --layout=bottom-up | read recent
-#   if [ $recent ]
-#       cd $recent
-#       commandline -r ''
-#       commandline -f repaint
-#   end
+#     ghq list --full-path | peco $peco_flags --layout=bottom-up | read recent
+#     if [ $recent ]
+#         cd $recent
+#         commandline -r ''
+#         commandline -f repaint
+#     end
 # end
 
 # function fish_user_key_bindings
-#   bind \cr 'peco_select_history (commandline -b)'
-#   bind \co peco_ghq
-#   bind \cq peco_z
+#     bind \cr 'peco_select_history (commandline -b)'
+#     bind \co peco_ghq
+#     bind \cq peco_z
+# end
+
+# function ghq_all
+#     curl "https://api.github.com/users/"(echo $argv)"/repos" | jq -r ".[].clone_url" | xargs -L1 ghq get
+# end
+
+# function ghq_remove_all
+#     ghq list --full-path | grep -E "/"(echo $argv)"/" | xargs -L1 rm -fr
+# end
+
+# function ghq_user
+#     ghq list --full-path | grep github.com | awk -F 'github.com/' '{print $2}' | awk -F '/' '{print $1}' | sort | uniq
 # end
 
 # function snow
