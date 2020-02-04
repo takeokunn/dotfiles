@@ -54,6 +54,7 @@
 # set -x PATH $PATH /usr/local/sbin
 # set -xg LANG en_US.UTF-8
 # set -xg LC_ALL en_US.UTF-8
+# set -xg OBJC_DISABLE_INITIALIZE_FORK_SAFETY YES
 
 # direnv
 # eval (direnv hook fish)
