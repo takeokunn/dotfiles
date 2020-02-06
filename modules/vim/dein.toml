@@ -26,10 +26,10 @@ repo = 'editorconfig/editorconfig-vim'
 repo = 'simeji/winresizer'
 
 [[plugins]]
-repo = 'takac/vim-hardtime'
-
-[[plugins]]
 repo = 'gosukiwi/vim-atom-dark'
 
 [[plugins]]
 repo = 'rhysd/vim-syntax-christmas-tree'
+
+[[plugins]]
+repo = 'mechatroner/rainbow_csv'
