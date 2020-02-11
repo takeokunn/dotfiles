@@ -24,5 +24,8 @@ indent_size = 2
 [*.scala]
 indent_size = 2
 
+[package.json]
+indent_size = 2
+
 [*.{el,lisp,asd}]
 max_line_length = 80
