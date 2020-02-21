@@ -45,6 +45,8 @@ set splitright
 set incsearch
 set ignorecase
 set smartcase
+:syntax on
+set t_Co=256
 
 nmap / /\v
 nmap <Leader><Leader> V
@@ -55,6 +57,16 @@ nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-:syntax on
-set t_Co=256
 colorscheme atom-dark-256
+
+set nocompatible
+map ^[OA ^[ka
+map ^[OB ^[ja
+map ^[OC ^[la
+map ^[OD ^[ha
+
+nnoremap <C-p> :FZFFileList<CR>
+nnoremap <silent> ,b :Buffers<CR>
+command! FZFFileList call fzf#run(fzf#wrap({
+            \ 'source': 'find . -type d -name .git -prune -o ! -name .DS_Store',
+            \ 'down': '40%'}))

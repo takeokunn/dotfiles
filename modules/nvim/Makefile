@@ -1,4 +1,4 @@
-VIM_DIR = ~/.config/vim
+VIM_DIR = ~/.config/nvim
 VIM_CACHE_DIR = ~/.cache/dein
 SELF_VIM_DIR = $(MODULE_DIR)/nvim
 
