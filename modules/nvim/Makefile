@@ -1,19 +1,21 @@
 VIM_DIR = ~/.config/vim
 VIM_CACHE_DIR = ~/.cache/dein
-SELF_VIM_DIR = $(MODULE_DIR)/vim
+SELF_VIM_DIR = $(MODULE_DIR)/nvim
 
 VIM_DEIN_URL = curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh
 
-CORE_CLEAN_TARGETS += vim-clean
-CORE_TARGETS += vim-install
+NVIM_CLEAN_TARGETS += nvim-clean
+NVIM_TARGETS += nvim-install
 
-.PHONY: vim-clean
-vim-clean:
+.PHONY: nvim-clean
+nvim-clean:
 	rm -rf $(VIM_DIR)
 	rm -rf $(VIM_CACHE_DIR)
 
-.PHONY: vim-install
-vim-install: $(VIM_CACHE_DIR)
+.PHONY: nvim-install
+nvim-install: $(VIM_CACHE_DIR)
+	ln -sf $(SELF_VIM_DIR)/init.vim $(VIM_DIR)/init.vim
+	ln -sf $(SELF_VIM_DIR)/dein.toml $(VIM_DIR)/dein.toml
 
 $(VIM_CACHE_DIR):
 	mkdir -p $(VIM_DIR)
@@ -21,4 +23,3 @@ $(VIM_CACHE_DIR):
 	curl $(VIM_DEIN_URL) > vim_install.sh
 	sh vim_install.sh $(VIM_CACHE_DIR)
 	rm vim_install.sh
-	ln -sf $(SELF_VIM_DIR)/dein.toml $(VIM_DIR)/dein.toml

@@ -11,9 +11,6 @@ repo = 'Shougo/neosnippet-snippets'
 repo = 'scrooloose/nerdtree'
 
 [[plugins]]
-repo = 'itchyny/lightline.vim'
-
-[[plugins]]
 repo = 'Shougo/unite.vim'
 
 [[plugins]]
@@ -32,4 +29,25 @@ repo = 'gosukiwi/vim-atom-dark'
 repo = 'rhysd/vim-syntax-christmas-tree'
 
 [[plugins]]
-repo = 'mechatroner/rainbow_csv'
+repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'luochen1990/rainbow'
+
+[[plugins]]
+repo = 'prabirshrestha/async.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+
+[[plugins]]
+repo = 'mattn/vim-lsp-icons'
