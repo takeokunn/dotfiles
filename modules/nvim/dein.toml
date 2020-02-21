@@ -2,6 +2,9 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
+repo = 'Shougo/neocomplcache'
+
+[[plugins]]
 repo = 'Shougo/neosnippet.vim'
 
 [[plugins]]
@@ -11,12 +14,6 @@ repo = 'Shougo/neosnippet-snippets'
 repo = 'scrooloose/nerdtree'
 
 [[plugins]]
-repo = 'Shougo/unite.vim'
-
-[[plugins]]
-repo = 'ujihisa/unite-colorscheme'
-
-[[plugins]]
 repo = 'editorconfig/editorconfig-vim'
 
 [[plugins]]
@@ -24,9 +21,6 @@ repo = 'simeji/winresizer'
 
 [[plugins]]
 repo = 'gosukiwi/vim-atom-dark'
-
-[[plugins]]
-repo = 'rhysd/vim-syntax-christmas-tree'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
@@ -56,13 +50,6 @@ repo = 'mattn/vim-lsp-icons'
 repo = 'ConradIrwin/vim-bracketed-paste'
 
 [[plugins]]
-repo = 'junegunn/fzf'
-build = './install --all'
-
-[[plugins]]
-repo = 'junegunn/fzf.vim'
-
-[[plugins]]
 repo = 'roxma/nvim-yarp'
 
 [[plugins]]
@@ -79,3 +66,22 @@ repo = 'pelodelfuego/vim-swoop'
 
 [[plugins]]
 repo = 'Shougo/denite.nvim'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+
+[[plugins]]
+repo = 'kana/vim-operator-user'
+
+[[plugins]]
+repo = 'haya14busa/vim-operator-flashy'
+
+[[plugins]]
+repo = 'majutsushi/tagbar'
+

@@ -17,10 +17,12 @@ if dein#check_install()
   call dein#install()
 endif
 
+" settings
 filetype plugin indent on
 syntax enable
+:syntax on
+colorscheme atom-dark-256
 
-" settings
 set encoding=utf-8
 set fileencoding=utf-8
 set clipboard+=unnamed
@@ -46,40 +48,7 @@ set incsearch
 set ignorecase
 set smartcase
 set wildmode=longest:full,full
-:syntax on
 set t_Co=256
-
-nmap / /\v
-nmap <Leader><Leader> V
-nmap <Esc><Esc> :nohlsearch<CR><Esc>
-nnoremap <silent><C-y> :NERDTreeToggle<CR>
-" nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
-" nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
-
-let mapleader="\<Space>"
-nnoremap <Leader>w :w<CR>
-
-colorscheme atom-dark-256
-
-set nocompatible
-map ^[OA ^[ka
-map ^[OB ^[ja
-map ^[OC ^[la
-map ^[OD ^[ha
-
-nnoremap <silent> ,x :GitFiles?<CR>
-
-" fzf
-nnoremap <C-x><C-p> :FZFFileList<CR>
-nnoremap <C-x><C-r> :FZFMru<CR>
-command! FZFFileList call fzf#run(fzf#wrap({
-      \ 'source': 'find . -type d -name .git -prune -o ! -name .DS_Store',
-      \ 'down': '40%'}))
-command! FZFMru call fzf#run({
-\  'source':  v:oldfiles,
-\  'sink':    'e',
-\  'options': '-m -x +s',
-\  'down':    '40%'})
 
 " gitgutter
 set updatetime=250
@@ -94,9 +63,6 @@ function! MySwoop()
   end
 endfunction
 
-nmap <Leader>l :call MySwoop()<CR>
-nmap <Leader>q :bdelete! swoopBuf<CR>
-
 " denite
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort
@@ -108,14 +74,31 @@ function! s:denite_my_settings() abort
         \ denite#do_map('do_action', 'preview')
   nnoremap <silent><buffer><expr> q
         \ denite#do_map('quit')
+  nnoremap <silent><buffer><expr> <Esc>
+        \ denite#do_map('quit')
   nnoremap <silent><buffer><expr> i
         \ denite#do_map('open_filter_buffer')
   nnoremap <silent><buffer><expr> <Space>
         \ denite#do_map('toggle_select').'j'
 endfunction
 
+" deoplete
+let g:deoplete#enable_at_startup = 1
+
+" indentLine
+let g:indentLine_char = '¦'
+
+" keymap
+nmap / /\v
+map y <Plug>(operator-flashy)
+nmap Y <Plug>(operator-flashy)$
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
+nmap <silent> ,y :NERDTreeToggle<CR>
 nmap <silent> ,k :Denite file/rec<CR>
 nmap <silent> ,b :Denite buffer<CR>
 nmap <silent> ,o :Denite outline<CR>
 nmap <silent> ,r :Denite file/old<CR>
-
+nmap <silent> ,h :Denite command_history<CR>
+nmap <silent> ,g :Denite grep<CR>
+nmap <silent> ,s :call MySwoop()<CR>
+nmap <silent> ,q :bdelete! swoopBuf<CR>
