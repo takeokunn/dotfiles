@@ -74,9 +74,6 @@ repo = 'Shougo/deoplete.nvim'
 repo = 'Yggdroot/indentLine'
 
 [[plugins]]
-repo = 'bronson/vim-trailing-whitespace'
-
-[[plugins]]
 repo = 'kana/vim-operator-user'
 
 [[plugins]]
@@ -85,3 +82,8 @@ repo = 'haya14busa/vim-operator-flashy'
 [[plugins]]
 repo = 'majutsushi/tagbar'
 
+[[plugins]]
+repo = 'Shougo/deoppet.nvim'
+
+[[plugins]]
+repo = 'Shougo/defx.nvim'
