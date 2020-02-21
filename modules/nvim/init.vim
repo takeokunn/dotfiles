@@ -67,6 +67,10 @@ map ^[OD ^[ha
 
 nnoremap <C-p> :FZFFileList<CR>
 nnoremap <silent> ,b :Buffers<CR>
+nnoremap <silent> ,x :GitFiles?<CR>
 command! FZFFileList call fzf#run(fzf#wrap({
             \ 'source': 'find . -type d -name .git -prune -o ! -name .DS_Store',
             \ 'down': '40%'}))
+
+set updatetime=250
+
