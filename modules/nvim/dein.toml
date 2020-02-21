@@ -76,3 +76,6 @@ repo = 'vim-airline/vim-airline'
 
 [[plugins]]
 repo = 'pelodelfuego/vim-swoop'
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'

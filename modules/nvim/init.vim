@@ -45,6 +45,7 @@ set splitright
 set incsearch
 set ignorecase
 set smartcase
+set wildmode=longest:full,full
 :syntax on
 set t_Co=256
 
@@ -52,13 +53,11 @@ nmap / /\v
 nmap <Leader><Leader> V
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 nnoremap <silent><C-y> :NERDTreeToggle<CR>
-nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
-nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
+" nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
+" nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 
 let mapleader="\<Space>"
 nnoremap <Leader>w :w<CR>
-
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 colorscheme atom-dark-256
 
@@ -68,19 +67,55 @@ map ^[OB ^[ja
 map ^[OC ^[la
 map ^[OD ^[ha
 
-nnoremap <C-p> :FZFFileList<CR>
-nnoremap <silent> ,b :Buffers<CR>
 nnoremap <silent> ,x :GitFiles?<CR>
-command! FZFFileList call fzf#run(fzf#wrap({
-            \ 'source': 'find . -type d -name .git -prune -o ! -name .DS_Store',
-            \ 'down': '40%'}))
 
+" fzf
+nnoremap <C-x><C-p> :FZFFileList<CR>
+nnoremap <C-x><C-r> :FZFMru<CR>
+command! FZFFileList call fzf#run(fzf#wrap({
+      \ 'source': 'find . -type d -name .git -prune -o ! -name .DS_Store',
+      \ 'down': '40%'}))
+command! FZFMru call fzf#run({
+\  'source':  v:oldfiles,
+\  'sink':    'e',
+\  'options': '-m -x +s',
+\  'down':    '40%'})
+
+" gitgutter
 set updatetime=250
 
-function MySwoop()
-    let currWord = expand('<cword>')
-    call SwoopPattern(currWord)
+" swoop
+function! MySwoop()
+  let word = expand('<cword>')
+  if len(word) > 0
+    call SwoopPattern(word)
+  else
+    call Swoop()
+  end
 endfunction
 
 nmap <Leader>l :call MySwoop()<CR>
 nmap <Leader>q :bdelete! swoopBuf<CR>
+
+" denite
+autocmd FileType denite call s:denite_my_settings()
+function! s:denite_my_settings() abort
+  nnoremap <silent><buffer><expr> <CR>
+        \ denite#do_map('do_action')
+  nnoremap <silent><buffer><expr> d
+        \ denite#do_map('do_action', 'delete')
+  nnoremap <silent><buffer><expr> p
+        \ denite#do_map('do_action', 'preview')
+  nnoremap <silent><buffer><expr> q
+        \ denite#do_map('quit')
+  nnoremap <silent><buffer><expr> i
+        \ denite#do_map('open_filter_buffer')
+  nnoremap <silent><buffer><expr> <Space>
+        \ denite#do_map('toggle_select').'j'
+endfunction
+
+nmap <silent> ,k :Denite file/rec<CR>
+nmap <silent> ,b :Denite buffer<CR>
+nmap <silent> ,o :Denite outline<CR>
+nmap <silent> ,r :Denite file/old<CR>
+
