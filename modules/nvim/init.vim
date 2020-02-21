@@ -55,6 +55,9 @@ nnoremap <silent><C-y> :NERDTreeToggle<CR>
 nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 
+let mapleader="\<Space>"
+nnoremap <Leader>w :w<CR>
+
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 colorscheme atom-dark-256
@@ -74,3 +77,10 @@ command! FZFFileList call fzf#run(fzf#wrap({
 
 set updatetime=250
 
+function MySwoop()
+    let currWord = expand('<cword>')
+    call SwoopPattern(currWord)
+endfunction
+
+nmap <Leader>l :call MySwoop()<CR>
+nmap <Leader>q :bdelete! swoopBuf<CR>
