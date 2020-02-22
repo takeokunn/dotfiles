@@ -87,3 +87,6 @@ repo = 'Shougo/deoppet.nvim'
 
 [[plugins]]
 repo = 'Shougo/defx.nvim'
+
+[[plugins]]
+repo = 'cespare/vim-toml'

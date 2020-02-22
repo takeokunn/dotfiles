@@ -161,7 +161,7 @@ nmap / /\v
 map y <Plug>(operator-flashy)
 nmap Y <Plug>(operator-flashy)$
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
-nmap <silent> ,y :NERDTreeToggle<CR>
+nmap <silent> ,y :Defx<CR>
 nmap <silent> ,k :Denite file/rec<CR>
 nmap <silent> ,b :Denite buffer<CR>
 nmap <silent> ,o :Denite outline<CR>
