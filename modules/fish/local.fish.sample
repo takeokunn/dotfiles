@@ -84,3 +84,4 @@
 # alias pbcopy 'xclip -selection c'
 # alias pbpaste 'xclip -selection c -o'
 # alias make 'make -j'
+# alias pythno 'python3'

@@ -7,7 +7,7 @@ set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 if dein#load_state('~/.cache/dein')
   call dein#begin('~/.cache/dein')
 
-  call dein#load_toml('~/.config/vim/dein.toml', { 'lazy': 0 })
+  call dein#load_toml('~/.config/nvim/dein.toml', { 'lazy': 0 })
 
   call dein#end()
   call dein#save_state()
@@ -21,7 +21,6 @@ endif
 filetype plugin indent on
 syntax enable
 :syntax on
-colorscheme atom-dark-256
 
 set encoding=utf-8
 set fileencoding=utf-8
@@ -158,15 +157,15 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | Defx | endif
 
 " keymap
 nmap / /\v
-map y <Plug>(operator-flashy)
-nmap Y <Plug>(operator-flashy)$
-nmap <Esc><Esc> :nohlsearch<CR><Esc>
-nmap <silent> ,y :Defx<CR>
-nmap <silent> ,k :Denite file/rec<CR>
-nmap <silent> ,b :Denite buffer<CR>
-nmap <silent> ,o :Denite outline<CR>
-nmap <silent> ,r :Denite file/old<CR>
-nmap <silent> ,h :Denite command_history<CR>
-nmap <silent> ,g :Denite grep<CR>
-nmap <silent> ,s :call MySwoop()<CR>
-nmap <silent> ,q :bdelete! swoopBuf<CR>
+nnoremap y <Plug>(operator-flashy)
+nnoremap Y <Plug>(operator-flashy)$
+nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
+nnoremap <silent> ,y :Defx<CR>
+nnoremap <silent> ,k :Denite file/rec<CR>
+nnoremap <silent> ,b :Denite buffer<CR>
+nnoremap <silent> ,o :Denite outline<CR>
+nnoremap <silent> ,r :Denite file/old<CR>
+nnoremap <silent> ,h :Denite command_history<CR>
+nnoremap <silent> ,g :Denite grep<CR>
+nnoremap <silent> ,s :call MySwoop()<CR>
+nnoremap <silent> ,q :bdelete! swoopBuf<CR>

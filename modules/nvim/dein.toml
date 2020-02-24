@@ -90,3 +90,6 @@ repo = 'Shougo/defx.nvim'
 
 [[plugins]]
 repo = 'cespare/vim-toml'
+
+[[plugins]]
+repo = 'terryma/vim-multiple-cursors'
