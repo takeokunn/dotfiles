@@ -37,3 +37,5 @@ bind generic    <Ctrl-g> refresh
 
 bind generic    <Esc>f :toggle file-name
 bind main       <Esc>f :toggle commit-title-refs
+
+bind status P	!git push origin
