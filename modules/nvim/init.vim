@@ -20,7 +20,7 @@ endif
 " settings
 filetype plugin indent on
 syntax enable
-:syntax on
+syntax on
 
 set encoding=utf-8
 set fileencoding=utf-8
@@ -155,17 +155,22 @@ function! s:defx_my_settings() abort
 endfunction
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | Defx | endif
 
+" iceberg.vim
+colorscheme iceberg
+
 " keymap
+let mapleader = ','
+
 nmap / /\v
 nnoremap y <Plug>(operator-flashy)
 nnoremap Y <Plug>(operator-flashy)$
 nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
-nnoremap <silent> ,y :Defx<CR>
-nnoremap <silent> ,k :Denite file/rec<CR>
-nnoremap <silent> ,b :Denite buffer<CR>
-nnoremap <silent> ,o :Denite outline<CR>
-nnoremap <silent> ,r :Denite file/old<CR>
-nnoremap <silent> ,h :Denite command_history<CR>
-nnoremap <silent> ,g :Denite grep<CR>
-nnoremap <silent> ,s :call MySwoop()<CR>
-nnoremap <silent> ,q :bdelete! swoopBuf<CR>
+nnoremap <silent> <leader>y :Defx<CR>
+nnoremap <silent> <leader>k :Denite file/rec<CR>
+nnoremap <silent> <leader>b :Denite buffer<CR>
+nnoremap <silent> <leader>o :Denite outline<CR>
+nnoremap <silent> <leader>r :Denite file/old<CR>
+nnoremap <silent> <leader>h :Denite command_history<CR>
+nnoremap <silent> <leader>g :Denite grep<CR>
+nnoremap <silent> <leader>s :call MySwoop()<CR>
+nnoremap <silent> <leader>q :bdelete! swoopBuf<CR>
