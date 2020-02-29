@@ -18,36 +18,50 @@ $ curl -L https://raw.githubusercontent.com/takeokunn/dotfiles/master/install.sh
 ### Core
 
 ```
-$ make core # install
-$ make core-clean # uninstall
+$ make core
+$ make core-clean
 ```
 
 * dotfiles
-* vim
+* bash
 * nano
+* vim
 * tmux
 
-### Fish
+### fish
 
 ```
-$ make fish # install
-$ make update # update
-$ make fish-clean # uninstall
+$ make fish
+$ make fish-clean
+$ make fish-update
 ```
 
-* fish shell
-* peco
-* ghq
-* z
-* omf
+* fish
+* oh-my-fish
 
-### Textlint
+### lem
 
 ```
-$ make textlint # install
-$ make textlint-clean # uninstall
+$ make lem
+$ make lem-clean
+$ make lem-update
 ```
 
-* npm
+* lem
 
-fdasfsafsd
+### nvim
+
+```
+$ make nvim
+$ make nvim-clean
+```
+
+* nvim
+
+### all
+
+```
+$ make all
+$ make clean
+$ make update
+```

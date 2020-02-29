@@ -1,4 +1,5 @@
 # config
+
 set main-view   = id date author:email-user commit-title:graph=yes,refs=yes
 set blame-view  = date:default author:email-user id:yes,color line-number:yes,interval=1 text
 
@@ -21,10 +22,9 @@ set mouse           = true
 set refresh-mode = auto
 
 set diff-highlight   = true
-color   diff-header  default magenta
-color   diff-chunk   black   white
 
 # keybind
+
 bind generic    g move-first-line
 bind generic    E view-grep
 bind generic    G move-last-line
@@ -39,3 +39,7 @@ bind generic    <Esc>f :toggle file-name
 bind main       <Esc>f :toggle commit-title-refs
 
 bind status P	!git push origin
+
+# plugins
+
+# source "~/.tig/colors/molokai-like-theme.tigrc"

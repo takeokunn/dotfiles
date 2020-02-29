@@ -15,6 +15,7 @@ FISH_TARGETS +=
 TEXTLINT_TARGETS +=
 TMUX_TARGETS +=
 NVIM_TARGETS +=
+LEM_TARGES +=
 
 # clean
 CORE_CLEAN_TARGETS +=
@@ -22,9 +23,11 @@ FISH_CLEAN_TARGETS +=
 TEXTLINT_CLEAN_TARGETS +=
 TMUX_CLEAN_TARGETS +=
 NVIM_CLEAN_TARGETS +=
+LEM_CLEAN_TARGES +=
 
 # update
 FISH_UPDATE_TARGETS +=
+LEM_UPDATE_TARGES +=
 
 ####################
 #      include     #
@@ -45,11 +48,8 @@ core: $(CORE_TARGETS)
 .PHONY: fish
 fish: $(FISH_TARGETS)
 
-.PHONY: textlint
-textlint: $(TEXTLINT_TARGETS)
-
-.PHONY: tmux
-tmux: $(TMUX_TARGETS)
+.PHONY: lem
+lem: $(LEM_TARGES)
 
 .PHONY: nvim
 nvim: $(NVIM_TARGETS)
@@ -64,11 +64,8 @@ core-clean: $(CORE_CLEAN_TARGETS)
 .PHONY: fish-clean
 fish-clean: $(FISH_CLEAN_TARGETS)
 
-.PHONY: textlint-clean
-textlint-clean: $(TEXTLINT_CLEAN_TARGETS)
-
-.PHONY: tmux-clean
-tmux-clean: $(TMUX_CLEAN_TARGETS)
+.PHONY: lem-clean
+lem-clean: $(LEM_CLEAN_TARGES)
 
 .PHONY: nvim-clean
 nvim-clean: $(NVIM_CLEAN_TARGETS)
@@ -81,4 +78,4 @@ clean: $(CORE_CLEAN_TARGETS) $(FISH_CLEAN_TARGETS) $(TEXTLINT_CLEAN_TARGETS) $(T
 fish-update: $(FISH_UPDATE_TARGETS)
 
 .PHONY: update
-update: $(FISH_UPDATE_TARGETS)
+update: $(FISH_UPDATE_TARGETS) $(LEM_UPDATE_TARGES)

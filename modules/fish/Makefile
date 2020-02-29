@@ -16,14 +16,14 @@ fish-shell-clean:
 .PHONY: fish-shell-install
 fish-shell-install: $(LOCAL_FILE) $(FUNCTIONS_FILE) $(FISH_DIR)
 
-$(FISH_DIR):
-	mkdir -p $(FISH_DIR)
-	ln -sf $(SELF_FISH_DIR)/config.fish $(FISH_DIR)/config.fish
-	ln -sf $(SELF_FISH_DIR)/local.fish $(FISH_DIR)/local.fish
-	ln -sf $(SELF_FISH_DIR)/functions.fish $(FISH_DIR)/functions.fish
-
 $(LOCAL_FILE):
 	cp $(LOCAL_FILE_SAMPLE) $(LOCAL_FILE)
 
 $(FUNCTIONS_FILE):
 	cp $(FUNCTIONS_FILE_SAMPLE) $(FUNCTIONS_FILE)
+
+$(FISH_DIR):
+	mkdir -p $(FISH_DIR)
+	ln -sf $(SELF_FISH_DIR)/config.fish $(FISH_DIR)/config.fish
+	ln -sf $(SELF_FISH_DIR)/local.fish $(FISH_DIR)/local.fish
+	ln -sf $(SELF_FISH_DIR)/functions.fish $(FISH_DIR)/functions.fish

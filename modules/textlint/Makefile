@@ -1,14 +1,14 @@
 TEXTLINT_INSTALL_DIRCTORY = ~/.npm-global
 
-TEXTLINT_CLEAN_TARGETS += textlint-npm-clean
-TEXTLINT_TARGETS += textlint-npm-install
+TEXTLINT_CLEAN_TARGETS += textlint-clean
+TEXTLINT_TARGETS += textlint-install
 
-.PHONY: textlint-npm-clean
-textlint-npm-clean:
+.PHONY: textlint-clean
+textlint-clean:
 	rm -fr $(TEXTLINT_INSTALL_DIRCTORY)
 
-.PHONY: textlint-npm-install
-textlint-npm-install: $(TEXTLINT_INSTALL_DIRCTORY)
+.PHONY: textlint-install
+textlint-install: $(TEXTLINT_INSTALL_DIRCTORY)
 
 $(TEXTLINT_INSTALL_DIRCTORY):
 	mkdir -p $(TEXTLINT_INSTALL_DIRCTORY)

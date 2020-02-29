@@ -19,7 +19,6 @@ endif
 
 " settings
 filetype plugin indent on
-syntax enable
 syntax on
 
 set encoding=utf-8
@@ -160,11 +159,9 @@ colorscheme iceberg
 
 " keymap
 let mapleader = ','
+inoremap jh <Esc>
 
 nmap / /\v
-nnoremap y <Plug>(operator-flashy)
-nnoremap Y <Plug>(operator-flashy)$
-nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
 nnoremap <silent> <leader>y :Defx<CR>
 nnoremap <silent> <leader>k :Denite file/rec<CR>
 nnoremap <silent> <leader>b :Denite buffer<CR>
