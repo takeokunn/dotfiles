@@ -55,6 +55,12 @@
 # set -xg LANG en_US.UTF-8
 # set -xg LC_ALL en_US.UTF-8
 # set -xg OBJC_DISABLE_INITIALIZE_FORK_SAFETY YES
+# set -xg LDFLAGS "-L/usr/local/opt/libxml2/lib"
+# set -xg CPPFLAGS "-I/usr/local/opt/libxml2/include"
+# set -xg PKG_CONFIG_PATH "/usr/local/opt/libxml2/lib/pkgconfig"
+# set -xg LIBXML2_CFLAGS `xml2-config --cflags`
+# set -xg LIBXML2_LIBS `xml2-config --libs`
+
 
 # direnv
 # eval (direnv hook fish)
@@ -77,6 +83,7 @@
 # set -x PATH $PATH /usr/local/opt/openssl/bin
 
 # alias emacs 'emacs -nw'
+# alias emacs '/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 # alias gnucash 'env LANGUAGE=ja_JP.UTF-8 LANG=ja_JP.UTF-8 LC_ALL=ja_JP.UTF-8 gnucash'
 # alias ss 'open /System/Library/CoreServices/ScreenSaverEngine.app'
 # alias ls 'gls --color'
