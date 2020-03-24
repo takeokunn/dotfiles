@@ -163,7 +163,7 @@ inoremap jh <Esc>
 
 nmap / /\v
 nnoremap <silent> <leader>y :Defx<CR>
-nnoremap <silent> <leader>k :Denite file/rec<CR>
+nnoremap <silent> <leader>k :Denite file/rec file_mru buffer<CR>
 nnoremap <silent> <leader>b :Denite buffer<CR>
 nnoremap <silent> <leader>o :Denite outline<CR>
 nnoremap <silent> <leader>r :Denite file/old<CR>

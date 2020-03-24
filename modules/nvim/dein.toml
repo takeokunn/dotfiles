@@ -102,3 +102,9 @@ repo = 'cocopon/iceberg.vim'
 
 [[plugins]]
 repo = 'preservim/nerdcommenter'
+
+[[plugins]]
+repo = 'pechorin/any-jump.vim'
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
