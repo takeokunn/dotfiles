@@ -157,9 +157,27 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | Defx | endif
 " iceberg.vim
 colorscheme iceberg
 
+" vimdoc-jp
+set helplang=ja
+
+" deol
+function! MyDeol()
+    let choice = confirm("Exec Deol By ?", "F floting\nV vertical\nH horizontal")
+    if choice == 0
+      Deol -split=floating
+    elseif choice == 1
+      Deol -split=vertical
+    elseif choice == 2
+      Deol -split=horizontal
+    else
+      echo 'quit'
+    endif
+endfunction
+
 " keymap
 let mapleader = ','
 inoremap jh <Esc>
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 nmap / /\v
 nnoremap <silent> <leader>y :Defx<CR>
@@ -171,3 +189,4 @@ nnoremap <silent> <leader>h :Denite command_history<CR>
 nnoremap <silent> <leader>g :Denite grep<CR>
 nnoremap <silent> <leader>s :call MySwoop()<CR>
 nnoremap <silent> <leader>q :bdelete! swoopBuf<CR>
+nnoremap <silent> <leader>t :call MyDeol()<CR>

@@ -114,3 +114,6 @@ repo = 'mattn/webapi-vim'
 
 [[plugins]]
 repo = 'LeafCage/vimhelpgenerator'
+
+[[plugins]]
+repo = 'Shougo/deol.nvim'
