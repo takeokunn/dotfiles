@@ -108,3 +108,9 @@ repo = 'pechorin/any-jump.vim'
 
 [[plugins]]
 repo = 'Shougo/neomru.vim'
+
+[[plugins]]
+repo = 'mattn/webapi-vim'
+
+[[plugins]]
+repo = 'LeafCage/vimhelpgenerator'
