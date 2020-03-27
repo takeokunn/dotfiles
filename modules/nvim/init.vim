@@ -164,13 +164,13 @@ set helplang=ja
 function! MyDeol()
     let choice = confirm("Exec Deol By ?", "F floting\nV vertical\nH horizontal")
     if choice == 0
-      Deol -split=floating
+        Deol -split=floating
     elseif choice == 1
-      Deol -split=vertical
+        Deol -split=vertical
     elseif choice == 2
-      Deol -split=horizontal
+        Deol -split=horizontal
     else
-      echo 'quit'
+        echo 'quit'
     endif
 endfunction
 
