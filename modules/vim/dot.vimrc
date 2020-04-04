@@ -1,5 +1,4 @@
 filetype plugin indent on
-syntax enable
 
 " settings
 set encoding=utf-8
