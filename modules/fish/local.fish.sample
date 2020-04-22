@@ -9,6 +9,7 @@
 # set -x PATH $PATH $GEM_HOME/bin
 
 # for golang
+# set -x GOROOT (go env GOROOT)
 # set -x GOPATH $HOME/projects/go
 # set -x PATH $PATH $GOPATH/bin
 
