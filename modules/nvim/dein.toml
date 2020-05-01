@@ -83,9 +83,6 @@ repo = 'haya14busa/vim-operator-flashy'
 repo = 'majutsushi/tagbar'
 
 [[plugins]]
-repo = 'Shougo/deoppet.nvim'
-
-[[plugins]]
 repo = 'Shougo/defx.nvim'
 
 [[plugins]]
@@ -117,3 +114,6 @@ repo = 'LeafCage/vimhelpgenerator'
 
 [[plugins]]
 repo = 'Shougo/deol.nvim'
+
+[[plugins]]
+repo = 'mattn/vim-sl'
