@@ -2,6 +2,9 @@
     excludesfile = ~/.gitignore
     editor = vim
     quotepath = off
+    ignorecase = false
+    safecrlf = true
+    autocrlf = false
 
 [alias]
     st = status
