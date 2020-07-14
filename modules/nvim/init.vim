@@ -48,6 +48,9 @@ set smartcase
 set wildmode=longest:full,full
 set t_Co=256
 
+" netrw
+let g:netrw_liststyle=3
+
 " gitgutter
 set updatetime=250
 
