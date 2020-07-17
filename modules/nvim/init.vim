@@ -47,6 +47,11 @@ set ignorecase
 set smartcase
 set wildmode=longest:full,full
 set t_Co=256
+set history=1000
+set autoread
+au FocusGained,BufEnter * checktime
+set list
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 
 " netrw
 let g:netrw_liststyle=3

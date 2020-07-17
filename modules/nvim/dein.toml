@@ -117,3 +117,6 @@ repo = 'Shougo/deol.nvim'
 
 [[plugins]]
 repo = 'mattn/vim-sl'
+
+[[plugins]]
+repo = 'tyru/caw.vim'
