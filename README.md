@@ -58,6 +58,16 @@ $ make nvim-clean
 
 * nvim
 
+### irb
+
+```
+$ make irb
+$ make irb-clean
+$ make irb-update
+```
+
+* irb
+
 ### all
 
 ```

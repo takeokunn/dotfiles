@@ -1,8 +1,8 @@
 SELF_LEM_DIR = $(MODULE_DIR)/lem
 
-LEM_CLEAN_TARGES += lem-clean
-LEM_TARGES += lem-install
-LEM_UPDATE_TARGES += lem-update
+LEM_CLEAN_TARGETS += lem-clean
+LEM_TARGETS += lem-install
+LEM_UPDATE_TARGETS += lem-update
 
 .PHONY: lem-clean
 lem-clean:
