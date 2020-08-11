@@ -120,3 +120,7 @@ repo = 'mattn/vim-sl'
 
 [[plugins]]
 repo = 'tyru/caw.vim'
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+

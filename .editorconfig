@@ -13,3 +13,6 @@ indent_style = tab
 
 [{Makefile,**.mk}]
 indent_style = tab
+
+[*.pryrc]
+indent_size = 2

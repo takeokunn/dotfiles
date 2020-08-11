@@ -213,3 +213,8 @@ nnoremap <silent> <leader>g :Denite grep<CR>
 nnoremap <silent> <leader>s :call MySwoop()<CR>
 nnoremap <silent> <leader>q :bdelete! swoopBuf<CR>
 nnoremap <silent> <leader>t :call MyDeol()<CR>
+
+nnoremap <C-l>d :LspDefinition<CR>
+nnoremap <C-l>s :LspStatus<CR>
+nnoremap <C-l>h :LspHover<CR>
+nnoremap <C-l>c :LspCodeAcion<CR>p
