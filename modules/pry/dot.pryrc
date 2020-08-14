@@ -3,7 +3,7 @@
 # plugin
 begin
   require 'awesome_print'
-rescue # rubocop:disable Lint/SuppressedException
+rescue LoadError# rubocop:disable Lint/SuppressedException
 else
   AwesomePrint.pry!
 end
