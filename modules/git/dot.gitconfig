@@ -1,24 +1,27 @@
 [core]
-    excludesfile = ~/.gitignore
-    editor = vim
-    quotepath = off
-    ignorecase = false
-    safecrlf = true
-    autocrlf = false
+excludesfile = ~/.gitignore
+editor = vim
+quotepath = off
+ignorecase = false
+safecrlf = true
+autocrlf = false
 
 [alias]
-    st = status
-    br = branch
-    co = commit
-    ch = checkout
-    ad = add
+st = status
+br = branch
+co = commit
+ch = checkout
+ad = add
 
 [user]
-    name = takeokunn
-    email = bararararatty@gmail.com
+name = takeokunn
+email = bararararatty@gmail.com
 
 [ghq]
-    root = ~/.ghq
+root = ~/.ghq
 
 [fetch]
-    prune = true
+prune = true
+
+[pull]
+rebase = false
