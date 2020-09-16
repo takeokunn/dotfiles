@@ -2,7 +2,12 @@
 (setq skk-server-portnum 9999)
 (setq skk-server-host "localhost")
 
-;;; ■モードのまま C-j を有効とする
+;;; config
+(setq skk-egg-like-newline t)
+(setq skk-show-annotation nil)
+(setq skk-auto-insert-paren t)
+
+
 ;;; https://github.com/skk-dev/ddskk/blob/master/etc/dot.skk#L752-L768
 (defun skk-C-j-key (arg)
     (interactive "P")
