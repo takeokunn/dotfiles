@@ -1,3 +1,5 @@
+;;; -*- mode: emacs-lisp; coding: utf-8 -*-
+
 ;;; for skkserv
 (setq skk-server-portnum 9999)
 (setq skk-server-host "localhost")
@@ -7,14 +9,10 @@
 (setq skk-show-annotation nil)
 (setq skk-auto-insert-paren t)
 
-
 ;;; https://github.com/skk-dev/ddskk/blob/master/etc/dot.skk#L752-L768
 (defun skk-C-j-key (arg)
     (interactive "P")
-    (let ((enable-modes '(lisp-interaction-mode ; eval-print-last-sexp
-			                 emacs-lisp-mode    ; newline-and-indent
-			                 ;; and more.
-			                 )))
+    (let ((enable-modes '(lisp-interaction-mode emacs-lisp-mode org-mode markdown-mode prog-mode)))
         (cond
             ((and (null (skk-in-minibuffer-p))
 	             (null skk-henkan-mode)
