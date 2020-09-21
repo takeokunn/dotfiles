@@ -41,3 +41,5 @@ node
 direnv
 the_silver_searcher
 nvim
+gh
+fzy

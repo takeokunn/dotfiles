@@ -5,4 +5,5 @@ package docker-machine
 package https://github.com/evanlucas/fish-kubectl-completions
 package peco
 package z
+package https://github.com/b4b4r07/enhancd
 theme default

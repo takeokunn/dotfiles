@@ -1,23 +1,8 @@
 # write your settings!
 
-# function logo
-#     echo '                 '(set_color F00)'___
-#   ___======____='(set_color FF7F00)'-'(set_color FF0)'-'(set_color FF7F00)'-='(set_color F00)')
-# /T            \_'(set_color FF0)'--='(set_color FF7F00)'=='(set_color F00)')
-# [ \ '(set_color FF7F00)'('(set_color FF0)'0'(set_color FF7F00)')   '(set_color F00)'\~    \_'(set_color FF0)'-='(set_color FF7F00)'='(set_color F00)')
-#  \      / )J'(set_color FF7F00)'~~    \\'(set_color FF0)'-='(set_color F00)')
-#   \\\\___/  )JJ'(set_color FF7F00)'~'(set_color FF0)'~~   '(set_color F00)'\)
-#    \_____/JJJ'(set_color FF7F00)'~~'(set_color FF0)'~~    '(set_color F00)'\\
-#    '(set_color FF7F00)'/ '(set_color FF0)'\  '(set_color FF0)', \\'(set_color F00)'J'(set_color FF7F00)'~~~'(set_color FF0)'~~     '(set_color FF7F00)'\\
-#   (-'(set_color FF0)'\)'(set_color F00)'\='(set_color FF7F00)'|'(set_color FF0)'\\\\\\'(set_color FF7F00)'~~'(set_color FF0)'~~       '(set_color FF7F00)'L_'(set_color FF0)'_
-#   '(set_color FF7F00)'('(set_color F00)'\\'(set_color FF7F00)'\\)  ('(set_color FF0)'\\'(set_color FF7F00)'\\\)'(set_color F00)'_           '(set_color FF0)'\=='(set_color FF7F00)'__
-#    '(set_color F00)'\V    '(set_color FF7F00)'\\\\'(set_color F00)'\) =='(set_color FF7F00)'=_____   '(set_color FF0)'\\\\\\\\'(set_color FF7F00)'\\\\
-#           '(set_color F00)'\V)     \_) '(set_color FF7F00)'\\\\'(set_color FF0)'\\\\JJ\\'(set_color FF7F00)'J\)
-#                       '(set_color F00)'/'(set_color FF7F00)'J'(set_color FF0)'\\'(set_color FF7F00)'J'(set_color F00)'T\\'(set_color FF7F00)'JJJ'(set_color F00)'J)
-#                       (J'(set_color FF7F00)'JJ'(set_color F00)'| \UUU)
-#                        (UU)'(set_color normal)
-# end
-
+####################
+#       peco       #
+####################
 # function peco_z
 #     set -l query (commandline)
 
@@ -54,18 +39,58 @@
 #     bind \cq peco_z
 # end
 
-# function ghq_all
+####################
+#       ghq        #
+####################
+# function ghq_create
+#     cd (ghq create (echo $argv)) | gh repo create (echo $argv) --public -y
+#     echo "# "(echo $argv) >> README.md
+#     git init
+#     git add README.md
+#     git commit -m "first commit"
+#     git branch -M master
+#     git remote add origin git@github.com:takeokunn/(echo $argv).git
+#     git push -u origin master
+# end
+
+# function ghq_users
+#     ghq list | grep "github.com" | cut -d / -f 2 | sort | uniq
+# end
+
+# function ghq_user_all
 #     curl "https://api.github.com/users/"(echo $argv)"/repos" | jq -r ".[].clone_url" | xargs -L1 ghq get
 # end
 
-# function ghq_remove_all
-#     ghq list --full-path | grep -E "/"(echo $argv)"/" | xargs -L1 rm -fr
+# function ghq_org_all
+#     curl "takeokunn" "https://api.github.com/orgs/"(echo $argv)"/repos" | jq -r ".[].clone_url" | xargs -L1 ghq get
 # end
 
-# function ghq_user
-#     ghq list --full-path | grep github.com | awk -F 'github.com/' '{print $2}' | awk -F '/' '{print $1}' | sort | uniq
+# function ghq_remove
+#     ghq list --full-path | peco | xargs -L1 rm -fr
 # end
 
-# function snow
-#     ruby -e 'C=`stty size`.scan(/\d+/)[1].to_i;S=["2743".to_i(16)].pack("U*");a={};puts "\033[2J";loop{a[rand(C)]=0;a.each{|x,o|;a[x]+=1;print "\033[#{o};#{x}H \033[#{a[x]};#{x}H#{S} \033[0;0H"};$stdout.flush;sleep 0.1}'
+# function ghq_remove_user
+#     ghq list | grep "github.com" | cut -d / -f 2 | sort | uniq | peco | read recent
+#     ghq list --full-path | grep -E "/"(echo $recent)"/" | xargs -L1 rm -fr
+# end
+
+####################
+#     awesome      #
+####################
+# function logo
+#     echo '                 '(set_color F00)'___
+#   ___======____='(set_color FF7F00)'-'(set_color FF0)'-'(set_color FF7F00)'-='(set_color F00)')
+# /T            \_'(set_color FF0)'--='(set_color FF7F00)'=='(set_color F00)')
+# [ \ '(set_color FF7F00)'('(set_color FF0)'0'(set_color FF7F00)')   '(set_color F00)'\~    \_'(set_color FF0)'-='(set_color FF7F00)'='(set_color F00)')
+#  \      / )J'(set_color FF7F00)'~~    \\'(set_color FF0)'-='(set_color F00)')
+#   \\\\___/  )JJ'(set_color FF7F00)'~'(set_color FF0)'~~   '(set_color F00)'\)
+#    \_____/JJJ'(set_color FF7F00)'~~'(set_color FF0)'~~    '(set_color F00)'\\
+#    '(set_color FF7F00)'/ '(set_color FF0)'\  '(set_color FF0)', \\'(set_color F00)'J'(set_color FF7F00)'~~~'(set_color FF0)'~~     '(set_color FF7F00)'\\
+#   (-'(set_color FF0)'\)'(set_color F00)'\='(set_color FF7F00)'|'(set_color FF0)'\\\\\\'(set_color FF7F00)'~~'(set_color FF0)'~~       '(set_color FF7F00)'L_'(set_color FF0)'_
+#   '(set_color FF7F00)'('(set_color F00)'\\'(set_color FF7F00)'\\)  ('(set_color FF0)'\\'(set_color FF7F00)'\\\)'(set_color F00)'_           '(set_color FF0)'\=='(set_color FF7F00)'__
+#    '(set_color F00)'\V    '(set_color FF7F00)'\\\\'(set_color F00)'\) =='(set_color FF7F00)'=_____   '(set_color FF0)'\\\\\\\\'(set_color FF7F00)'\\\\
+#           '(set_color F00)'\V)     \_) '(set_color FF7F00)'\\\\'(set_color FF0)'\\\\JJ\\'(set_color FF7F00)'J\)
+#                       '(set_color F00)'/'(set_color FF7F00)'J'(set_color FF0)'\\'(set_color FF7F00)'J'(set_color F00)'T\\'(set_color FF7F00)'JJJ'(set_color F00)'J)
+#                       (J'(set_color FF7F00)'JJ'(set_color F00)'| \UUU)
+#                        (UU)'(set_color normal)
 # end
