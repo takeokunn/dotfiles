@@ -10,7 +10,7 @@
 #         set peco_flags --query "$query"
 #     end
 
-#     z -l | peco $peco_flags --layout=bottom-up | awk '{ print $2 }' | read recent
+#     z -l | peco $peco_flags | awk '{ print $2 }' | read recent
 #     if [ $recent ]
 #         cd $recent
 #         commandline -r ''
@@ -25,7 +25,7 @@
 #         set peco_flags --query "$query"
 #     end
 
-#     ghq list --full-path | peco $peco_flags --layout=bottom-up | read recent
+#     ghq list --full-path | peco $peco_flags | read recent
 #     if [ $recent ]
 #         cd $recent
 #         commandline -r ''
