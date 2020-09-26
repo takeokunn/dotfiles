@@ -68,6 +68,15 @@ $ make irb-update
 
 * irb
 
+### spacemacs
+
+```
+$ make spacemacs
+$ make spacemacs-clean
+```
+
+* spacemacs
+
 ### all
 
 ```
