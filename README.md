@@ -27,6 +27,7 @@ $ make core-clean
 * nano
 * vim
 * tmux
+* tig
 
 ### fish
 

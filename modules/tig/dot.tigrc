@@ -43,4 +43,4 @@ bind branch L	!git pull origin %(branch)
 
 # plugins
 
-# source "~/.tig/colors/molokai-like-theme.tigrc"
+source "~/.tig/colors/molokai-like-theme.tigrc"
