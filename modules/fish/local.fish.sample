@@ -83,6 +83,9 @@
 # openssl
 # set -x PATH $PATH /usr/local/opt/openssl/bin
 
+## llvm
+# set -x PATH $PATH /usr/local/opt/llvm/bin
+
 # alias emacs 'emacs -nw'
 # alias emacs '/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 # alias gnucash 'env LANGUAGE=ja_JP.UTF-8 LANG=ja_JP.UTF-8 LC_ALL=ja_JP.UTF-8 gnucash'
