@@ -32,3 +32,4 @@ $(FISH_DIR):
 $(FISH_COMPLETION_DIR):
 	mkdir -p $(FISH_COMPLETION_DIR)
 	ln -sf $(SELF_FISH_DIR)/completions/ros.fish $(FISH_COMPLETION_DIR)/ros.fish
+	ln -sf $(SELF_FISH_DIR)/completions/sbcl.fish $(FISH_COMPLETION_DIR)/sbcl.fish
