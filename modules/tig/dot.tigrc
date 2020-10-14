@@ -42,5 +42,4 @@ bind status P	!git push origin
 bind branch L	!git pull origin %(branch)
 
 # plugins
-
 source "~/.tig/colors/molokai-like-theme.tigrc"
