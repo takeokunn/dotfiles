@@ -81,5 +81,5 @@ complete -c ros -n "__fish_seen_subcommand_from template" -xa import -d "Import 
 complete -c ros -n "__fish_seen_subcommand_from template" -xa help -d "Print usage and subcommands description"
 
 ### config
-complete -c ros -n "__fish_seen_subcommand_from config" -xa show -d "show the VALUE to the TARGET."
-complete -c ros -n "__fish_seen_subcommand_from config" -xa set -d "set the VALUE to the TARGET."
+complete -c ros -n "__fish_seen_subcommand_from config" -xa show -d "show TARGET."
+complete -c ros -n "__fish_seen_subcommand_from config" -xa set -d "set TARGET VALUE."
