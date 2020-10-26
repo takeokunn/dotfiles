@@ -29,6 +29,15 @@ $ make core-clean
 * tmux
 * tig
 
+### tmux
+
+```
+$ make tmux
+$ make tmux-clean
+```
+
+* tmux
+
 ### fish
 
 ```
