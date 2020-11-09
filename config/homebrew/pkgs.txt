@@ -43,3 +43,9 @@ the_silver_searcher
 nvim
 gh
 fzy
+exa
+bat
+fd
+ripgrep
+tokei
+procs

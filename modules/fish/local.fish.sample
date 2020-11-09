@@ -96,3 +96,9 @@
 # alias pbpaste 'xclip -selection c -o'
 # alias make 'make -j'
 # alias pythno 'python3'
+
+# alias ls 'exa'
+# alias cat 'bat'
+# alias find 'fd'
+# alias wc 'tokei'
+# alias ps 'procs'
