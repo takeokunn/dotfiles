@@ -40,7 +40,6 @@ IRB_UPDATE_TARGETS +=
 
 -include $(SOURCE_DIR)/make/*.mk
 -include $(MODULE_DIR)/*/Makefile
--include config/Makefile
 
 ####################
 #     commands     #
