@@ -26,7 +26,6 @@ $ make core-clean
 * bash
 * nano
 * vim
-* tmux
 * tig
 
 ### tmux
