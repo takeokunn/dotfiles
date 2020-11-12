@@ -2,7 +2,7 @@ VIM_DIR = ~/.config/nvim
 VIM_CACHE_DIR = ~/.cache/dein
 SELF_VIM_DIR = $(MODULE_DIR)/nvim
 
-VIM_DEIN_URL = curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh
+VIM_DEIN_URL = https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh
 
 NVIM_CLEAN_TARGETS += nvim-clean
 NVIM_TARGETS += nvim-install
