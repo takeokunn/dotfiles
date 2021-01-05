@@ -49,3 +49,5 @@ fd
 ripgrep
 tokei
 procs
+dog
+gibo
