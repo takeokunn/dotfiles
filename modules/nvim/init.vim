@@ -59,16 +59,6 @@ let g:netrw_liststyle=3
 " gitgutter
 set updatetime=250
 
-" swoop
-function! MySwoop()
-  let word = expand('<cword>')
-  if len(word) > 0
-    call SwoopPattern(word)
-  else
-    call Swoop()
-  end
-endfunction
-
 " denite
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort
@@ -207,14 +197,14 @@ nnoremap <silent> <leader>y :Defx<CR>
 nnoremap <silent> <leader>k :Denite file/rec file_mru buffer<CR>
 nnoremap <silent> <leader>b :Denite buffer<CR>
 nnoremap <silent> <leader>o :Denite outline<CR>
+nnoremap <silent> <leader>l :Denite line<CR>
 nnoremap <silent> <leader>r :Denite file/old<CR>
 nnoremap <silent> <leader>h :Denite command_history<CR>
 nnoremap <silent> <leader>g :Denite grep<CR>
-nnoremap <silent> <leader>s :call MySwoop()<CR>
-nnoremap <silent> <leader>q :bdelete! swoopBuf<CR>
 nnoremap <silent> <leader>t :call MyDeol()<CR>
 
 nnoremap <C-l>d :LspDefinition<CR>
 nnoremap <C-l>s :LspStatus<CR>
 nnoremap <C-l>h :LspHover<CR>
-nnoremap <C-l>c :LspCodeAcion<CR>p
+nnoremap <C-l>c :LspCodeAcion<CR>
+
