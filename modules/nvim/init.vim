@@ -190,7 +190,11 @@ endif
 " keymap
 let mapleader = ','
 inoremap jh <Esc>
+nnoremap <Leader>p "+p
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+vnoremap < <gv
+vnoremap > >gv
 
 nmap / /\v
 nnoremap <silent> <leader>y :Defx<CR>
