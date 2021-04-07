@@ -14,3 +14,23 @@ end
 
 # alias
 alias cdd 'cd ~/Desktop'
+
+# cloudsqlproxy projectを指定して、dbproxyを起動
+function cloudsqlproxy
+  # すでにcloud_sql_proxyジョブがあるなら、sigkill送信する
+  set -l pid (ps aux | grep -v grep | grep cloud_sql_proxy | awk '{print $2}')
+  if [ $pid ]
+    kill -9 $pid
+  end
+  set -l port 23306
+  set -l region asia-northeast1
+  set -x gcp_projects game-arena-staging
+  set -l target (for i in $gcp_projects; echo $i; end | peco )
+  set -l dbname (python3 -c  """
+instances = {
+  \"game-arena-staging\": \"gadb\"
+}
+print(instances[\""$target"\"])
+  """)
+  cloud_sql_proxy -instances=$target:$region:$dbname=tcp:$port
+end

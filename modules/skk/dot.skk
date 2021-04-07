@@ -1,8 +1,8 @@
 ;;; -*- mode: emacs-lisp; coding: utf-8 -*-
 
 ;;; for skkserv
-;; (setq skk-server-host "localhost")
-;; (setq skk-server-portnum 1178)
+(setq skk-server-host "localhost")
+(setq skk-server-portnum 1178)
 
 ;;; config
 (setq skk-egg-like-newline t)
@@ -23,3 +23,7 @@
 
 (add-to-list 'skk-rom-kana-rule-list
 	'(skk-kakutei-key nil skk-C-j-key))
+
+;; for azik
+(setq skk-use-azik t)
+(setq skk-azik-keyboard-type 'jp106)

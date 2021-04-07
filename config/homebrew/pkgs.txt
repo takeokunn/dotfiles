@@ -51,3 +51,5 @@ tokei
 procs
 dog
 gibo
+graphviz
+sqlite3
