@@ -193,6 +193,13 @@ inoremap jh <Esc>
 nnoremap <Leader>p "+p
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
+nnoremap <silent> <c-j> 10gj
+nnoremap <silent> <c-k> 10gk
+vnoremap <silent> <c-j> 10gj
+vnoremap <silent> <c-k> 10gk
+
+nnoremap <silent><expr> * v:count ? '*' : ':sil exe "keepj norm! *" <Bar> call winrestview(' . string(winsaveview()) . ')<CR>'
+
 vnoremap < <gv
 vnoremap > >gv
 

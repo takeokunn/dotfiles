@@ -121,3 +121,6 @@ repo = 'tyru/caw.vim'
 [[plugins]]
 repo = 'jiangmiao/auto-pairs'
 
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+
