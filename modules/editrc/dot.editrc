@@ -1,0 +1,3 @@
+mysql:bind '^R' em-inc-search-prev
+mysql:bind -s "^xd" "show databases;"
+mysql:bind -s "^xt" "show tables;"
