@@ -1,4 +1,4 @@
-SKK_DIR=~/.skk-jisyo
+SKK_DIR=~/.my-skk-jisyo
 
 SKK_CLEAN_TARGETS += skk-clean
 SKK_TARGETS += skk-install
