@@ -102,3 +102,4 @@
 # alias find 'fd'
 # alias ps 'procs'
 # alias dig 'dog'
+# alias ping 'gping'

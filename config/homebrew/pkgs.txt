@@ -53,3 +53,4 @@ dog
 gibo
 graphviz
 sqlite3
+gping
