@@ -78,7 +78,7 @@
 # set -x PATH $PATH $ANDROID_HOME/platform-tools
 
 # java
-# set -x JAVA_HOME /usr/lib/jvm/java-1.11.0-openjdk-amd64
+# set -x JAVA_HOME (/usr/libexec/java_home -V 1.8.291.10)
 
 # openssl
 # set -x PATH $PATH /usr/local/opt/openssl/bin
