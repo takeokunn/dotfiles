@@ -5,7 +5,8 @@ TEXTLINT_TARGETS += textlint-install
 
 .PHONY: textlint-clean
 textlint-clean:
-	rm -fr $(TEXTLINT_INSTALL_DIRCTORY)
+	npm uninstall -g textlint
+	npm uninstall -g textlint-rule-preset-ja-spacing textlint-rule-preset-ja-technical-writing textlint-rule-spellcheck-tech-word
 
 .PHONY: textlint-install
 textlint-install: $(TEXTLINT_INSTALL_DIRCTORY)

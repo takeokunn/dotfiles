@@ -47,6 +47,9 @@ repo = 'mattn/vim-lsp-settings'
 repo = 'mattn/vim-lsp-icons'
 
 [[plugins]]
+repo = 'neovim/nvim-lspconfig'
+
+[[plugins]]
 repo = 'ConradIrwin/vim-bracketed-paste'
 
 [[plugins]]
