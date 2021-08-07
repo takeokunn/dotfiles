@@ -54,3 +54,6 @@ gibo
 graphviz
 sqlite3
 gping
+cmake
+llvm
+clang-format
