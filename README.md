@@ -1,4 +1,4 @@
-# dotfiles
+# takeokunn's dotfiles
 
 ## Setup
 
