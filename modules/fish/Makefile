@@ -41,6 +41,6 @@ $(FISH_COMPLETION_DIR):
 	ln -sf $(SELF_FISH_DIR)/completions/sbcl.fish $(FISH_COMPLETION_DIR)/sbcl.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pry.fish $(FISH_COMPLETION_DIR)/pry.fish
 	ln -sf $(SELF_FISH_DIR)/completions/zat.fish $(FISH_COMPLETION_DIR)/zat.fish
-	curl $(FISH_GHQ_COMPLETION_FILE) -o ~/.config/fish/completions/ghq.fish
-	curl $(FISH_DOCKER_COMPLETION_FILE) -o ~/.config/fish/completions/docker.fish
-	curl $(FISH_DOCKER_COMPOSE_COMPLETION_FILE) -o ~/.config/fish/completions/docker-compose.fish
+	curl $(FISH_GHQ_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/ghq.fish
+	curl $(FISH_DOCKER_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/docker.fish
+	curl $(FISH_DOCKER_COMPOSE_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/docker-compose.fish
