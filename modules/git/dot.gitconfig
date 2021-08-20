@@ -25,3 +25,6 @@ prune = true
 
 [pull]
 rebase = false
+
+[github]
+user = takeokunn
