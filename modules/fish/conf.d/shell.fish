@@ -14,10 +14,6 @@ if type -q fd
     alias find 'fd'
 end
 
-if type -q procs
-    alias ps 'procs'
-end
-
 if type -q dog
     alias dig 'dog'
 end
