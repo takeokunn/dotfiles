@@ -18,6 +18,3 @@ bash-install: $(BASH_IT_DIR)
 $(BASH_IT_DIR):
 	git clone --depth=1 $(BASH_IT_GITHUB) $(BASH_IT_DIR)
 	bash $(BASH_IT_SCRIPT) -s
-	echo "source $(BASH_IT_DIR)/lib/history.bash" >> ~/.bash_profile
-	echo "source $(BASH_IT_DIR)/lib/search.bash" >> ~/.bash_profile
-	echo "source $(BASH_IT_DIR)/lib/appearance.bash" >> ~/.bash_profile

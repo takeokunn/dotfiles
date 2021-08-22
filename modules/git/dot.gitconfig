@@ -27,4 +27,4 @@ prune = true
 rebase = false
 
 [github]
-user = takeokunn
+	user = takeokunn
