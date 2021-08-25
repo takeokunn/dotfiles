@@ -3,9 +3,9 @@ if test (uname) = "Darwin"
     set -xg LANG en_US.UTF-8
     set -xg LC_ALL en_US.UTF-8
     set -xg OBJC_DISABLE_INITIALIZE_FORK_SAFETY YES
-    set -xg LDFLAGS "-L/usr/local/opt/libxml2/lib"
-    set -xg CPPFLAGS "-I/usr/local/opt/libxml2/include"
-    set -xg PKG_CONFIG_PATH "/usr/local/opt/libxml2/lib/pkgconfig"
+    # set -xg LDFLAGS "-L/usr/local/opt/libxml2/lib"
+    # set -xg CPPFLAGS "-I/usr/local/opt/libxml2/include"
+    # set -xg PKG_CONFIG_PATH "/usr/local/opt/libxml2/lib/pkgconfig"
     set -xg LIBXML2_CFLAGS `xml2-config --cflags`
     set -xg LIBXML2_LIBS `xml2-config --libs`
 

@@ -5,6 +5,7 @@ quotepath = off
 ignorecase = false
 safecrlf = true
 autocrlf = false
+precomposeunicode = true
 
 [alias]
 st = status
@@ -27,4 +28,4 @@ prune = true
 rebase = false
 
 [github]
-	user = takeokunn
+user = takeokunn
