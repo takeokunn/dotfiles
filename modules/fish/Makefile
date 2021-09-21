@@ -20,6 +20,7 @@ fish-clean:
 
 .PHONY: fish-install
 fish-install: $(FISH_DIR) $(FISH_FUNCTION_DIR) $(FISH_COMPLETION_DIR) $(FISH_CONFIG_DIR)
+	fish -c "fisher update"
 
 $(FISH_DIR):
 	mkdir -p $(FISH_DIR)
