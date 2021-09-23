@@ -6,7 +6,6 @@ SELF_FISH_DIR = $(MODULE_DIR)/fish
 
 FISH_FISHER_FILE = $(FISH_FUNCTION_DIR)/fisher.fish
 
-FISH_GHQ_COMPLETION_FILE = https://raw.githubusercontent.com/decors/fish-ghq/master/completions/ghq.fish
 FISH_DOCKER_COMPLETION_FILE = https://raw.githubusercontent.com/docker/docker-ce/master/components/cli/contrib/completion/fish/docker.fish
 FISH_DOCKER_COMPOSE_COMPLETION_FILE = https://raw.githubusercontent.com/docker/compose/master/contrib/completion/fish/docker-compose.fish
 FISH_FISHER_COMPLETION_FILE = https://raw.githubusercontent.com/jorgebucaran/fisher/main/completions/fisher.fish
@@ -52,7 +51,7 @@ $(FISH_COMPLETION_DIR):
 	ln -sf $(SELF_FISH_DIR)/completions/ros.fish $(FISH_COMPLETION_DIR)/ros.fish
 	ln -sf $(SELF_FISH_DIR)/completions/sbcl.fish $(FISH_COMPLETION_DIR)/sbcl.fish
 	ln -sf $(SELF_FISH_DIR)/completions/zat.fish $(FISH_COMPLETION_DIR)/zat.fish
-	curl $(FISH_GHQ_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/ghq.fish
+	ln -sf $(SELF_FISH_DIR)/completions/dart.fish $(FISH_COMPLETION_DIR)/dart.fish
 	curl $(FISH_DOCKER_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/docker.fish
 	curl $(FISH_DOCKER_COMPOSE_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/docker-compose.fish
 	curl $(FISH_FISHER_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/fisher.fish

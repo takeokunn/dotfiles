@@ -12,14 +12,12 @@
 ;;; https://github.com/skk-dev/ddskk/blob/master/etc/dot.skk#L752-L768
 (defun skk-C-j-key (arg)
     (interactive "P")
-    (let ((enable-modes '(lisp-interaction-mode emacs-lisp-mode org-mode markdown-mode prog-mode)))
-        (cond
-            ((and (null (skk-in-minibuffer-p))
-	             (null skk-henkan-mode)
-	             (member major-mode enable-modes))
-                (skk-emulate-original-map arg))
-            (t
-                (skk-kakutei arg)))))
+    (cond
+        ((and (null (skk-in-minibuffer-p))
+	         (null skk-henkan-mode))
+            (skk-emulate-original-map arg))
+        (t
+            (skk-kakutei arg))))
 
 (add-to-list 'skk-rom-kana-rule-list
 	'(skk-kakutei-key nil skk-C-j-key))

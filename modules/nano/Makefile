@@ -1,6 +1,5 @@
 NANO_DIR = ~/.nano
-NANORC_FILE = ~/.nanorc
-NANORC_GITHUB = https://github.com/Naereen/nanorc.git
+NANORC_GITHUB = https://github.com/scopatz/nanorc.git
 
 CORE_CLEAN_TARGETS += nano-clean
 CORE_TARGETS += nano-install
@@ -11,6 +10,7 @@ nano-clean:
 
 .PHONY: nano-install
 nano-install: $(NANO_DIR)
+	ln -sf $(NANO_DIR)/nanorc $(HOME)/.nanorc
 
 $(NANO_DIR):
 	git clone $(NANORC_GITHUB) $(NANO_DIR)

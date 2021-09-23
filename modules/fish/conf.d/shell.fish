@@ -7,6 +7,7 @@ if type -q exa
 end
 
 if type -q bat
+    set -x MANPAGER sh -c 'col -bx | bat -l man -p'
     alias cat 'bat'
 end
 
