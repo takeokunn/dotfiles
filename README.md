@@ -16,12 +16,7 @@ $ bash bin/apt-init.sh  # for ubuntu
 $ curl -O https://raw.githubusercontent.com/takeokunn/dotfiles/master/install.sh
 $ curl -O https://raw.githubusercontent.com/takeokunn/dotfiles/master/install.sh.asc
 
-# verify
-$ gpg --keyserver keys.gnupg.net --recv-keys "0B10DAA7BA0236D7382287660F79C0AB03FD7A1C"
-gpg: key 0F79C0AB03FD7A1C: "takeo obara <bararararatty@gmail.com>" not changed
-gpg: Total number processed: 1
-gpg:              unchanged: 1
-
+# verify gpg
 $ gpg --verify install.sh.asc install.sh
 gpg: Signature made Mon May  3 07:35:49 2021 JST
 gpg:                using RSA key 8757D842F7D004D771C16954E195541047A39E7D
