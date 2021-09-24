@@ -1,3 +1,6 @@
+# load
+# source "./private.fish"
+
 # initialize
 function fish_prompt
     if [ $status -eq 0 ]

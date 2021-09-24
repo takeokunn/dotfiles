@@ -22,7 +22,6 @@ gpg: Signature made Mon May  3 07:35:49 2021 JST
 gpg:                using RSA key 8757D842F7D004D771C16954E195541047A39E7D
 gpg: Good signature from "takeo obara <bararararatty@gmail.com>" [ultimate]
 
-
 # exec
 $ bash ./install.sh
 ```

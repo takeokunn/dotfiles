@@ -4,6 +4,8 @@ FISH_FUNCTION_DIR = $(FISH_DIR)/functions
 FISH_CONFIG_DIR = $(FISH_DIR)/conf.d
 SELF_FISH_DIR = $(MODULE_DIR)/fish
 
+FISH_PRIVATE_FILE = $(SELF_FISH_DIR)/private.fish
+
 FISH_FISHER_FILE = $(FISH_FUNCTION_DIR)/fisher.fish
 
 FISH_DOCKER_COMPLETION_FILE = https://raw.githubusercontent.com/docker/docker-ce/master/components/cli/contrib/completion/fish/docker.fish
@@ -20,12 +22,14 @@ fish-clean:
 
 .PHONY: fish-install
 fish-install: $(FISH_DIR) $(FISH_FUNCTION_DIR) $(FISH_COMPLETION_DIR) $(FISH_CONFIG_DIR)
-	fish -c "fisher update"
 
 $(FISH_DIR):
 	mkdir -p $(FISH_DIR)
 	ln -sf $(SELF_FISH_DIR)/config.fish $(FISH_DIR)/config.fish
 	ln -sf $(SELF_FISH_DIR)/fish_plugins $(FISH_DIR)/fish_plugins
+	touch $(FISH_PRIVATE_FILE)
+	ln -sf $(FISH_PRIVATE_FILE) $(FISH_DIR)/private.fish
+
 
 $(FISH_FUNCTION_DIR):
 	mkdir -p $(FISH_FUNCTION_DIR)
