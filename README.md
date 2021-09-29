@@ -38,11 +38,12 @@ $ make core-clean
 * nano
 * vim
 * tig
+* peco
 
 ### tmux
 
 ```shell
-$ make tmux
+$ make tmux-install
 $ make tmux-clean
 ```
 
@@ -51,7 +52,7 @@ $ make tmux-clean
 ### fish
 
 ```shell
-$ make fish
+$ make fish-install
 $ make fish-clean
 $ make fish-update
 ```
@@ -62,7 +63,7 @@ $ make fish-update
 ### lem
 
 ```shell
-$ make lem
+$ make lem-install
 $ make lem-clean
 $ make lem-update
 ```
@@ -72,7 +73,7 @@ $ make lem-update
 ### nvim
 
 ```shell
-$ make nvim
+$ make nvim-install
 $ make nvim-clean
 ```
 
@@ -81,7 +82,7 @@ $ make nvim-clean
 ### irb
 
 ```shell
-$ make irb
+$ make irb-install
 $ make irb-clean
 $ make irb-update
 ```
@@ -91,7 +92,7 @@ $ make irb-update
 ### spacemacs
 
 ```shell
-$ make spacemacs
+$ make spacemacs-install
 $ make spacemacs-clean
 ```
 

@@ -1,0 +1,6 @@
+{
+    "Use256Color": true,
+    "Keymap": {
+        "C-k": "peco.KillEndOfLine"
+    }
+}
