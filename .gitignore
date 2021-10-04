@@ -6,3 +6,4 @@ tmp/*
 !tmp/.gitkeep
 
 .log
+.ac-php-conf.json

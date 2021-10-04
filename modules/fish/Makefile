@@ -41,6 +41,7 @@ $(FISH_FUNCTION_DIR):
 	ln -sf $(SELF_FISH_DIR)/functions/ghq_users.fish $(FISH_FUNCTION_DIR)/ghq_users.fish
 	ln -sf $(SELF_FISH_DIR)/functions/gibo_generate.fish $(FISH_FUNCTION_DIR)/gibo_generate.fish
 	ln -sf $(SELF_FISH_DIR)/functions/logo.fish $(FISH_FUNCTION_DIR)/logo.fish
+	ln -sf $(SELF_FISH_DIR)/functions/loop.fish $(FISH_FUNCTION_DIR)/loop.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_ghq.fish $(FISH_FUNCTION_DIR)/peco_ghq.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_select_history.fish $(FISH_FUNCTION_DIR)/peco_select_history.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_z.fish $(FISH_FUNCTION_DIR)/peco_z.fish
@@ -59,8 +60,6 @@ $(FISH_COMPLETION_DIR):
 
 $(FISH_CONFIG_DIR):
 	mkdir -p $(FISH_CONFIG_DIR)
-	ln -sf $(SELF_FISH_DIR)/conf.d/android.fish $(FISH_CONFIG_DIR)/android.fish
-	ln -sf $(SELF_FISH_DIR)/conf.d/composer.fish $(FISH_CONFIG_DIR)/composer.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/direnv.fish $(FISH_CONFIG_DIR)/direnv.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/gcloud.fish $(FISH_CONFIG_DIR)/gcloud.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/go.fish $(FISH_CONFIG_DIR)/go.fish
@@ -69,10 +68,12 @@ $(FISH_CONFIG_DIR):
 	ln -sf $(SELF_FISH_DIR)/conf.d/llvm.fish $(FISH_CONFIG_DIR)/llvm.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/mac.fish $(FISH_CONFIG_DIR)/mac.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/nodejs.fish $(FISH_CONFIG_DIR)/nodejs.fish
+	ln -sf $(SELF_FISH_DIR)/conf.d/php.fish $(FISH_CONFIG_DIR)/php.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/python.fish $(FISH_CONFIG_DIR)/python.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/ruby.fish $(FISH_CONFIG_DIR)/ruby.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/rust.fish $(FISH_CONFIG_DIR)/rust.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/shell.fish $(FISH_CONFIG_DIR)/shell.fish
+	ln -sf $(SELF_FISH_DIR)/conf.d/android.fish $(FISH_CONFIG_DIR)/android.fish
 
 fish-update:
 	fish -c "fisher update"
