@@ -1,10 +1,26 @@
 {
     "filters": {},
     "rules": {
-        "preset-ja-technical-writing": true,
+        "preset-ja-technical-writing": {
+            "no-exclamation-question-mark": false,
+            "sentence-length": {
+                "max": 200
+            },
+        },
         "spellcheck-tech-word": true,
-        "textlint-rule-ginger": true,
-        "textlint-rule-spellchecker": true,
+        "textlint-rule-ginger": {
+            "skipPatterns": [
+                "/zx/i",
+                "/REPL/i",
+                "/fish-mode/i",
+                "/company-shell/i",
+                "/whatis/i",
+                "/nodejs-repl/i",
+            ]
+        },
+        "textlint-rule-spellchecker": {
+            "skipWords": ["zx", "REPL", "whatis"],
+        },
         "textlint-rule-write-good": true,
         "preset-ja-spacing": true,
     }
