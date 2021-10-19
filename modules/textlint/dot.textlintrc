@@ -10,14 +10,10 @@
         "spellcheck-tech-word": true,
         "textlint-rule-ginger": {
             "skipPatterns": [
-                "/\`(.*)\`/g",
+                "`(.*)`",
             ]
         },
-        "textlint-rule-spellchecker": {
-            "skipRegExps": [
-                "/\`(.*)\`/g",
-            ]
-        },
+        "textlint-rule-spellchecker": true,
         "textlint-rule-write-good": true,
         "preset-ja-spacing": true,
     }
