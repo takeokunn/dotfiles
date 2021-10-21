@@ -53,6 +53,7 @@ $(FISH_COMPLETION_DIR):
 	mkdir -p $(FISH_COMPLETION_DIR)
 	ln -sf $(SELF_FISH_DIR)/completions/aws.fish $(FISH_COMPLETION_DIR)/aws.fish
 	ln -sf $(SELF_FISH_DIR)/completions/cdk.fish $(FISH_COMPLETION_DIR)/cdk.fish
+	ln -sf $(SELF_FISH_DIR)/completions/clasp.fish $(FISH_COMPLETION_DIR)/clasp.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pry.fish $(FISH_COMPLETION_DIR)/pry.fish
 	ln -sf $(SELF_FISH_DIR)/completions/zat.fish $(FISH_COMPLETION_DIR)/zat.fish
 	curl $(FISH_DOCKER_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/docker.fish
