@@ -46,7 +46,11 @@ function prompt_pwd --description 'ref: https://hotoolong.hatenablog.com/entry/2
             end
 
             set -l folders (string split -rm2 / $tmp)
-            echo (string replace -ar '(\.?[^/]{'"$fish_prompt_pwd_dir_length"'})[^/]*/' '$1/' $folders[1]'/')$folders[2]'/'$folders[3]
+            if test (count $folders) -gt 2
+                echo (string replace -ar '(\.?[^/]{'"$fish_prompt_pwd_dir_length"'})[^/]*/' '$1/' $folders[1]'/')$folders[2]'/'$folders[3]
+            else
+                string join / (string replace -ar '(\.?[^/]{'"$fish_prompt_pwd_dir_length"'})[^/]*/' '$1/' $tmp) $full
+            end
         end
     end
 end
