@@ -55,6 +55,7 @@ $(FISH_COMPLETION_DIR):
 	ln -sf $(SELF_FISH_DIR)/completions/cdk.fish $(FISH_COMPLETION_DIR)/cdk.fish
 	ln -sf $(SELF_FISH_DIR)/completions/clasp.fish $(FISH_COMPLETION_DIR)/clasp.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pry.fish $(FISH_COMPLETION_DIR)/pry.fish
+	ln -sf $(SELF_FISH_DIR)/completions/solc.fish $(FISH_COMPLETION_DIR)/solc.fish
 	ln -sf $(SELF_FISH_DIR)/completions/zat.fish $(FISH_COMPLETION_DIR)/zat.fish
 	curl $(FISH_DOCKER_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/docker.fish
 	curl $(FISH_DOCKER_COMPOSE_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/docker-compose.fish
