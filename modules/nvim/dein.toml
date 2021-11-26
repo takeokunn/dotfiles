@@ -4,7 +4,7 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo = 'cocopon/iceberg.vim'
 hook_add = '''
-colorscheme iceberg
+source ~/.config/nvim/plugins/iceberg.vim
 '''
 
 [[plugins]]
