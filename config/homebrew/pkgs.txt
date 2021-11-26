@@ -56,3 +56,5 @@ tmux
 tokei
 unar
 wget
+urlview
+extract_url
