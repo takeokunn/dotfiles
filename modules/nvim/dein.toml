@@ -70,6 +70,7 @@ repo = 'easymotion/vim-easymotion'
 repo = 'Shougo/deoplete.nvim'
 hook_add = '''
 let g:deoplete#enable_at_startup = 1
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
 '''
 
 [[plugins]]
