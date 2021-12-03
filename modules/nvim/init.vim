@@ -58,24 +58,21 @@ set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 let g:netrw_liststyle=3
 
 " keymap
-let mapleader = ','
-inoremap jh <Esc>
-nnoremap <Leader>p "+p
-nmap <Esc><Esc> :nohlsearch<CR><Esc>
-
-nnoremap <silent> <c-j> 10gj
-nnoremap <silent> <c-k> 10gk
-vnoremap <silent> <c-j> 10gj
-vnoremap <silent> <c-k> 10gk
-
-nnoremap <silent><expr> * v:count ? '*' : ':sil exe "keepj norm! *" <Bar> call winrestview(' . string(winsaveview()) . ')<CR>'
+nmap / /\v
 
 vnoremap < <gv
 vnoremap > >gv
 
-nmap / /\v
+inoremap jh <Esc>
+nnoremap <Leader>p "+p
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
-" Denite
+let mapleader = ','
+
+nnoremap <silent> <c-j> 10gj
+nnoremap <silent> <c-k> 10gk
+nnoremap <silent><expr> * v:count ? '*' : ':sil exe "keepj norm! *" <Bar> call winrestview(' . string(winsaveview()) . ')<CR>'
+
 nnoremap <silent> <leader>k :Denite file/rec<CR>
 nnoremap <silent> <leader>b :Denite buffer<CR>
 nnoremap <silent> <leader>o :Denite outline<CR>
@@ -83,9 +80,5 @@ nnoremap <silent> <leader>l :Denite line<CR>
 nnoremap <silent> <leader>r :Denite file/old<CR>
 nnoremap <silent> <leader>h :Denite command_history<CR>
 nnoremap <silent> <leader>g :Denite grep<CR>
-
-" Defx
 nnoremap <silent> <leader>y :Defx -columns=git:mark:filename:type<CR>
-
-" Deol
-nnoremap <silent> <leader>t :call MyDeol()<CR>
+nnoremap <silent> <leader>u :UndotreeToggleAndFocus<CR>

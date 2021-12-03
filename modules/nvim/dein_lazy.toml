@@ -21,6 +21,9 @@ on_ft = ['vue']
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
 on_ft = ['markdown']
+hook_add = '''
+let g:vim_markdown_conceal = 0
+'''
 
 [[plugins]]
 repo = 'elzr/vim-json'
@@ -43,3 +46,7 @@ repo = 'mattn/emmet-vim'
 [[plugins]]
 repo = 'hashivim/vim-terraform'
 on_ft = ['terraform']
+
+[[plugins]]
+repo = 'vim-goimports'
+on_ft = ['go']

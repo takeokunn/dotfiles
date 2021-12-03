@@ -16,3 +16,6 @@ indent_style = tab
 
 [*.pryrc]
 indent_size = 2
+
+[*.{vim,toml}]
+indent_size = 2

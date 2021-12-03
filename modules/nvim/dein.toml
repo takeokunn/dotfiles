@@ -113,22 +113,22 @@ repo = "neoclide/coc.nvim"
 repo = "vim-denops/denops.vim"
 
 [[plugins]]
-repo = "vim-denops/denops-helloworld.vim"
-
-[[plugins]]
 repo = "vim-skk/skkeleton"
 hook_add = '''
-imap <C-j> <Plug>(skkeleton-toggle)
-cmap <C-j> <Plug>(skkeleton-toggle)
-
-    function! s:skkeleton_init() abort
-      call skkeleton#config({
-        \ 'eggLikeNewline': v:true,
-        \ 'useSkkServer': v:true,
-        \ })
-      call skkeleton#register_kanatable('rom', {
-        \ "z\<Space>": ["\u3000", ''],
-        \ })
-    endfunction
-    autocmd User skkeleton-initialize-pre call s:skkeleton_init()
+source ~/.config/nvim/plugins/skkeleton.vim
 '''
+
+[[plugins]]
+repo = 'nvim-treesitter/nvim-treesitter'
+hook_add = '''
+source ~/.config/nvim/plugins/nvim-treesitter.vim
+'''
+
+[[plugins]]
+repo = 'mbbill/undotree'
+hook_add = '''
+command! UndotreeToggleAndFocus :UndotreeToggle | :UndotreeFocus
+'''
+
+[[plugins]]
+repo = 'mattn/vim-nyancat'
