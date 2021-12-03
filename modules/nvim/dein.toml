@@ -67,13 +67,6 @@ repo = 'jiangmiao/auto-pairs'
 repo = 'easymotion/vim-easymotion'
 
 [[plugins]]
-repo = 'Shougo/deoplete.nvim'
-hook_add = '''
-let g:deoplete#enable_at_startup = 1
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
-'''
-
-[[plugins]]
 repo = 'Shougo/denite.nvim'
 hook_add = '''
 source ~/.config/nvim/plugins/denite.vim
@@ -115,3 +108,27 @@ repo = 'neovim/nvim-lspconfig'
 
 [[plugins]]
 repo = "neoclide/coc.nvim"
+
+[[plugins]]
+repo = "vim-denops/denops.vim"
+
+[[plugins]]
+repo = "vim-denops/denops-helloworld.vim"
+
+[[plugins]]
+repo = "vim-skk/skkeleton"
+hook_add = '''
+imap <C-j> <Plug>(skkeleton-toggle)
+cmap <C-j> <Plug>(skkeleton-toggle)
+
+    function! s:skkeleton_init() abort
+      call skkeleton#config({
+        \ 'eggLikeNewline': v:true,
+        \ 'useSkkServer': v:true,
+        \ })
+      call skkeleton#register_kanatable('rom', {
+        \ "z\<Space>": ["\u3000", ''],
+        \ })
+    endfunction
+    autocmd User skkeleton-initialize-pre call s:skkeleton_init()
+'''

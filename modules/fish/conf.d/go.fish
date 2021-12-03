@@ -1,5 +1,5 @@
 if type -q go
-    set -x GOROOT (go env GOROOT)
+    # set -x GOROOT (go env GOROOT)
     set -x GOPATH $HOME/projects/go
     set -x PATH $PATH $GOPATH/bin
 end

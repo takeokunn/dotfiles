@@ -1,3 +1,10 @@
+call defx#custom#option('_', {
+\ 'winwidth': 40,
+\ 'show_ignored_files': 1,
+\ 'toggle': 1,
+\ 'resume': 1,
+\ })
+
 autocmd FileType defx call s:defx_my_settings()
 function! s:defx_my_settings() abort
     " Define mappings
