@@ -7,6 +7,9 @@ safecrlf = true
 autocrlf = false
 precomposeunicode = true
 
+[commit]
+template = ~/.gitmessage
+
 [alias]
 st = status
 br = branch

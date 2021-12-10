@@ -107,9 +107,6 @@ repo = 'mattn/vim-lsp-icons'
 repo = 'neovim/nvim-lspconfig'
 
 [[plugins]]
-repo = "neoclide/coc.nvim"
-
-[[plugins]]
 repo = "vim-denops/denops.vim"
 
 [[plugins]]
@@ -127,8 +124,12 @@ source ~/.config/nvim/plugins/nvim-treesitter.vim
 [[plugins]]
 repo = 'mbbill/undotree'
 hook_add = '''
+let g:undotree_WindowLayout = 3
 command! UndotreeToggleAndFocus :UndotreeToggle | :UndotreeFocus
 '''
 
 [[plugins]]
-repo = 'mattn/vim-nyancat'
+repo = 'vim-airline/vim-airline'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
