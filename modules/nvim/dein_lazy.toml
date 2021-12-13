@@ -48,10 +48,6 @@ repo = 'hashivim/vim-terraform'
 on_ft = ['terraform']
 
 [[plugins]]
-repo = 'vim-goimports'
-on_ft = ['go']
-
-[[plugins]]
 repo = 'leafgarland/typescript-vim'
 on_ft = ['typescript', 'typescriptreact']
 

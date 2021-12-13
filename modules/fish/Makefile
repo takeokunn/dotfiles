@@ -42,6 +42,7 @@ $(FISH_FUNCTION_DIR):
 	ln -sf $(SELF_FISH_DIR)/functions/gibo_generate.fish $(FISH_FUNCTION_DIR)/gibo_generate.fish
 	ln -sf $(SELF_FISH_DIR)/functions/logo.fish $(FISH_FUNCTION_DIR)/logo.fish
 	ln -sf $(SELF_FISH_DIR)/functions/loop.fish $(FISH_FUNCTION_DIR)/loop.fish
+	ln -sf $(SELF_FISH_DIR)/functions/peco_genact.fish $(FISH_FUNCTION_DIR)/peco_genact.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_ghq.fish $(FISH_FUNCTION_DIR)/peco_ghq.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_select_history.fish $(FISH_FUNCTION_DIR)/peco_select_history.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_z.fish $(FISH_FUNCTION_DIR)/peco_z.fish
