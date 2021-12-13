@@ -9,6 +9,7 @@ precomposeunicode = true
 
 [commit]
 template = ~/.gitmessage
+gpgsign = true
 
 [alias]
 st = status
@@ -20,7 +21,7 @@ ad = add
 [user]
 name = takeokunn
 email = bararararatty@gmail.com
-	signingkey = 0F79C0AB03FD7A1C
+signingkey = 0F79C0AB03FD7A1C
 
 [ghq]
 root = ~/.ghq
@@ -33,5 +34,6 @@ rebase = false
 
 [github]
 user = takeokunn
+
 [gpg]
-	program = gpg2
+program = gpg
