@@ -67,6 +67,7 @@ $(FISH_CONFIG_DIR):
 	ln -sf $(SELF_FISH_DIR)/conf.d/direnv.fish $(FISH_CONFIG_DIR)/direnv.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/gcloud.fish $(FISH_CONFIG_DIR)/gcloud.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/go.fish $(FISH_CONFIG_DIR)/go.fish
+	ln -sf $(SELF_FISH_DIR)/conf.d/gpg.fish $(FISH_CONFIG_DIR)/gpg.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/java.fish $(FISH_CONFIG_DIR)/java.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/lisp.fish $(FISH_CONFIG_DIR)/lisp.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/llvm.fish $(FISH_CONFIG_DIR)/llvm.fish
