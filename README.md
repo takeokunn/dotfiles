@@ -49,6 +49,15 @@ $ make tmux-clean
 
 * tmux
 
+### alacritty
+
+```shell
+$ make alacritty-install
+$ make alacritty-clean
+```
+
+* alacritty
+
 ### fish
 
 ```shell
