@@ -1,5 +1,5 @@
 # load
-# source ~/.config/fish/private.fish
+source ~/.config/fish/private.fish
 
 # initialize
 function fish_prompt
