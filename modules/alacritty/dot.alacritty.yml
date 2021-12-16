@@ -1,0 +1,60 @@
+background_opacity: 0.95
+
+scrolling:
+  history: 0
+
+font:
+  size: 13
+  normal:
+    family: Monaco
+    # family: RictyDiminished NF
+  bold:
+    family: Monaco
+    # family: RictyDiminished NF
+  italic:
+      family: Monaco
+      # family: RictyDiminished NF
+
+colors:
+  primary:
+    background: '0x000000'
+    foreground: '0xffffff'
+  cursor:
+    text: '0xF81CE5'
+    cursor: '0xffffff'
+  normal:
+    black:   '0x000000'
+    red:     '0xfe0100'
+    green:   '0x00ff00'
+    yellow:  '0xffff00'
+    blue:    '0x00bfff'
+    magenta: '0xcc00ff'
+    cyan:    '0x00ffff'
+    white:   '0xd0d0d0'
+  bright:
+    black:   '0x808080'
+    red:     '0xfe0100'
+    green:   '0x33ff00'
+    yellow:  '0xfeff00'
+    blue:    '0x0066ff'
+    magenta: '0xcc00ff'
+    cyan:    '0x00ffff'
+    white:   '0xFFFFFF'
+
+mouse_bindings:
+  - { mouse: Right, action: Copy }
+  - { mouse: Right, mods: Shift, action: Paste }
+
+key_bindings:
+  - { key: F,            mods: Command,           chars: "\x1bf"                         }
+  - { key: B,            mods: Command,           chars: "\x1bb"                         }
+  - { key: D,            mods: Command,           chars: "\x1bd"                         }
+  - { key: LBracket,     mods: Control,           chars: "\x1b"                          }
+  - { key: Backslash,    mods: Alt,               chars: "\x5c"                          }
+  - { key: Key0,         mods: Command,           action: ResetFontSize                  }
+  - { key: Semicolon,    mods: Command|Shift,     action: IncreaseFontSize               }
+  - { key: Minus,        mods: Command|Shift,     action: DecreaseFontSize               }
+  - { key: 36,           mods: Command,           action: ToggleSimpleFullscreen         }
+
+selection:
+  save_to_clipboard: true
