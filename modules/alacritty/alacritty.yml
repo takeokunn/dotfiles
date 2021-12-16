@@ -1,5 +1,5 @@
 import:
-  - ~/.config/alacritty/alacritty-theme/themes/dracula.yaml
+  - ~/.config/alacritty/alacritty-theme/themes/darcula.yaml
 
 background_opacity: 1
 
@@ -20,15 +20,15 @@ mouse_bindings:
   - { mouse: Right, mods: Shift, action: Paste }
 
 key_bindings:
-  - { key: F,            mods: Command,           chars: "\x1bf"                         }
-  - { key: B,            mods: Command,           chars: "\x1bb"                         }
-  - { key: D,            mods: Command,           chars: "\x1bd"                         }
-  - { key: LBracket,     mods: Control,           chars: "\x1b"                          }
-  - { key: Backslash,    mods: Alt,               chars: "\x5c"                          }
-  - { key: Key0,         mods: Command,           action: ResetFontSize                  }
-  - { key: Semicolon,    mods: Command|Shift,     action: IncreaseFontSize               }
-  - { key: Minus,        mods: Command|Shift,     action: DecreaseFontSize               }
-  - { key: 36,           mods: Command,           action: ToggleSimpleFullscreen         }
+  - { key: F,            mods: Command,           chars: "\x1bf"                 }
+  - { key: B,            mods: Command,           chars: "\x1bb"                 }
+  - { key: D,            mods: Command,           chars: "\x1bd"                 }
+  - { key: LBracket,     mods: Control,           chars: "\x1b"                  }
+  - { key: Backslash,    mods: Alt,               chars: "\x5c"                  }
+  - { key: Key0,         mods: Command,           action: ResetFontSize          }
+  - { key: Semicolon,    mods: Command|Shift,     action: IncreaseFontSize       }
+  - { key: Minus,        mods: Command|Shift,     action: DecreaseFontSize       }
+  - { key: 36,           mods: Command,           action: ToggleSimpleFullscreen }
 
 selection:
   save_to_clipboard: true
