@@ -13,4 +13,4 @@ nano-install: $(NANO_DIR)
 	ln -sf $(NANO_DIR)/nanorc $(HOME)/.nanorc
 
 $(NANO_DIR):
-	git clone $(NANORC_GITHUB) $(NANO_DIR)
+	git clone --depth=1 $(NANORC_GITHUB) $(NANO_DIR)

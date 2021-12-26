@@ -12,4 +12,4 @@ tig-clean:
 tig-install: $(TIG_DIR)
 
 $(TIG_DIR):
-	git clone $(TIG_GITHUB_URL) $(TIG_DIR)
+	git clone --depth=1 $(TIG_GITHUB_URL) $(TIG_DIR)

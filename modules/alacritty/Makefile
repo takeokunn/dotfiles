@@ -12,7 +12,6 @@ alacritty-clean:
 
 .PHONY: alacritty-install
 alacritty-install: $(ALACRITTY_DIR)
-	git clone --depth=1 $(ALACRITTY_THEME_GITHUB) $(ALACRITTY_DIR)/alacritty-theme
 
 $(ALACRITTY_DIR):
 	mkdir -p $(ALACRITTY_DIR)

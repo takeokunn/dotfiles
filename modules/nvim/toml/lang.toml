@@ -1,4 +1,10 @@
 [[plugins]]
+repo = 'nvim-treesitter/nvim-treesitter'
+hook_add = '''
+" source ~/.config/nvim/plugins/nvim-treesitter.vim
+'''
+
+[[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
@@ -33,10 +39,6 @@ let g:vim_json_syntax_conceal = 0
 on_ft = ['json']
 
 [[plugins]]
-repo = 'leafgarland/typescript-vim'
-on_ft = ['typescript']
-
-[[plugins]]
 repo = 'dag/vim-fish'
 on_ft = ['fish']
 
@@ -49,8 +51,4 @@ on_ft = ['terraform']
 
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
-on_ft = ['typescript', 'typescriptreact']
-
-[[plugins]]
-repo = 'peitalin/vim-jsx-typescript'
 on_ft = ['typescript', 'typescriptreact']

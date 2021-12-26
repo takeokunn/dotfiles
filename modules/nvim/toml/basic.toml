@@ -1,0 +1,42 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = "vim-denops/denops.vim"
+
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
+hook_add = '''
+set fileencoding=utf-8 fileformat=unix
+'''
+
+[[plugins]]
+repo = 'mattn/vim-sl'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+hook_add = '''
+set updatetime=250
+'''
+
+[[plugins]]
+repo = 'tyru/caw.vim'
+
+[[plugins]]
+repo = "vim-skk/skkeleton"
+hook_add = '''
+source ~/.config/nvim/plugins/skkeleton.vim
+'''
+
+[[plugins]]
+repo = 'mbbill/undotree'
+hook_add = '''
+let g:undotree_WindowLayout = 3
+command! UndotreeToggleAndFocus :UndotreeToggle | :UndotreeFocus
+'''
+
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
+repo = 'ConradIrwin/vim-bracketed-paste'

@@ -1,0 +1,6 @@
+neovim
+alacritty
+emacs
+aquaskk
+keycastr
+wireshark
