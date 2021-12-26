@@ -2,7 +2,6 @@ asciiquarium
 autoconf
 automake
 bat
-ccze
 clang-format
 cmake
 coreutils
