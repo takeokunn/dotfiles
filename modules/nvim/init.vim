@@ -6,7 +6,6 @@ set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
 if dein#load_state('~/.cache/dein')
   call dein#begin('~/.cache/dein')
-
   " not lazy load
   call dein#load_toml('~/.config/nvim/toml/basic.toml', { 'lazy': 0 })
   call dein#load_toml('~/.config/nvim/toml/cursor.toml', { 'lazy': 0 })
@@ -14,7 +13,6 @@ if dein#load_state('~/.cache/dein')
   call dein#load_toml('~/.config/nvim/toml/theme.toml', { 'lazy': 0 })
 
   " lazy load
-  call dein#load_toml('~/.config/nvim/toml/lsp.toml', { 'lazy': 1 })
   call dein#load_toml('~/.config/nvim/toml/lang.toml', { 'lazy': 1 })
 
   call dein#end()
@@ -79,6 +77,7 @@ nnoremap <silent> <c-j> 10gj
 nnoremap <silent> <c-k> 10gk
 nnoremap <silent><expr> * v:count ? '*' : ':sil exe "keepj norm! *" <Bar> call winrestview(' . string(winsaveview()) . ')<CR>'
 
+" denite
 nnoremap <silent> <leader>k :Denite file/rec<CR>
 nnoremap <silent> <leader>b :Denite buffer<CR>
 nnoremap <silent> <leader>o :Denite outline<CR>
@@ -86,5 +85,26 @@ nnoremap <silent> <leader>l :Denite line<CR>
 nnoremap <silent> <leader>r :Denite file/old<CR>
 nnoremap <silent> <leader>h :Denite command_history<CR>
 nnoremap <silent> <leader>g :Denite grep<CR>
+
+" defx
 nnoremap <silent> <leader>y :Defx -columns=git:mark:filename:type<CR>
+
+" undo-tree
 nnoremap <silent> <leader>u :UndotreeToggleAndFocus<CR>
+
+" easymotion
+map  f <Plug>(easymotion-bd-f)
+nmap f <Plug>(easymotion-overwin-f)
+nmap s <Plug>(easymotion-overwin-f2)
+map  L <Plug>(easymotion-bd-jk)
+nmap L <Plug>(easymotion-overwin-line)
+map  W <Plug>(easymotion-bd-w)
+nmap W <Plug>(easymotion-overwin-w)
+
+" coc
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+nnoremap<silent> K :call <SID>show_documentation()<CR>
+

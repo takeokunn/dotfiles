@@ -40,3 +40,16 @@ repo = 'editorconfig/editorconfig-vim'
 
 [[plugins]]
 repo = 'ConradIrwin/vim-bracketed-paste'
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+build = 'coc#util#install()'
+hook_add = '''
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+'''

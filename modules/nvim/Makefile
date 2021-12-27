@@ -22,6 +22,7 @@ nvim-install: $(VIM_DIR) $(VIM_CACHE_DIR) $(VIM_TOML_DIR) $(VIM_PLUGINS_DIR)
 $(VIM_DIR):
 	mkdir -p $(VIM_DIR)
 	ln -sf $(SELF_VIM_DIR)/init.vim $(VIM_DIR)/init.vim
+	ln -sf $(SELF_VIM_DIR)/coc-settings.json $(VIM_DIR)/coc-settings.json
 
 $(VIM_CACHE_DIR):
 	mkdir -p $(VIM_CACHE_DIR)
@@ -35,13 +36,11 @@ $(VIM_TOML_DIR):
 	ln -sf $(SELF_VIM_TOML_DIR)/cursor.toml $(VIM_TOML_DIR)/cursor.toml
 	ln -sf $(SELF_VIM_TOML_DIR)/filer.toml $(VIM_TOML_DIR)/filer.toml
 	ln -sf $(SELF_VIM_TOML_DIR)/lang.toml $(VIM_TOML_DIR)/lang.toml
-	ln -sf $(SELF_VIM_TOML_DIR)/lsp.toml $(VIM_TOML_DIR)/lsp.toml
 	ln -sf $(SELF_VIM_TOML_DIR)/theme.toml $(VIM_TOML_DIR)/theme.toml
 
 $(VIM_PLUGINS_DIR):
 	mkdir -p $(VIM_PLUGINS_DIR)
 	ln -sf $(SELF_VIM_PLUGINS_DIR)/defx.vim $(VIM_PLUGINS_DIR)/defx.vim
 	ln -sf $(SELF_VIM_PLUGINS_DIR)/denite.vim $(VIM_PLUGINS_DIR)/denite.vim
-	ln -sf $(SELF_VIM_PLUGINS_DIR)/vim-lsp.vim $(VIM_PLUGINS_DIR)/vim-lsp.vim
 	ln -sf $(SELF_VIM_PLUGINS_DIR)/skkeleton.vim $(VIM_PLUGINS_DIR)/skkeleton.vim
 	ln -sf $(SELF_VIM_PLUGINS_DIR)/nvim-treesitter.vim $(VIM_PLUGINS_DIR)/nvim-treesitter.vim

@@ -11,6 +11,7 @@ direnv
 dog
 editorconfig
 exa
+extract_url
 fd
 findutils
 fish
@@ -54,6 +55,5 @@ the_silver_searcher
 tmux
 tokei
 unar
-wget
 urlview
-extract_url
+wget

@@ -1,13 +1,6 @@
 [[plugins]]
-repo = 'nvim-treesitter/nvim-treesitter'
-hook_add = '''
-" source ~/.config/nvim/plugins/nvim-treesitter.vim
-'''
-
-[[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = ['toml']
-
 [[plugins]]
 repo = 'vim-ruby/vim-ruby'
 on_ft = ['ruby']
@@ -52,3 +45,21 @@ on_ft = ['terraform']
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
 on_ft = ['typescript', 'typescriptreact']
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = ['go']
+hook_add = '''
+let g:go_term_mode = 'split'
+'''
+
+[[plugins]]
+repo = 'mattn/vim-goimports'
+on_ft = ['go']
+hook_add = '''
+let g:goimports_simplify = 1
+'''
+
+[[plugins]]
+repo = 'pantharshit00/vim-prisma'
+on_ft = ['prisma']

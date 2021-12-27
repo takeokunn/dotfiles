@@ -3,3 +3,5 @@ repo = 'easymotion/vim-easymotion'
 
 [[plugins]]
 repo = 'mg979/vim-visual-multi'
+
+
