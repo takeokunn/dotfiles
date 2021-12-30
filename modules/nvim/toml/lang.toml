@@ -1,6 +1,7 @@
 [[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = ['toml']
+
 [[plugins]]
 repo = 'vim-ruby/vim-ruby'
 on_ft = ['ruby']

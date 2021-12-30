@@ -73,9 +73,25 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 let mapleader = ','
 
+" basic
 nnoremap <silent> <c-j> 10gj
 nnoremap <silent> <c-k> 10gk
 nnoremap <silent><expr> * v:count ? '*' : ':sil exe "keepj norm! *" <Bar> call winrestview(' . string(winsaveview()) . ')<CR>'
+
+" window
+nnoremap sj <C-w>j
+nnoremap sk <C-w>k
+nnoremap sl <C-w>l
+nnoremap sh <C-w>h
+nnoremap sJ <C-w>J
+nnoremap sK <C-w>K
+nnoremap sL <C-w>L
+nnoremap sH <C-w>H
+nnoremap sw <C-w>w
+
+" buffer
+nnoremap <silent> sp :<C-u>bp<CR>
+nnoremap <silent> sn :<C-u>bn<CR>
 
 " denite
 nnoremap <silent> <leader>k :Denite file/rec<CR>
@@ -93,9 +109,7 @@ nnoremap <silent> <leader>y :Defx -columns=git:mark:filename:type<CR>
 nnoremap <silent> <leader>u :UndotreeToggleAndFocus<CR>
 
 " easymotion
-map  f <Plug>(easymotion-bd-f)
-nmap f <Plug>(easymotion-overwin-f)
-nmap s <Plug>(easymotion-overwin-f2)
+nmap f <Plug>(easymotion-overwin-f2)
 map  L <Plug>(easymotion-bd-jk)
 nmap L <Plug>(easymotion-overwin-line)
 map  W <Plug>(easymotion-bd-w)

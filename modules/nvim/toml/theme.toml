@@ -5,22 +5,6 @@ colorscheme iceberg
 '''
 
 [[plugins]]
-repo = 'simeji/winresizer'
-
-[[plugins]]
-repo = 'itchyny/lightline.vim'
-hook_add = '''
-set laststatus=2
-set noshowmode
-'''
-
-[[plugins]]
-repo = 'luochen1990/rainbow'
-hook_add = '''
-let g:rainbow_active = 1
-'''
-
-[[plugins]]
 repo = 'Yggdroot/indentLine'
 hook_add = '''
 let g:indentLine_faster = 1
@@ -28,19 +12,8 @@ let g:indentLine_char = '¦'
 '''
 
 [[plugins]]
-repo = 'majutsushi/tagbar'
-
-[[plugins]]
-repo = 'jiangmiao/auto-pairs'
-
-[[plugins]]
-repo = 'Shougo/denite.nvim'
+repo = 'itchyny/lightline.vim'
 hook_add = '''
-source ~/.config/nvim/plugins/denite.vim
+set laststatus=2
+set noshowmode
 '''
-
-[[plugins]]
-repo = 'vim-airline/vim-airline'
-
-[[plugins]]
-repo = 'vim-airline/vim-airline-themes'

@@ -31,8 +31,7 @@ source ~/.config/nvim/plugins/skkeleton.vim
 [[plugins]]
 repo = 'mbbill/undotree'
 hook_add = '''
-let g:undotree_WindowLayout = 3
-command! UndotreeToggleAndFocus :UndotreeToggle | :UndotreeFocus
+source ~/.config/nvim/plugins/undotree.vim
 '''
 
 [[plugins]]
@@ -45,11 +44,29 @@ repo = 'ConradIrwin/vim-bracketed-paste'
 repo = 'neoclide/coc.nvim'
 build = 'coc#util#install()'
 hook_add = '''
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
-endfunction
+source ~/.config/nvim/plugins/coc.vim
+'''
+
+[[plugins]]
+repo = 'mtth/scratch.vim'
+
+[[plugins]]
+repo = 'simeji/winresizer'
+
+[[plugins]]
+repo = 'luochen1990/rainbow'
+hook_add = '''
+let g:rainbow_active = 1
+'''
+
+[[plugins]]
+repo = 'majutsushi/tagbar'
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+hook_add = '''
+source ~/.config/nvim/plugins/denite.vim
 '''

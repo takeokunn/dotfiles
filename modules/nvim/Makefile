@@ -40,7 +40,10 @@ $(VIM_TOML_DIR):
 
 $(VIM_PLUGINS_DIR):
 	mkdir -p $(VIM_PLUGINS_DIR)
+	ln -sf $(SELF_VIM_PLUGINS_DIR)/airline.vim $(VIM_PLUGINS_DIR)/airline.vim
+	ln -sf $(SELF_VIM_PLUGINS_DIR)/coc.vim $(VIM_PLUGINS_DIR)/coc.vim
 	ln -sf $(SELF_VIM_PLUGINS_DIR)/defx.vim $(VIM_PLUGINS_DIR)/defx.vim
 	ln -sf $(SELF_VIM_PLUGINS_DIR)/denite.vim $(VIM_PLUGINS_DIR)/denite.vim
 	ln -sf $(SELF_VIM_PLUGINS_DIR)/skkeleton.vim $(VIM_PLUGINS_DIR)/skkeleton.vim
 	ln -sf $(SELF_VIM_PLUGINS_DIR)/nvim-treesitter.vim $(VIM_PLUGINS_DIR)/nvim-treesitter.vim
+	ln -sf $(SELF_VIM_PLUGINS_DIR)/undotree.vim $(VIM_PLUGINS_DIR)/undotree.vim

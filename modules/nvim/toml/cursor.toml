@@ -4,4 +4,5 @@ repo = 'easymotion/vim-easymotion'
 [[plugins]]
 repo = 'mg979/vim-visual-multi'
 
-
+[[plugins]]
+repo = 'tpope/vim-surround'
