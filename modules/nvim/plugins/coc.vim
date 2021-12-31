@@ -5,3 +5,5 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
+command! -nargs=0 Format :call CocAction('format')

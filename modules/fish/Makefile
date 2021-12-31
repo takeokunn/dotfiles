@@ -46,6 +46,7 @@ $(FISH_FUNCTION_DIR):
 	ln -sf $(SELF_FISH_DIR)/functions/peco_select_history.fish $(FISH_FUNCTION_DIR)/peco_select_history.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_z.fish $(FISH_FUNCTION_DIR)/peco_z.fish
 	ln -sf $(SELF_FISH_DIR)/functions/prompt_pwd.fish $(FISH_FUNCTION_DIR)/prompt_pwd.fish
+	ln -sf $(SELF_FISH_DIR)/functions/skylark.fish $(FISH_FUNCTION_DIR)/skylark.fish
 	ln -sf $(SELF_FISH_DIR)/functions/tmux_attach_session_if_needed.fish $(FISH_FUNCTION_DIR)/tmux_attach_session_if_needed.fish
 	curl https://git.io/fisher --create-dirs -sLo $(FISH_FISHER_FILE)
 
@@ -56,6 +57,7 @@ $(FISH_COMPLETION_DIR):
 	ln -sf $(SELF_FISH_DIR)/completions/clasp.fish $(FISH_COMPLETION_DIR)/clasp.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pry.fish $(FISH_COMPLETION_DIR)/pry.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pod.fish $(FISH_COMPLETION_DIR)/pod.fish
+	ln -sf $(SELF_FISH_DIR)/completions/skylark.fish $(FISH_COMPLETION_DIR)/skylark.fish
 	ln -sf $(SELF_FISH_DIR)/completions/solc.fish $(FISH_COMPLETION_DIR)/solc.fish
 	ln -sf $(SELF_FISH_DIR)/completions/zat.fish $(FISH_COMPLETION_DIR)/zat.fish
 	ln -sf $(SELF_FISH_DIR)/completions/terminal-notifier.fish $(FISH_COMPLETION_DIR)/terminal-notifier.fish
