@@ -49,6 +49,9 @@ source ~/.config/nvim/plugins/coc.vim
 
 [[plugins]]
 repo = 'mtth/scratch.vim'
+hook_add = '''
+let g:scratch_height = 30
+'''
 
 [[plugins]]
 repo = 'simeji/winresizer'
@@ -58,9 +61,6 @@ repo = 'luochen1990/rainbow'
 hook_add = '''
 let g:rainbow_active = 1
 '''
-
-[[plugins]]
-repo = 'majutsushi/tagbar'
 
 [[plugins]]
 repo = 'jiangmiao/auto-pairs'

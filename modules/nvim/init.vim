@@ -56,7 +56,6 @@ set history=1000
 set autoread
 au FocusGained,BufEnter * checktime
 set list
-set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 
 " netrw
 let g:netrw_liststyle=3
@@ -109,15 +108,5 @@ nnoremap <silent> <leader>y :Defx -columns=git:mark:filename:type<CR>
 nnoremap <silent> <leader>u :UndotreeToggleAndFocus<CR>
 
 " easymotion
-nmap f <Plug>(easymotion-overwin-f2)
-map  L <Plug>(easymotion-bd-jk)
-nmap L <Plug>(easymotion-overwin-line)
-map  W <Plug>(easymotion-bd-w)
-nmap W <Plug>(easymotion-overwin-w)
-
-" coc
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-nnoremap<silent> K :call <SID>show_documentation()<CR>
+map <Leader> <Plug>(easymotion-prefix)
+nmap <Leader>f <Plug>(easymotion-overwin-f2)
