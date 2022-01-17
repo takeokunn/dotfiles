@@ -15,3 +15,11 @@ function! s:denite_my_settings() abort
   nnoremap <silent><buffer><expr> <Space>
         \ denite#do_map('toggle_select').'j'
 endfunction
+
+nnoremap <silent> <leader>k :Denite file/rec<CR>
+nnoremap <silent> <leader>b :Denite buffer<CR>
+nnoremap <silent> <leader>o :Denite outline<CR>
+nnoremap <silent> <leader>l :Denite line<CR>
+nnoremap <silent> <leader>r :Denite file/old<CR>
+nnoremap <silent> <leader>h :Denite command_history<CR>
+nnoremap <silent> <leader>g :Denite grep<CR>

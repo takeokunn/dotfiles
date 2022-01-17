@@ -108,5 +108,17 @@ nnoremap <silent> <leader>y :Defx -columns=git:mark:filename:type<CR>
 nnoremap <silent> <leader>u :UndotreeToggleAndFocus<CR>
 
 " easymotion
-map <Leader> <Plug>(easymotion-prefix)
+nmap <Leader> <Plug>(easymotion-prefix)
 nmap <Leader>f <Plug>(easymotion-overwin-f2)
+
+" coc
+nmap <leader>rn <Plug>(coc-rename)
+nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>cl  <Plug>(coc-codelens-action)
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)

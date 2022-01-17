@@ -64,3 +64,10 @@ let g:goimports_simplify = 1
 [[plugins]]
 repo = 'pantharshit00/vim-prisma'
 on_ft = ['prisma']
+
+[[plugins]]
+repo = '0robustus1/vim-tmux-conf'
+on_ft = ['tmuxconf']
+hook_add = '''
+au BufRead,BufNewFile dot.tmux.conf setf tmuxconf
+'''
