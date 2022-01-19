@@ -1,0 +1,19 @@
+*.c diff=cpp
+*.h diff=cpp
+*.cpp diff=cpp
+*.hpp diff=cpp
+*.cs diff=csharp
+*.m diff=objc
+*.java diff=java
+*.html diff=html
+*.xml diff=html
+*.pl diff=perl
+*.pm diff=perl
+*.t diff=perl
+*.php diff=php
+*.ptml diff=php
+*.py diff=python
+*.rb diff=ruby
+*.csv encoding=cp932
+*.json diff=json
+*.gpg filter=gpg diff=gpg

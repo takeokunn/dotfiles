@@ -37,3 +37,14 @@ user = takeokunn
 
 [gpg]
 program = gpg
+
+[diff]
+patience = true
+
+[color]
+ui = auto
+status = auto
+diff = auto
+branch = auto
+interactive = auto
+grep = auto
