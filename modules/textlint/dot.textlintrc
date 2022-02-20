@@ -9,16 +9,16 @@
             "no-exclamation-question-mark": false,
             "sentence-length": {
                 "max": 200
-            },
+            }
         },
         "spellcheck-tech-word": true,
         "textlint-rule-ginger": {
             "skipPatterns": [
-                "`(.*)`",
+                "`(.*)`"
             ]
         },
         "textlint-rule-spellchecker": true,
         "textlint-rule-write-good": true,
-        "preset-ja-spacing": true,
+        "preset-ja-spacing": true
     }
 }

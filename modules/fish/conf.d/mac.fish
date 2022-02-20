@@ -1,5 +1,4 @@
 if test (uname) = "Darwin"
-    set -x PATH $PATH /usr/local/sbin
     set -xg LANG en_US.UTF-8
     set -xg LC_ALL en_US.UTF-8
     set -xg OBJC_DISABLE_INITIALIZE_FORK_SAFETY YES
@@ -21,4 +20,9 @@ if test (uname) = "Darwin"
 
     ## homebrew editor
     set -x HOMEBREW_EDITOR "vim"
+
+    # path
+    set -x PATH $PATH /usr/local/sbin
+    set -x PATH $PATH /opt/local/bin
+    set -x PATH $PATH /opt/local/sbin
 end
