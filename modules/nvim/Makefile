@@ -1,4 +1,5 @@
 VIM_DIR = ~/.config/nvim
+VIM_COC_DIR = ~/.config/coc
 VIM_TOML_DIR = $(VIM_DIR)/toml
 VIM_PLUGINS_DIR = $(VIM_DIR)/plugins
 VIM_CACHE_DIR = ~/.cache/dein
@@ -15,6 +16,7 @@ NVIM_TARGETS += nvim-install
 nvim-clean:
 	rm -rf $(VIM_DIR)
 	rm -rf $(VIM_CACHE_DIR)
+	rm -fr $(VIM_COC_DIR)
 
 .PHONY: nvim-install
 nvim-install: $(VIM_DIR) $(VIM_CACHE_DIR) $(VIM_TOML_DIR) $(VIM_PLUGINS_DIR)

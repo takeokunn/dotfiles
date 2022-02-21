@@ -4,8 +4,6 @@ FISH_FUNCTION_DIR = $(FISH_DIR)/functions
 FISH_CONFIG_DIR = $(FISH_DIR)/conf.d
 SELF_FISH_DIR = $(MODULE_DIR)/fish
 
-FISH_PRIVATE_FILE = $(SELF_FISH_DIR)/private.fish
-
 FISH_FISHER_FILE = $(FISH_FUNCTION_DIR)/fisher.fish
 
 FISH_DOCKER_COMPLETION_FILE = https://raw.githubusercontent.com/docker/docker-ce/master/components/cli/contrib/completion/fish/docker.fish
@@ -27,7 +25,6 @@ $(FISH_DIR):
 	mkdir -p $(FISH_DIR)
 	ln -sf $(SELF_FISH_DIR)/config.fish $(FISH_DIR)/config.fish
 	ln -sf $(SELF_FISH_DIR)/fish_plugins $(FISH_DIR)/fish_plugins
-	touch $(FISH_PRIVATE_FILE)
 
 $(FISH_FUNCTION_DIR):
 	mkdir -p $(FISH_FUNCTION_DIR)
