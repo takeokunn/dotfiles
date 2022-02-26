@@ -1,6 +1,6 @@
 [core]
 excludesfile = ~/.gitignore
-editor = emacs
+editor = emacs -nw
 quotepath = off
 ignorecase = false
 safecrlf = true

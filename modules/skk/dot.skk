@@ -14,13 +14,13 @@
     (interactive "P")
     (cond
         ((and (null (skk-in-minibuffer-p))
-	         (null skk-henkan-mode))
+             (null skk-henkan-mode))
             (skk-emulate-original-map arg))
         (t
             (skk-kakutei arg))))
 
 (add-to-list 'skk-rom-kana-rule-list
-	'(skk-kakutei-key nil skk-C-j-key))
+    '(skk-kakutei-key nil skk-C-j-key))
 
 ;; for azik
 (setq skk-use-azik t)

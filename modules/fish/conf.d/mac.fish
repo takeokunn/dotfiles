@@ -19,10 +19,13 @@ if test (uname) = "Darwin"
     # set -x PATH $PATH /usr/local/opt/llvm/bin
 
     ## homebrew editor
-    set -x HOMEBREW_EDITOR "vim"
+    set -x HOMEBREW_EDITOR "emacs"
 
     # path
     set -x PATH $PATH /usr/local/sbin
     set -x PATH $PATH /opt/local/bin
     set -x PATH $PATH /opt/local/sbin
+
+    # emacs
+    alias emacs 'emacs -nw'
 end
