@@ -52,6 +52,7 @@ $(FISH_COMPLETION_DIR):
 	ln -sf $(SELF_FISH_DIR)/completions/aws.fish $(FISH_COMPLETION_DIR)/aws.fish
 	ln -sf $(SELF_FISH_DIR)/completions/cdk.fish $(FISH_COMPLETION_DIR)/cdk.fish
 	ln -sf $(SELF_FISH_DIR)/completions/clasp.fish $(FISH_COMPLETION_DIR)/clasp.fish
+	ln -sf $(SELF_FISH_DIR)/completions/ecschedule.fish $(FISH_COMPLETION_DIR)/ecschedule.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pry.fish $(FISH_COMPLETION_DIR)/pry.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pod.fish $(FISH_COMPLETION_DIR)/pod.fish
 	ln -sf $(SELF_FISH_DIR)/completions/skylark.fish $(FISH_COMPLETION_DIR)/skylark.fish
