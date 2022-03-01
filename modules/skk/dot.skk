@@ -19,8 +19,7 @@
         (t
             (skk-kakutei arg))))
 
-(add-to-list 'skk-rom-kana-rule-list
-    '(skk-kakutei-key nil skk-C-j-key))
+(add-to-list 'skk-rom-kana-rule-list '(skk-kakutei-key nil skk-C-j-key))
 
 ;; for azik
 (setq skk-use-azik t)
