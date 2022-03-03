@@ -1,13 +1,12 @@
 function peco_select_history
-    if test (count $argv) = 0
-        set peco_flags
-    else
-        set peco_flags --query "$argv"
+    set -l query (commandline)
+
+    if test -n $query
+        set peco_flags --query "$query"
     end
-    history | peco $peco_flags | read foo
-    if [ $foo ]
-        commandline $foo
-    else
-        commandline ''
+
+    history | peco $peco_flags | read recent
+    if [ $recent ]
+        commandline $recent
     end
 end
