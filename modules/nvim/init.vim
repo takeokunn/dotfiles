@@ -57,6 +57,13 @@ set autoread
 au FocusGained,BufEnter * checktime
 set list
 
+" highlight
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+highlight LineNr ctermbg=none
+highlight Folded ctermbg=none
+highlight EndOfBuffer ctermbg=none
+
 " netrw
 let g:netrw_liststyle=3
 
