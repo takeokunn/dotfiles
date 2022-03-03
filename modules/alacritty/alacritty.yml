@@ -1,13 +1,15 @@
 import:
   - ~/.config/alacritty/alacritty-theme/themes/darcula.yaml
 
-background_opacity: 1
+window:
+  # startup_mode: SimpleFullscreen
+  opacity: 0.9
 
 scrolling:
   history: 0
 
 font:
-  size: 13
+  size: 13.0
   normal:
     family: Monaco
   bold:
