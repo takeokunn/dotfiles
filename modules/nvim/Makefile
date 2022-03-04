@@ -3,6 +3,7 @@ VIM_COC_DIR = ~/.config/coc
 VIM_TOML_DIR = $(VIM_DIR)/toml
 VIM_PLUGINS_DIR = $(VIM_DIR)/plugins
 VIM_CACHE_DIR = ~/.cache/dein
+
 SELF_VIM_DIR = $(MODULE_DIR)/nvim
 SELF_VIM_TOML_DIR = $(MODULE_DIR)/nvim/toml
 SELF_VIM_PLUGINS_DIR = $(MODULE_DIR)/nvim/plugins
@@ -49,3 +50,4 @@ $(VIM_PLUGINS_DIR):
 	ln -sf $(SELF_VIM_PLUGINS_DIR)/skkeleton.vim $(VIM_PLUGINS_DIR)/skkeleton.vim
 	ln -sf $(SELF_VIM_PLUGINS_DIR)/nvim-treesitter.vim $(VIM_PLUGINS_DIR)/nvim-treesitter.vim
 	ln -sf $(SELF_VIM_PLUGINS_DIR)/undotree.vim $(VIM_PLUGINS_DIR)/undotree.vim
+	ln -sf $(SELF_VIM_PLUGINS_DIR)/orgmode.vim $(VIM_PLUGINS_DIR)/orgmode.vim

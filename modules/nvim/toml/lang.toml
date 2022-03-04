@@ -71,3 +71,17 @@ on_ft = ['tmuxconf']
 hook_add = '''
 au BufRead,BufNewFile dot.tmux.conf setf tmuxconf
 '''
+
+[[plugins]]
+repo = 'sherylynn/vim-elisp'
+
+[[plugins]]
+repo = 'nvim-treesitter/nvim-treesitter'
+
+[[plugins]]
+repo = 'nvim-orgmode/orgmode'
+depends = 'nvim-treesitter'
+on_lua = 'orgmode'
+hook_add = '''
+source ~/.config/nvim/plugins/orgmode.vim
+'''
