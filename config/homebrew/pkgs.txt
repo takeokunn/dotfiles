@@ -7,7 +7,6 @@ cmake
 coreutils
 ctags
 direnv
-direnv
 dog
 editorconfig
 exa

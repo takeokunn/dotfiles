@@ -1,0 +1,17 @@
+bat
+build-essential
+exa
+fd-find
+fish
+git
+go
+jq
+nano
+neovim
+nodejs
+nvim
+peco
+ripgrep
+tmux
+wget
+xclip
