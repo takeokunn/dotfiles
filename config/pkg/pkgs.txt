@@ -1,11 +1,6 @@
-bat
 build-essential
-exa
-fd-find
+emacs
 fish
-git
-go
-jq
 nano
 neovim
 nodejs
