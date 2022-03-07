@@ -1,12 +1,7 @@
 build-essential
 emacs
 fish
-nano
 neovim
-nodejs
-nvim
-peco
 ripgrep
 tmux
 wget
-xclip

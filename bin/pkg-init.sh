@@ -2,5 +2,5 @@
 source $(dirname $0)/.init.sh
 
 while read pkg; do
-    pkg install $pkg
+    pkg install -y $pkg
 done < $CONFIG_PKG_DIR/pkgs.txt
