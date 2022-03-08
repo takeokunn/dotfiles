@@ -1,6 +1,7 @@
-neovim
 alacritty
-emacs
+alfred
 aquaskk
+emacs
 keycastr
+neovim
 wireshark
