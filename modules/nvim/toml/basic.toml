@@ -70,3 +70,6 @@ repo = 'Shougo/denite.nvim'
 hook_add = '''
 source ~/.config/nvim/plugins/denite.vim
 '''
+
+[[plugins]]
+repo = "dbmrq/vim-redacted"
