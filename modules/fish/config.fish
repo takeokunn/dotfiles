@@ -12,6 +12,9 @@ end
 alias make 'make -j'
 alias cdd 'cd ~/Desktop'
 
+# config
+set -x EDITOR "emacs -nw"
+
 # keybind
 function fish_user_key_bindings
     bind \cr peco_select_history
@@ -20,6 +23,7 @@ function fish_user_key_bindings
     bind \eg magit
 end
 
+# for tmux
 if type -q tmux && test -z $TMUX && status --is-login
     tmux_attach_session_if_needed
 end
