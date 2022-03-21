@@ -1,10 +1,14 @@
 function ghq_create
-    cd (ghq create (echo $argv)) | gh repo create (echo $argv) --public -y
+    # create github repo
+    set license (curl https://api.github.com/licenses | jq -r ".[].spdx_id" | peco)
+    gh repo create (echo $argv) --public --license $license -y
+    ghq get git@github.com:takeokunn/(echo $argv).git
+
+    # add readme
+    cd (ghq root)/github.com/takeokunn/(echo $argv)
     echo "# "(echo $argv) >> README.md
-    git init
     git add README.md
-    git commit -m "first commit"
+    git commit -m "Add README.md"
     git branch -M main
-    git remote add origin git@github.com:takeokunn/(echo $argv).git
     git push -u origin main
 end
