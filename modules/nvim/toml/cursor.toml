@@ -1,5 +1,8 @@
 [[plugins]]
 repo = 'easymotion/vim-easymotion'
+hook_add = '''
+let g:EasyMotion_smartcase = 1
+'''
 
 [[plugins]]
 repo = 'mg979/vim-visual-multi'

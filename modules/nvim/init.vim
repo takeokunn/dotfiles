@@ -110,14 +110,13 @@ nnoremap <silent> <leader>h :Denite command_history<CR>
 nnoremap <silent> <leader>g :Denite grep<CR>
 
 " defx
-nnoremap <silent> <leader>y :Defx -columns=git:mark:filename:type<CR>
+nnoremap <silent> <leader>y :Defx<CR>
 
 " undo-tree
 nnoremap <silent> <leader>u :UndotreeToggleAndFocus<CR>
 
 " easymotion
-nmap <Leader> <Plug>(easymotion-prefix)
-nmap <Leader>f <Plug>(easymotion-overwin-f2)
+nmap <silent> f <Plug>(easymotion-overwin-f2)
 
 " coc
 nmap <leader>rn <Plug>(coc-rename)
