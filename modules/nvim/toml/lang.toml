@@ -38,6 +38,10 @@ on_ft = ['fish']
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
+hook_add = '''
+let g:user_emmet_mode='a'
+autocmd FileType html,css,blade EmmetInstall
+'''
 
 [[plugins]]
 repo = 'hashivim/vim-terraform'
@@ -84,4 +88,13 @@ depends = 'nvim-treesitter'
 on_lua = 'orgmode'
 hook_add = '''
 source ~/.config/nvim/plugins/orgmode.vim
+'''
+
+[[plugins]]
+repo = 'jwalton512/vim-blade'
+hook_add = '''
+let g:blade_custom_directives_pairs = {
+      \   'markdown': 'endmarkdown',
+      \   'cache': 'endcache',
+      \ }
 '''
