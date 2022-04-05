@@ -13,19 +13,22 @@ if test (uname) = "Darwin"
     # set -xg LIBRARY_PATH "/usr/local/Cellar/libgccjit/11.1.0/lib/gcc/11"
 
     # openssl
-    set -x PATH $PATH /usr/local/opt/openssl/bin
+    fish_add_path /usr/local/opt/openssl/bin
 
     ## llvm
-    # set -x PATH $PATH /usr/local/opt/llvm/bin
+    # fish_add_path /usr/local/opt/llvm/bin
 
     ## homebrew editor
     set -x HOMEBREW_EDITOR "emacs"
 
     # path
-    set -x PATH $PATH /usr/local/sbin
-    set -x PATH $PATH /opt/local/bin
-    set -x PATH $PATH /opt/local/sbin
+    fish_add_path /usr/local/sbin
+    fish_add_path /usr/local/bin
+    fish_add_path /opt/local/sbin
 
     # emacs
     alias emacs 'emacs -nw'
+
+    # texinfo
+    fish_add_path /usr/local/opt/texinfo/bin
 end

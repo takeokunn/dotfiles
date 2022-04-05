@@ -1,3 +1,3 @@
 if type -q ros
-    set -x PATH $PATH $HOME/.roswell/bin
+    fish_add_path $HOME/.roswell/bin
 end

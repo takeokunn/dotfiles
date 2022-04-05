@@ -1,7 +1,7 @@
 if type -q npm
-    set -x PATH $HOME/.npm-global/bin $PATH
+    fish_add_path $HOME/.npm-global/bin
 end
 
 if type -q nodebrew
-    set -x PATH $PATH $HOME/.nodebrew/current/bin
+    fish_add_path $HOME/.nodebrew/current/bin
 end

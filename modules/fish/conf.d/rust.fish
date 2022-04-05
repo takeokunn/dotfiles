@@ -1,3 +1,3 @@
 if type -q cargo
-    set -x PATH $PATH $HOME/.cargo/bin
+    fish_add_path $HOME/.cargo/bin
 end
