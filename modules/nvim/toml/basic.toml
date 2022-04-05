@@ -22,12 +22,6 @@ set updatetime=250
 [[plugins]]
 repo = 'tyru/caw.vim'
 
-# [[plugins]]
-# repo = "vim-skk/skkeleton"
-# hook_add = '''
-# source ~/.config/nvim/plugins/skkeleton.vim
-# '''
-
 [[plugins]]
 repo = 'mbbill/undotree'
 hook_add = '''
