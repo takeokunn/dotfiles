@@ -9,14 +9,14 @@ if test (uname) = "Darwin"
     set -xg LIBXML2_LIBS `xml2-config --libs`
 
     # libgccjit
-    # set -xg CC "/usr/local/bin/gcc-11"
-    # set -xg LIBRARY_PATH "/usr/local/Cellar/libgccjit/11.1.0/lib/gcc/11"
+    set -xg CC "/usr/local/bin/gcc-11"
+    set -xg LIBRARY_PATH "/usr/local/Cellar/libgccjit/11.2.0_1/lib/gcc/11/"
 
     # openssl
     fish_add_path /usr/local/opt/openssl/bin
 
     ## llvm
-    # fish_add_path /usr/local/opt/llvm/bin
+    fish_add_path /usr/local/opt/llvm/bin
 
     ## homebrew editor
     set -x HOMEBREW_EDITOR "emacs"

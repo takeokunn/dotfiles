@@ -9,7 +9,6 @@ function fish_prompt
 end
 
 # alias
-alias make 'make -j'
 alias cdd 'cd ~/Desktop'
 
 # config
