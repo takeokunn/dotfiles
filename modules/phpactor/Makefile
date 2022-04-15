@@ -7,10 +7,10 @@ PHPACTOR_TARGETS += phpactor-install
 .PHONY: phpactor-install
 phpactor-install: $(PHPACTOR_DIR)
 
-$(PECO_DIR):
-	mkdir -p $(PECO_DIR)
-	ln -sf $(SELF_PECO_DIR)/config.json $(PECO_DIR)/config.json
+$(PHPACTOR_DIR):
+	mkdir -p $(PHPACTOR_DIR)
+	ln -sf $(SELF_PHPACTOR_DIR)/phpactor.yml $(PHPACTOR_DIR)/phpactor.yml
 
-.PHONY: peco-clean
-peco-clean:
-	rm -r $(PECO_DIR)
+.PHONY: phpactor-clean
+phpactor-clean:
+	rm -r $(PHPACTOR_DIR)
