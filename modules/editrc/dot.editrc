@@ -29,4 +29,5 @@ bind "\e\e[D" ed-prev-word
 mysql:bind -s "^xd" "show databases;"
 mysql:bind -s "^xt" "show tables;"
 mysql:bind -s "^xp" "show full processlist;"
+mysql:bind -s "^xa" "select * from "
 mysql:bind -s "^xc" "select count(*) from "

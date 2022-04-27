@@ -6,3 +6,4 @@
 .envrc
 .log
 .dir-locals.el
+phpactor.log
