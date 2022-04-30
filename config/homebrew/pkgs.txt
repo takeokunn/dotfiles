@@ -8,6 +8,7 @@ coreutils
 ctags
 direnv
 dog
+dust
 editorconfig
 exa
 extract_url

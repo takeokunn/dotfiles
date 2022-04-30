@@ -22,3 +22,7 @@ end
 if type -q gping
     alias ping 'gping'
 end
+
+if type -q dust
+    alias du 'dust'
+end
