@@ -28,6 +28,8 @@ $(FISH_DIR):
 
 $(FISH_FUNCTION_DIR):
 	mkdir -p $(FISH_FUNCTION_DIR)
+	ln -sf $(SELF_FISH_DIR)/functions/fish_prompt.fish $(FISH_FUNCTION_DIR)/fish_prompt.fish
+	ln -sf $(SELF_FISH_DIR)/functions/fish_user_key_bindings.fish $(FISH_FUNCTION_DIR)/fish_user_key_bindings.fish
 	ln -sf $(SELF_FISH_DIR)/functions/ghq_create.fish $(FISH_FUNCTION_DIR)/ghq_create.fish
 	ln -sf $(SELF_FISH_DIR)/functions/ghq_org_all.fish $(FISH_FUNCTION_DIR)/ghq_org_all.fish
 	ln -sf $(SELF_FISH_DIR)/functions/ghq_remove.fish $(FISH_FUNCTION_DIR)/ghq_remove.fish
