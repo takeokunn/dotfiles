@@ -17,7 +17,7 @@ br = branch
 co = commit
 ch = checkout
 ad = add
-fixit = commit --amend --no-edit
+fix = commit --amend --no-edit
 
 [user]
 name = takeokunn

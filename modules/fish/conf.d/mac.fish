@@ -27,6 +27,9 @@ if test (uname) = "Darwin"
     fish_add_path /usr/local/bin
     fish_add_path /opt/local/sbin
 
+    # my alias
+    alias cdd 'cd ~/Desktop'
+
     # emacs
     alias emacs 'emacs -nw'
 

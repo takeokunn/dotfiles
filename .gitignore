@@ -7,3 +7,5 @@ tmp/*
 
 *.log
 .ac-php-conf.json
+
+.dir-locals-2.el
