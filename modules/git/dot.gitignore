@@ -5,5 +5,5 @@
 .DS_Store
 .envrc
 .log
-.dir-locals.el
+.dir-locals-2.el
 phpactor.log
