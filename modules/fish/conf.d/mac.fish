@@ -32,6 +32,7 @@ if test (uname) = "Darwin"
 
     # emacs
     alias emacs 'emacs -nw'
+    set -xg LSP_USE_PLISTS true
 
     # texinfo
     fish_add_path /usr/local/opt/texinfo/bin
