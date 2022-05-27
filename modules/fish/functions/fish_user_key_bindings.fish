@@ -4,6 +4,10 @@ function fish_user_key_bindings
     bind \cq peco_z
     bind \eg magit
 
+    # for vi-mode
+    fish_vi_key_bindings default
+    bind -M insert \cf forward-char
+
     # unbind
     bind -e \cg
 end
