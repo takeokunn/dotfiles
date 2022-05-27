@@ -4,4 +4,4 @@ if type -q tmux && test -z $TMUX && status --is-login
 end
 
 # for vi-mode
-# fish_vi_key_bindings default
+fish_vi_key_bindings default
