@@ -5,7 +5,7 @@ function fish_user_key_bindings
     bind \eg magit
 
     # for vi-mode
-    fish_vi_key_bindings default
+    fish_vi_key_bindings insert
     bind -M insert \cf forward-char
 
     # unbind
