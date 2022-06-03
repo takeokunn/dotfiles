@@ -51,6 +51,7 @@ source-highlight
 sqlite3
 stunnel
 terminal-notifier
+thefuck
 the_silver_searcher
 tmux
 tokei

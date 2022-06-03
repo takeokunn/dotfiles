@@ -10,7 +10,7 @@ if test (uname) = "Darwin"
 
     # libgccjit
     # set -xg CC "/usr/local/bin/gcc-11"
-    # set -xg LIBRARY_PATH (brew --prefix libgccjit)/lib/gcc/11
+    # set -xg LIBRARY_PATH (brew --prefix libgccjit)/lib/gcc/9
 
     # openssl
     fish_add_path /usr/local/opt/openssl/bin
@@ -29,6 +29,7 @@ if test (uname) = "Darwin"
 
     # my alias
     alias cdd 'cd ~/Desktop'
+    alias make 'make -j8'
 
     # emacs
     alias emacs 'emacs -nw'
