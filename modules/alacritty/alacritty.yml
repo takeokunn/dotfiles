@@ -1,9 +1,9 @@
-import:
-  - ~/.config/alacritty/alacritty-theme/themes/darcula.yaml
+# import:
+#   - ~/.config/alacritty/alacritty-theme/themes/darcula.yaml
 
 window:
   decorations: none
-  opacity: 1
+  opacity: 0.95
   startup_mode: Maximized
 
 scrolling:
