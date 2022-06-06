@@ -8,6 +8,8 @@
 $ bash bin/brew-init.sh # for homebrew
 $ bash bin/apt-init.sh  # for ubuntu
 $ bash bin/pkg-init.sh  # for FreeBSD
+
+$ bash bin/brew-font-init.sh # for homebrew font
 ```
 
 ### Easy Install

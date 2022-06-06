@@ -10,7 +10,8 @@ if test (uname) = "Darwin"
 
     # libgccjit
     # set -xg CC "/usr/local/bin/gcc-11"
-    # set -xg LIBRARY_PATH (brew --prefix libgccjit)/lib/gcc/11
+    set -xg LIBRARY_PATH (brew --prefix libgccjit)/lib/gcc/11
+    set -x NATIVE_FULL_AOT 1
 
     # openssl
     fish_add_path /usr/local/opt/openssl/bin
