@@ -1,7 +1,6 @@
 alacritty
 alfred
 aquaskk
-emacs
 keycastr
 neovim
 wireshark

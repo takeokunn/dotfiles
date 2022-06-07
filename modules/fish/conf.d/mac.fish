@@ -9,7 +9,6 @@ if test (uname) = "Darwin"
     set -xg LIBXML2_LIBS `xml2-config --libs`
 
     # libgccjit
-    # set -xg CC "/usr/local/bin/gcc-11"
     set -xg LIBRARY_PATH (brew --prefix libgccjit)/lib/gcc/11
     set -x NATIVE_FULL_AOT 1
 
@@ -26,7 +25,6 @@ if test (uname) = "Darwin"
     # path
     fish_add_path /usr/local/sbin
     fish_add_path /usr/local/bin
-    fish_add_path /opt/local/sbin
 
     # my alias
     alias cdd 'cd ~/Desktop'
@@ -38,4 +36,10 @@ if test (uname) = "Darwin"
 
     # texinfo
     fish_add_path /usr/local/opt/texinfo/bin
+
+    # bison
+    fish_add_path /usr/local/opt/bison/bin
+
+    # libiconv
+    fish_add_path /usr/local/opt/libiconv/bin
 end

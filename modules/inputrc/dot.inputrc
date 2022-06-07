@@ -1,4 +1,3 @@
-set editing-mode emacs
 set bell-style none
 set visible-stats on
 set completion-ignore-case on
