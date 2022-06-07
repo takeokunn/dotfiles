@@ -1,31 +1,3 @@
-bind "^A" ed-move-to-beg
-bind "^B" ed-prev-char
-bind "^C" ed-tty-sigint
-bind "^D" em-delete-or-list
-bind "^E" ed-move-to-end
-bind "^F" ed-next-char
-bind "^I" rl_complete
-bind "^K" ed-kill-line
-bind "^L" ed-clear-screen
-bind "^N" ed-search-next-history
-bind "^O" ed-tty-flush-output
-bind "^P" ed-search-prev-history
-bind "^R" em-inc-search-prev
-bind "^S" em-inc-search-next
-bind "^T" ed-transpose-chars
-bind "^U" vi-kill-line-prev
-bind "^W" ed-delete-prev-word
-bind "^X" ed-sequence-lead-in
-bind "^Y" em-yank
-
-bind "\e[1;5C" em-next-word
-bind "\e[5C" em-next-word
-bind "\e\e[C" em-next-word
-
-bind "\e[1;5D" ed-prev-word
-bind "\e[5D" ed-prev-word
-bind "\e\e[D" ed-prev-word
-
 mysql:bind -s "^xd" "show databases;"
 mysql:bind -s "^xt" "show tables;"
 mysql:bind -s "^xp" "show full processlist;"
