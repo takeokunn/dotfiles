@@ -1,12 +1,13 @@
 if test (uname) = "Darwin"
+    # lang
     set -xg LANG en_US.UTF-8
     set -xg LC_ALL en_US.UTF-8
-    set -xg OBJC_DISABLE_INITIALIZE_FORK_SAFETY YES
-    # set -xg LDFLAGS "-L/usr/local/opt/libxml2/lib"
-    # set -xg CPPFLAGS "-I/usr/local/opt/libxml2/include"
-    # set -xg PKG_CONFIG_PATH "/usr/local/opt/libxml2/lib/pkgconfig"
-    set -xg LIBXML2_CFLAGS `xml2-config --cflags`
-    set -xg LIBXML2_LIBS `xml2-config --libs`
+
+    # libxml2
+    set -gx LDFLAGS "-L/usr/local/opt/libxml2/lib"
+    set -gx CPPFLAGS "-I/usr/local/opt/libxml2/include"
+    set -gx PKG_CONFIG_PATH "/usr/local/opt/libxml2/lib/pkgconfig"
+    fish_add_path /usr/local/opt/libxml2/bin
 
     # libgccjit
     set -xg LIBRARY_PATH (brew --prefix libgccjit)/lib/gcc/11
@@ -15,10 +16,7 @@ if test (uname) = "Darwin"
     # openssl
     fish_add_path /usr/local/opt/openssl/bin
 
-    ## llvm
-    fish_add_path /usr/local/opt/llvm/bin
-
-    ## homebrew editor
+   # homebrew editor
     set -x EDITOR "emacs -nw"
     set -x HOMEBREW_EDITOR "emacs -nw"
 
@@ -26,7 +24,7 @@ if test (uname) = "Darwin"
     fish_add_path /usr/local/sbin
     fish_add_path /usr/local/bin
 
-    # my alias
+    # alias
     alias cdd 'cd ~/Desktop'
     alias make 'make -j8'
 
