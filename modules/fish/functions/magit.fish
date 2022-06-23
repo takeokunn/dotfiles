@@ -1,4 +1,4 @@
-function magit ()
+function magit
     set -l git_root (git rev-parse --show-toplevel)
     emacs -nw --eval "
 (progn
