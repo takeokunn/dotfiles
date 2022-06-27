@@ -4,4 +4,4 @@ logging.level: "warning"
 logging.formatter: "pretty"
 rpc.store_replay: true
 completion_worse.experimantal: true
-language_server_phpstan.enabled: true
+# language_server_phpstan.enabled: true
