@@ -8,3 +8,4 @@
 .dir-locals-2.el
 phpactor.log
 .vscode/
+.ac-php-conf.json
