@@ -20,7 +20,7 @@ fish-clean:
 
 .PHONY: fish-install
 fish-install: $(FISH_DIR) $(FISH_FUNCTION_DIR) $(FISH_COMPLETION_DIR) $(FISH_CONFIG_DIR)
-	ln -sf $(SELF_FISH_DIR)/conf.d/thefuck.fish $(FISH_CONFIG_DIR)/thefuck.fish
+	ln -sf $(SELF_FISH_DIR)/conf.d/gh.fish $(FISH_CONFIG_DIR)/gh.fish
 
 $(FISH_DIR):
 	mkdir -p $(FISH_DIR)
@@ -74,6 +74,7 @@ $(FISH_CONFIG_DIR):
 	mkdir -p $(FISH_CONFIG_DIR)
 	ln -sf $(SELF_FISH_DIR)/conf.d/direnv.fish $(FISH_CONFIG_DIR)/direnv.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/gcloud.fish $(FISH_CONFIG_DIR)/gcloud.fish
+	ln -sf $(SELF_FISH_DIR)/conf.d/gh.fish $(FISH_CONFIG_DIR)/gh.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/go.fish $(FISH_CONFIG_DIR)/go.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/gpg.fish $(FISH_CONFIG_DIR)/gpg.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/java.fish $(FISH_CONFIG_DIR)/java.fish
