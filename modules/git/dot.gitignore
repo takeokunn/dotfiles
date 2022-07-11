@@ -9,3 +9,4 @@
 phpactor.log
 .vscode/
 .ac-php-conf.json
+.metals/

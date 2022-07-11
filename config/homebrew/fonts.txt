@@ -38,6 +38,7 @@ font-noto-sans-deseret
 font-noto-sans-devanagari
 font-noto-sans-display
 font-noto-sans-egyptian-hieroglyphs
+font-noto-sans-elymaic
 font-noto-sans-ethiopic
 font-noto-sans-georgian
 font-noto-sans-glagolitic
@@ -64,6 +65,7 @@ font-noto-sans-lycian
 font-noto-sans-lydian
 font-noto-sans-malayalam
 font-noto-sans-mandaic
+font-noto-sans-math
 font-noto-sans-meetei-mayek
 font-noto-sans-mongolian
 font-noto-sans-mono
@@ -74,6 +76,7 @@ font-noto-sans-ogham
 font-noto-sans-ol-chiki
 font-noto-sans-old-italic
 font-noto-sans-old-persian
+font-noto-sans-old-sogdian
 font-noto-sans-old-south-arabian
 font-noto-sans-old-turkic
 font-noto-sans-oriya
@@ -87,9 +90,11 @@ font-noto-sans-samaritan
 font-noto-sans-saurashtra
 font-noto-sans-shavian
 font-noto-sans-sinhala
+font-noto-sans-sogdian
 font-noto-sans-sundanese
 font-noto-sans-syloti-nagri
 font-noto-sans-symbols
+font-noto-sans-symbols-2
 font-noto-sans-symbols2
 font-noto-sans-syriac-eastern
 font-noto-sans-syriac-estrangela
@@ -100,6 +105,8 @@ font-noto-sans-tai-le
 font-noto-sans-tai-tham
 font-noto-sans-tai-viet
 font-noto-sans-tamil
+font-noto-sans-tamil
+font-noto-sans-tamil-supplement
 font-noto-sans-telugu
 font-noto-sans-thaana
 font-noto-sans-thai
@@ -131,4 +138,4 @@ font-noto-serif-sinhala
 font-noto-serif-tamil
 font-noto-serif-telugu
 font-noto-serif-thai
-font-source-han-noto-cjk
+font-source-hpan-noto-cjk
