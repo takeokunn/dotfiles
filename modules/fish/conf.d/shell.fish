@@ -26,3 +26,7 @@ end
 if type -q dust
     alias du 'dust'
 end
+
+if type -q broot
+    alias tree 'broot -ips'
+end
