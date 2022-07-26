@@ -1,5 +1,5 @@
 # [vi mode]
-set editing-mode vi
+# set editing-mode vi
 
 # [prompt]
 set show-mode-in-prompt on
