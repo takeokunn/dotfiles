@@ -1,8 +1,8 @@
 NANO_DIR = ~/.nano
 NANORC_GITHUB = https://github.com/scopatz/nanorc.git
 
-CORE_CLEAN_TARGETS += nano-clean
-CORE_TARGETS += nano-install
+NANO_CLEAN_TARGETS += nano-clean
+NANO_TARGETS += nano-install
 
 .PHONY: nano-clean
 nano-clean:
