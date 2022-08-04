@@ -1,11 +1,11 @@
-PHPACTOR_DIR = ~/.config/phpactor
-SELF_PHPACTOR_DIR = $(MODULE_DIR)/phpactor
+PECO_DIR = ~/.config/peco
+SELF_PECO_DIR = $(MODULE_DIR)/peco
 
-PHPACTOR_CLEAN_TARGETS += phpactor-clean
-PHPACTOR_TARGETS += phpactor-install
+PECO_CLEAN_TARGETS += peco-clean
+PECO_TARGETS += peco-install
 
-.PHONY: phpactor-install
-phpactor-install: $(PHPACTOR_DIR)
+.PHONY: peco-install
+peco-install: $(PECO_DIR)
 
 $(PECO_DIR):
 	mkdir -p $(PECO_DIR)
