@@ -10,13 +10,13 @@ if test (uname) = "Darwin"
     fish_add_path /usr/local/opt/libxml2/bin
 
     # libgccjit
-    set -xg LIBRARY_PATH (brew --prefix libgccjit)/lib/gcc/11
+    set -xg LIBRARY_PATH (brew --prefix libgccjit)/lib/gcc/current
     set -x NATIVE_FULL_AOT 1
 
     # openssl
     fish_add_path /usr/local/opt/openssl/bin
 
-   # homebrew editor
+    # homebrew editor
     set -x EDITOR "emacs -nw"
     set -x HOMEBREW_EDITOR "emacs -nw"
 
