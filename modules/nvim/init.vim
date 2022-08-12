@@ -42,7 +42,6 @@ set showcmd
 set title
 set number relativenumber
 set cursorline
-set cursorcolumn
 set nofoldenable
 set noswapfile
 set expandtab
