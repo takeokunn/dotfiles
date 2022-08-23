@@ -1,7 +1,7 @@
 [[plugins]]
-repo = 'cocopon/iceberg.vim'
+repo = 'dracula/vim'
 hook_add = '''
-colorscheme iceberg
+colorscheme dracula
 '''
 
 [[plugins]]
