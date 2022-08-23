@@ -57,6 +57,9 @@ set autoread
 au FocusGained,BufEnter * checktime
 set list
 
+" cursor line
+highlight clear CursorLine
+
 " highlight
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
