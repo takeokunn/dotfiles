@@ -9,6 +9,7 @@ FISH_FISHER_FILE = $(FISH_FUNCTION_DIR)/fisher.fish
 FISH_DOCKER_COMPLETION_FILE = https://raw.githubusercontent.com/docker/docker-ce/master/components/cli/contrib/completion/fish/docker.fish
 FISH_DOCKER_COMPOSE_COMPLETION_FILE = https://raw.githubusercontent.com/docker/compose/master/contrib/completion/fish/docker-compose.fish
 FISH_FISHER_COMPLETION_FILE = https://raw.githubusercontent.com/jorgebucaran/fisher/main/completions/fisher.fish
+FISH_GUIX_CONPLETION_FILE = https://raw.githubusercontent.com/lfam/guix/master/etc/completion/fish/guix.fish
 
 FISH_TARGETS += fish-install
 FISH_CLEAN_TARGETS += fish-clean
@@ -20,7 +21,6 @@ fish-clean:
 
 .PHONY: fish-install
 fish-install: $(FISH_DIR) $(FISH_FUNCTION_DIR) $(FISH_COMPLETION_DIR) $(FISH_CONFIG_DIR)
-	ln -sf $(SELF_FISH_DIR)/conf.d/gh.fish $(FISH_CONFIG_DIR)/gh.fish
 
 $(FISH_DIR):
 	mkdir -p $(FISH_DIR)
@@ -69,6 +69,7 @@ $(FISH_COMPLETION_DIR):
 	curl $(FISH_DOCKER_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/docker.fish
 	curl $(FISH_DOCKER_COMPOSE_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/docker-compose.fish
 	curl $(FISH_FISHER_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/fisher.fish
+	curl $(FISH_GUIX_CONPLETION_FILE) -o $(FISH_COMPLETION_DIR)/guix.fish
 
 $(FISH_CONFIG_DIR):
 	mkdir -p $(FISH_CONFIG_DIR)
