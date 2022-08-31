@@ -1,0 +1,19 @@
+[general]
+accounts = Gmail
+maxsyncaccounts = 3
+
+[Account Gmail]
+localrepository = Local
+remoterepository = Remote
+
+[Repository Local]
+type = Maildir
+localfolders = ~/Maildir
+
+[Repository Remote]
+type = IMAP
+remotehost = imap.gmail.com
+remoteuser = @gmail.com
+remotepass = PASSWORD
+ssl = yes
+maxconnections = 1
