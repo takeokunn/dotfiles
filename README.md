@@ -37,30 +37,12 @@ $ make core-clean
 ```
 
 * dotfiles
-* bash
-* nano
-* vim
-* tig
 
-### peco
+### bash
 
 ```shell
-$ make peco-install
-$ make peco-clean
-```
-
-### tmux
-
-```shell
-$ make tmux-install
-$ make tmux-clean
-```
-
-### alacritty
-
-```shell
-$ make alacritty-install
-$ make alacritty-clean
+$ make bash-install
+$ make bash-clean
 ```
 
 ### fish
@@ -71,12 +53,25 @@ $ make fish-clean
 $ make fish-update
 ```
 
-### lem
+### nano
 
 ```shell
-$ make lem-install
-$ make lem-clean
-$ make lem-update
+$ make nano-install
+$ make nano-clean
+```
+
+### textlint
+
+```shell
+$ make textlint-install
+$ make textlint-clean
+```
+
+### tmux
+
+```shell
+$ make tmux-install
+$ make tmux-clean
 ```
 
 ### nvim
@@ -84,6 +79,14 @@ $ make lem-update
 ```shell
 $ make nvim-install
 $ make nvim-clean
+```
+
+### lem
+
+```shell
+$ make lem-install
+$ make lem-clean
+$ make lem-update
 ```
 
 ### irb
@@ -101,11 +104,46 @@ $ make spacemacs-install
 $ make spacemacs-clean
 ```
 
+### doomemacs
+
+```shell
+$ make doomemacs-install
+$ make doomemacs-clean
+```
+
+### skk
+
+```shell
+$ make skk-install
+$ make skk-clean
+```
+
+### peco
+
+```shell
+$ make peco-install
+$ make peco-clean
+```
+
+### alacritty
+
+```shell
+$ make alacritty-install
+$ make alacritty-clean
+```
+
 ### phpactor
 
 ```shell
 $ make phpactor-install
 $ make phpactor-clean
+```
+
+### nyxt
+
+```shell
+$ make nyxt-install
+$ make nyxt-clean
 ```
 
 ### all
