@@ -1,4 +1,4 @@
-NPM_UPDATE_TARGET += npm-update
+NPM_UPDATE_TARGETS += npm-update
 
 .PHONY: npm-update
 npm-update:

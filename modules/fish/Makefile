@@ -91,5 +91,6 @@ $(FISH_CONFIG_DIR):
 	ln -sf $(SELF_FISH_DIR)/conf.d/android.fish $(FISH_CONFIG_DIR)/android.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/thefuck.fish $(FISH_CONFIG_DIR)/thefuck.fish
 
+.PHONY: fish-update
 fish-update:
 	fish -c "fisher update"
