@@ -22,7 +22,7 @@ fix = commit --amend --no-edit
 [user]
 name = takeokunn
 email = bararararatty@gmail.com
-signingkey = 0F79C0AB03FD7A1C
+signingkey = 0B10DAA7BA0236D7382287660F79C0AB03FD7A1C
 
 [ghq]
 root = ~/.ghq

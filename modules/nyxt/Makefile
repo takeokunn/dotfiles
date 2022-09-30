@@ -9,10 +9,11 @@ nyxt-install: $(NYXT_DIR)
 
 $(NYXT_DIR):
 	mkdir -p $(NYXT_DIR)
-	ln -sf $(SELF_NYXT_DIR)/config.lisp $(NYXT_DIR)/config.lisp
-	ln -sf $(SELF_NYXT_DIR)/keybinds.lisp $(NYXT_DIR)/keybinds.lisp
+	ln -sf $(SELF_NYXT_DIR)/init.lisp $(NYXT_DIR)/init.lisp
+	ln -sf $(SELF_NYXT_DIR)/emacs.lisp $(NYXT_DIR)/emacs.lisp
+	ln -sf $(SELF_NYXT_DIR)/keybind.lisp $(NYXT_DIR)/keybind.lisp
+	ln -sf $(SELF_NYXT_DIR)/style.lisp $(NYXT_DIR)/style.lisp
 	ln -sf $(SELF_NYXT_DIR)/statusline.lisp $(NYXT_DIR)/statusline.lisp
-	ln -sf $(SELF_NYXT_DIR)/stylesheet.lisp $(NYXT_DIR)/stylesheet.lisp
 
 .PHONY: nyxt-clean
 nyxt-clean:
