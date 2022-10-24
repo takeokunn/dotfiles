@@ -13,7 +13,9 @@ textlint-clean:
 		textlint-rule-ginger \
 		textlint-rule-spellchecker \
 		textlint-rule-write-good \
-		textlint-filter-rule-node-types
+		textlint-filter-rule-node-types \
+		textlint-rule-no-dropping-the-ra \
+		textlint-plugin-org
 
 .PHONY: textlint-install
 textlint-install: $(TEXTLINT_INSTALL_DIRCTORY)
@@ -29,4 +31,6 @@ $(TEXTLINT_INSTALL_DIRCTORY):
 		textlint-rule-ginger \
 		textlint-rule-spellchecker \
 		textlint-rule-write-good \
-		textlint-filter-rule-node-types
+		textlint-filter-rule-node-types \
+		textlint-rule-no-dropping-the-ra \
+		textlint-plugin-org
