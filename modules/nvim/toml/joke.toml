@@ -1,0 +1,5 @@
+[[plugins]]
+repo = 'mattn/vim-sl'
+
+[[plugins]]
+repo = "dbmrq/vim-redacted"

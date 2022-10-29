@@ -27,10 +27,10 @@ let g:vim_markdown_conceal = 0
 
 [[plugins]]
 repo = 'elzr/vim-json'
-hook_add = '''
+on_ft = ['json']
+hook_source = '''
 let g:vim_json_syntax_conceal = 0
 '''
-on_ft = ['json']
 
 [[plugins]]
 repo = 'dag/vim-fish'
@@ -38,7 +38,7 @@ on_ft = ['fish']
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
-hook_add = '''
+hook_source = '''
 let g:user_emmet_mode='a'
 autocmd FileType html,css,blade EmmetInstall
 '''
@@ -54,14 +54,14 @@ on_ft = ['typescript', 'typescriptreact']
 [[plugins]]
 repo = 'fatih/vim-go'
 on_ft = ['go']
-hook_add = '''
+hook_source = '''
 let g:go_term_mode = 'split'
 '''
 
 [[plugins]]
 repo = 'mattn/vim-goimports'
 on_ft = ['go']
-hook_add = '''
+hook_source = '''
 let g:goimports_simplify = 1
 '''
 
@@ -72,7 +72,7 @@ on_ft = ['prisma']
 [[plugins]]
 repo = '0robustus1/vim-tmux-conf'
 on_ft = ['tmuxconf']
-hook_add = '''
+hook_source = '''
 au BufRead,BufNewFile dot.tmux.conf setf tmuxconf
 '''
 
@@ -81,18 +81,20 @@ repo = 'sherylynn/vim-elisp'
 
 [[plugins]]
 repo = 'nvim-treesitter/nvim-treesitter'
+on_event = 'BufRead'
+hook_post_update = 'TSUpdate'
 
 [[plugins]]
 repo = 'nvim-orgmode/orgmode'
 depends = 'nvim-treesitter'
 on_lua = 'orgmode'
-hook_add = '''
+hook_source = '''
 source ~/.config/nvim/plugins/orgmode.vim
 '''
 
 [[plugins]]
 repo = 'jwalton512/vim-blade'
-hook_add = '''
+hook_source = '''
 let g:blade_custom_directives_pairs = {
       \   'markdown': 'endmarkdown',
       \   'cache': 'endcache',

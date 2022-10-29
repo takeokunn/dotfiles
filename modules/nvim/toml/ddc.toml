@@ -1,0 +1,23 @@
+[[plugins]]
+repo = 'Shougo/ddc.vim'
+depends = 'denops.vim'
+on_func = 'ddc#enable()'
+hook_source = '''
+source ~/.config/nvim/plugins/ddc.vim
+'''
+
+[[plugins]]
+repo = 'Shougo/ddc-ui-native'
+depends = ['ddc']
+
+[[plugins]]
+repo = 'Shougo/ddc-source-around'
+depends = ['ddc']
+
+[[plugins]]
+repo = 'Shougo/ddc-matcher_head'
+depends = ['ddc']
+
+[[plugins]]
+repo = 'Shougo/ddc-sorter_rank'
+depends = ['ddc']

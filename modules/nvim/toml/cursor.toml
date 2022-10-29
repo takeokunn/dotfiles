@@ -1,6 +1,6 @@
 [[plugins]]
 repo = 'easymotion/vim-easymotion'
-hook_add = '''
+hook_source = '''
 let g:EasyMotion_smartcase = 1
 '''
 

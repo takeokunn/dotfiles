@@ -8,12 +8,16 @@ if dein#load_state('~/.cache/dein')
   call dein#begin('~/.cache/dein')
   " not lazy load
   call dein#load_toml('~/.config/nvim/toml/basic.toml', { 'lazy': 0 })
-  call dein#load_toml('~/.config/nvim/toml/cursor.toml', { 'lazy': 0 })
-  call dein#load_toml('~/.config/nvim/toml/filer.toml', { 'lazy': 0 })
   call dein#load_toml('~/.config/nvim/toml/theme.toml', { 'lazy': 0 })
 
   " lazy load
-  call dein#load_toml('~/.config/nvim/toml/lang.toml', { 'lazy': 1 })
+  call dein#load_toml('~/.config/nvim/toml/ddc.toml', { 'lazy': 1 })
+  call dein#load_toml('~/.config/nvim/toml/ddu.toml', { 'lazy': 1 })
+  call dein#load_toml('~/.config/nvim/toml/joke.toml', { 'lazy': 1 })
+  call dein#load_toml('~/.config/nvim/toml/language.toml', { 'lazy': 1 })
+  call dein#load_toml('~/.config/nvim/toml/lsp.toml', { 'lazy': 1 })
+  call dein#load_toml('~/.config/nvim/toml/utility.toml', { 'lazy': 1 })
+  call dein#load_toml('~/.config/nvim/toml/cursor.toml', { 'lazy': 1 })
 
   call dein#end()
   call dein#save_state()
@@ -102,32 +106,24 @@ nnoremap sw <C-w>w
 nnoremap <silent> sp :<C-u>bp<CR>
 nnoremap <silent> sn :<C-u>bn<CR>
 
-" denite
-nnoremap <silent> <leader>k :Denite file/rec<CR>
-nnoremap <silent> <leader>b :Denite buffer<CR>
-nnoremap <silent> <leader>o :Denite outline<CR>
-nnoremap <silent> <leader>l :Denite line<CR>
-nnoremap <silent> <leader>r :Denite file/old<CR>
-nnoremap <silent> <leader>h :Denite command_history<CR>
-nnoremap <silent> <leader>g :Denite grep<CR>
-
-" defx
-nnoremap <silent> <leader>y :Defx<CR>
-
 " undo-tree
 nnoremap <silent> <leader>u :UndotreeToggleAndFocus<CR>
 
 " easymotion
 nmap <silent> f <Plug>(easymotion-overwin-f2)
 
-" coc
-nmap <leader>rn <Plug>(coc-rename)
-nmap <leader>ac  <Plug>(coc-codeaction)
-nmap <leader>qf  <Plug>(coc-fix-current)
-nmap <leader>cl  <Plug>(coc-codelens-action)
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+" ddc
+inoremap <expr><S-TAB>  pumvisible() ? '<C-p>' : '<C-h>'
+inoremap <silent><expr> <TAB>
+         \ pumvisible() ? '<C-n>' :
+         \ (col('.') <= 1 <Bar><Bar> getline('.')[col('.') - 2] =~# '\s') ?
+         \ '<TAB>' : ddc#map#manual_complete()
+
+"ddu
+nnoremap <SID>[ug] <Nop>
+nmap ,u <SID>[ug]
+nnoremap <silent> <SID>[ug]m :<C-u>Ddu mr<CR>
+nnoremap <silent> <SID>[ug]b :<C-u>Ddu buffer<CR>
+nnoremap <silent> <SID>[ug]r :<C-u>Ddu register<CR>
+nnoremap <silent> <SID>[ug]n :<C-u>Ddu file -source-param-new -volatile<CR>
+nnoremap <silent> <SID>[ug]f :<C-u>Ddu file<CR>

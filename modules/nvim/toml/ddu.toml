@@ -1,0 +1,43 @@
+[[plugins]]
+repo = 'Shougo/ddu.vim'
+depends = ['denops.vim']
+on_func = 'ddu#start()'
+hook_source = '''
+source ~/.config/nvim/plugins/ddu.vim
+'''
+
+[[plugins]]
+repo = 'Shougo/ddu-ui-ff'
+depends = ['ddu.vim']
+
+[[plugins]]
+repo = 'Shougo/ddu-source-file'
+depends = ['ddu.vim']
+
+[[plugins]]
+repo = 'Shougo/ddu-source-register'
+depends = ['ddu.vim']
+
+[[plugins]]
+repo = 'kuuote/ddu-source-mr'
+depends = ['ddu.vim']
+
+[[plugins]]
+repo = 'lambdalisue/mr.vim'
+depends = ['ddu.vim']
+
+[[plugins]]
+repo = 'shun/ddu-source-buffer'
+depends = ['ddu.vim']
+
+[[plugins]]
+repo = 'Shougo/ddu-filter-matcher_substring'
+depends = ['ddu.vim']
+
+[[plugins]]
+repo = 'Shougo/ddu-commands.vim'
+depends = ['ddu.vim']
+
+[[plugins]]
+repo = 'Shougo/ddu-kind-file'
+depends = ['ddu.vim']

@@ -25,7 +25,6 @@ nvim-install: $(VIM_DIR) $(VIM_CACHE_DIR) $(VIM_TOML_DIR) $(VIM_PLUGINS_DIR)
 $(VIM_DIR):
 	mkdir -p $(VIM_DIR)
 	ln -sf $(SELF_VIM_DIR)/init.vim $(VIM_DIR)/init.vim
-	ln -sf $(SELF_VIM_DIR)/coc-settings.json $(VIM_DIR)/coc-settings.json
 
 $(VIM_CACHE_DIR):
 	mkdir -p $(VIM_CACHE_DIR)
@@ -37,17 +36,18 @@ $(VIM_TOML_DIR):
 	mkdir -p $(VIM_TOML_DIR)
 	ln -sf $(SELF_VIM_TOML_DIR)/basic.toml $(VIM_TOML_DIR)/basic.toml
 	ln -sf $(SELF_VIM_TOML_DIR)/cursor.toml $(VIM_TOML_DIR)/cursor.toml
-	ln -sf $(SELF_VIM_TOML_DIR)/filer.toml $(VIM_TOML_DIR)/filer.toml
-	ln -sf $(SELF_VIM_TOML_DIR)/lang.toml $(VIM_TOML_DIR)/lang.toml
+	ln -sf $(SELF_VIM_TOML_DIR)/ddc.toml $(VIM_TOML_DIR)/ddc.toml
+	ln -sf $(SELF_VIM_TOML_DIR)/ddu.toml $(VIM_TOML_DIR)/ddu.toml
+	ln -sf $(SELF_VIM_TOML_DIR)/joke.toml $(VIM_TOML_DIR)/joke.toml
+	ln -sf $(SELF_VIM_TOML_DIR)/language.toml $(VIM_TOML_DIR)/language.toml
+	ln -sf $(SELF_VIM_TOML_DIR)/lsp.toml $(VIM_TOML_DIR)/lsp.toml
 	ln -sf $(SELF_VIM_TOML_DIR)/theme.toml $(VIM_TOML_DIR)/theme.toml
+	ln -sf $(SELF_VIM_TOML_DIR)/utility.toml $(VIM_TOML_DIR)/utility.toml
 
 $(VIM_PLUGINS_DIR):
 	mkdir -p $(VIM_PLUGINS_DIR)
-	ln -sf $(SELF_VIM_PLUGINS_DIR)/airline.vim $(VIM_PLUGINS_DIR)/airline.vim
-	ln -sf $(SELF_VIM_PLUGINS_DIR)/coc.vim $(VIM_PLUGINS_DIR)/coc.vim
+	ln -sf $(SELF_VIM_PLUGINS_DIR)/ddc.vim $(VIM_PLUGINS_DIR)/ddc.vim
+	ln -sf $(SELF_VIM_PLUGINS_DIR)/ddu.vim $(VIM_PLUGINS_DIR)/ddu.vim
 	ln -sf $(SELF_VIM_PLUGINS_DIR)/defx.vim $(VIM_PLUGINS_DIR)/defx.vim
-	ln -sf $(SELF_VIM_PLUGINS_DIR)/denite.vim $(VIM_PLUGINS_DIR)/denite.vim
-	ln -sf $(SELF_VIM_PLUGINS_DIR)/skkeleton.vim $(VIM_PLUGINS_DIR)/skkeleton.vim
-	ln -sf $(SELF_VIM_PLUGINS_DIR)/nvim-treesitter.vim $(VIM_PLUGINS_DIR)/nvim-treesitter.vim
-	ln -sf $(SELF_VIM_PLUGINS_DIR)/undotree.vim $(VIM_PLUGINS_DIR)/undotree.vim
+	ln -sf $(SELF_VIM_PLUGINS_DIR)/lightline.vim $(VIM_PLUGINS_DIR)/lightline.vim
 	ln -sf $(SELF_VIM_PLUGINS_DIR)/orgmode.vim $(VIM_PLUGINS_DIR)/orgmode.vim

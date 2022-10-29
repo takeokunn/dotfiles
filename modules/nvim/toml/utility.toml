@@ -1,0 +1,45 @@
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+hook_add = '''
+set updatetime=250
+'''
+
+[[plugins]]
+repo = 'tyru/caw.vim'
+
+[[plugins]]
+repo = 'mbbill/undotree'
+hook_add = '''
+let g:undotree_WindowLayout = 3
+command! UndotreeToggleAndFocus :UndotreeToggle | :UndotreeFocus
+'''
+
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
+hook_add = '''
+set fileencoding=utf-8 fileformat=unix
+'''
+
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
+repo = 'ConradIrwin/vim-bracketed-paste'
+
+[[plugins]]
+repo = 'mtth/scratch.vim'
+hook_add = '''
+let g:scratch_height = 30
+'''
+
+[[plugins]]
+repo = 'simeji/winresizer'
+
+[[plugins]]
+repo = 'luochen1990/rainbow'
+hook_add = '''
+let g:rainbow_active = 1
+'''
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
