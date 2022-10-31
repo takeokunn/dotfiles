@@ -122,8 +122,8 @@ inoremap <silent><expr> <TAB>
 "ddu
 nnoremap <SID>[ug] <Nop>
 nmap ,u <SID>[ug]
-nnoremap <silent> <SID>[ug]m :<C-u>Ddu mr<CR>
-nnoremap <silent> <SID>[ug]b :<C-u>Ddu buffer<CR>
-nnoremap <silent> <SID>[ug]r :<C-u>Ddu register<CR>
-nnoremap <silent> <SID>[ug]n :<C-u>Ddu file -source-param-new -volatile<CR>
-nnoremap <silent> <SID>[ug]f :<C-u>Ddu file<CR>
+nnoremap <silent> <SID>[ug]m :Ddu mr<CR>
+nnoremap <silent> <SID>[ug]b :Ddu buffer<CR>
+nnoremap <silent> <SID>[ug]r :Ddu register<CR>
+nnoremap <silent> <SID>[ug]n :Ddu file -source-param-new -volatile<CR>
+nnoremap <silent> <SID>[ug]f :Ddu file<CR>

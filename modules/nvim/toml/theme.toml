@@ -17,3 +17,6 @@ hook_add = '''
 set laststatus=2
 set noshowmode
 '''
+
+[[plugins]]
+repo = ''
