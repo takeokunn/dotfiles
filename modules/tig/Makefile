@@ -1,5 +1,5 @@
 TIG_DIR = ~/.tig
-TIG_GITHUB_URL = https://github.com/edentsai/tig-theme-molokai-like
+TIG_GITHUB_URL = https://github.com/dracula/tig.git
 
 CORE_CLEAN_TARGETS += tig-clean
 CORE_TARGETS += tig-install
