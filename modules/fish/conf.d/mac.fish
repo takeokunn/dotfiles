@@ -40,4 +40,7 @@ if test (uname) = "Darwin"
 
     # libiconv
     fish_add_path /usr/local/opt/libiconv/bin
+
+    # speedtest-cli
+    alias speedtest 'speedtest --secure'
 end
