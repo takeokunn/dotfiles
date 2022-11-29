@@ -46,6 +46,8 @@ $(FISH_FUNCTION_DIR):
 	ln -sf $(SELF_FISH_DIR)/functions/magit.fish $(FISH_FUNCTION_DIR)/magit.fish
 	ln -sf $(SELF_FISH_DIR)/functions/myip.fish $(FISH_FUNCTION_DIR)/myip.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_genact.fish $(FISH_FUNCTION_DIR)/peco_genact.fish
+	ln -sf $(SELF_FISH_DIR)/functions/peco_growi.fish $(FISH_FUNCTION_DIR)/peco_growi.fish
+	ln -sf $(SELF_FISH_DIR)/functions/peco_redmine.fish $(FISH_FUNCTION_DIR)/peco_redmine.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_ghq.fish $(FISH_FUNCTION_DIR)/peco_ghq.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_select_history.fish $(FISH_FUNCTION_DIR)/peco_select_history.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_z.fish $(FISH_FUNCTION_DIR)/peco_z.fish
