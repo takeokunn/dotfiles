@@ -39,7 +39,6 @@ $(FISH_FUNCTION_DIR):
 	ln -sf $(SELF_FISH_DIR)/functions/ghq_users.fish $(FISH_FUNCTION_DIR)/ghq_users.fish
 	ln -sf $(SELF_FISH_DIR)/functions/gibo_generate.fish $(FISH_FUNCTION_DIR)/gibo_generate.fish
 	ln -sf $(SELF_FISH_DIR)/functions/kill_process.fish $(FISH_FUNCTION_DIR)/kill_process.fish
-	ln -sf $(SELF_FISH_DIR)/functions/lang.fish $(FISH_FUNCTION_DIR)/lang.fish
 	ln -sf $(SELF_FISH_DIR)/functions/logo.fish $(FISH_FUNCTION_DIR)/logo.fish
 	ln -sf $(SELF_FISH_DIR)/functions/loop.fish $(FISH_FUNCTION_DIR)/loop.fish
 	ln -sf $(SELF_FISH_DIR)/functions/ll.fish $(FISH_FUNCTION_DIR)/ll.fish
@@ -47,7 +46,8 @@ $(FISH_FUNCTION_DIR):
 	ln -sf $(SELF_FISH_DIR)/functions/myip.fish $(FISH_FUNCTION_DIR)/myip.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_genact.fish $(FISH_FUNCTION_DIR)/peco_genact.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_growi.fish $(FISH_FUNCTION_DIR)/peco_growi.fish
-	ln -sf $(SELF_FISH_DIR)/functions/peco_redmine.fish $(FISH_FUNCTION_DIR)/peco_redmine.fish
+	ln -sf $(SELF_FISH_DIR)/functions/peco_redmine_search_issue.fish $(FISH_FUNCTION_DIR)/peco_redmine_search_issue.fish
+	ln -sf $(SELF_FISH_DIR)/functions/peco_redmine_my_issue.fish $(FISH_FUNCTION_DIR)/peco_redmine_my_issue.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_ghq.fish $(FISH_FUNCTION_DIR)/peco_ghq.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_select_history.fish $(FISH_FUNCTION_DIR)/peco_select_history.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_z.fish $(FISH_FUNCTION_DIR)/peco_z.fish
