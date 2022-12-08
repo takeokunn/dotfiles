@@ -38,6 +38,7 @@ $(FISH_FUNCTION_DIR):
 	ln -sf $(SELF_FISH_DIR)/functions/ghq_user_all.fish $(FISH_FUNCTION_DIR)/ghq_user_all.fish
 	ln -sf $(SELF_FISH_DIR)/functions/ghq_users.fish $(FISH_FUNCTION_DIR)/ghq_users.fish
 	ln -sf $(SELF_FISH_DIR)/functions/gibo_generate.fish $(FISH_FUNCTION_DIR)/gibo_generate.fish
+	ln -sf $(SELF_FISH_DIR)/functions/growi_create_page.fish $(FISH_FUNCTION_DIR)/growi_create_page.fish
 	ln -sf $(SELF_FISH_DIR)/functions/kill_process.fish $(FISH_FUNCTION_DIR)/kill_process.fish
 	ln -sf $(SELF_FISH_DIR)/functions/logo.fish $(FISH_FUNCTION_DIR)/logo.fish
 	ln -sf $(SELF_FISH_DIR)/functions/loop.fish $(FISH_FUNCTION_DIR)/loop.fish
