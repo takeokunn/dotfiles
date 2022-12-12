@@ -83,6 +83,14 @@ NYXT_CLEAN_TARGETS +=
 # npm
 NPM_UPDATE_TARGETS +=
 
+# neofetch
+NEOFETCH_CLEAN_TARGETS +=
+NEOFETCH_TARGETS +=
+
+# gh
+GH_CLEAN_TARGETS +=
+GH_TARGETS +=
+
 ####################
 #      include     #
 ####################
@@ -168,6 +176,14 @@ ALL_CLEAN_TARGETS += NYXT_CLEAN_TARGETS
 
 # npm
 ALL_UPDATE_TARGETS += NPM_UPDATE_TARGETS
+
+# neofetch
+ALL_TARGETS += NEOFETCH_TARGETS
+ALL_CLEAN_TARGETS += NEOFETCH_CLEAN_TARGETS
+
+# gh
+GH_TARGETS += GH_TARGETS
+GH_CLEAN_TARGETS += GH_CLEAN_TARGETS
 
 ####################
 #     commands     #

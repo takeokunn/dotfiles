@@ -146,6 +146,20 @@ $ make nyxt-install
 $ make nyxt-clean
 ```
 
+### gh
+
+```shell
+$ make gh-install
+$ make gh-clean
+```
+
+### neofetch
+
+```shell
+$ make neofetch-install
+$ make neofetch-clean
+```
+
 ### all
 
 ```shell
