@@ -21,7 +21,7 @@ fish-clean:
 
 .PHONY: fish-install
 fish-install: $(FISH_DIR) $(FISH_FUNCTION_DIR) $(FISH_COMPLETION_DIR) $(FISH_CONFIG_DIR)
-
+	ln -sf $(SELF_FISH_DIR)/functions/peco_nodebrew.fish $(FISH_FUNCTION_DIR)/peco_nodebrew.fish
 $(FISH_DIR):
 	mkdir -p $(FISH_DIR)
 	ln -sf $(SELF_FISH_DIR)/config.fish $(FISH_DIR)/config.fish
@@ -47,6 +47,7 @@ $(FISH_FUNCTION_DIR):
 	ln -sf $(SELF_FISH_DIR)/functions/myip.fish $(FISH_FUNCTION_DIR)/myip.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_genact.fish $(FISH_FUNCTION_DIR)/peco_genact.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_growi.fish $(FISH_FUNCTION_DIR)/peco_growi.fish
+	ln -sf $(SELF_FISH_DIR)/functions/peco_nodebrew.fish $(FISH_FUNCTION_DIR)/peco_nodebrew.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_redmine_search_issue.fish $(FISH_FUNCTION_DIR)/peco_redmine_search_issue.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_redmine_my_issue.fish $(FISH_FUNCTION_DIR)/peco_redmine_my_issue.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_ghq.fish $(FISH_FUNCTION_DIR)/peco_ghq.fish
