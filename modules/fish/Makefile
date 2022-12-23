@@ -64,14 +64,15 @@ $(FISH_COMPLETION_DIR):
 	ln -sf $(SELF_FISH_DIR)/completions/cdk.fish $(FISH_COMPLETION_DIR)/cdk.fish
 	ln -sf $(SELF_FISH_DIR)/completions/clasp.fish $(FISH_COMPLETION_DIR)/clasp.fish
 	ln -sf $(SELF_FISH_DIR)/completions/cmigemo.fish $(FISH_COMPLETION_DIR)/cmigemo.fish
-	ln -sf $(SELF_FISH_DIR)/completions/guix.fish $(FISH_COMPLETION_DIR)/guix.fish
 	ln -sf $(SELF_FISH_DIR)/completions/ecschedule.fish $(FISH_COMPLETION_DIR)/ecschedule.fish
-	ln -sf $(SELF_FISH_DIR)/completions/pry.fish $(FISH_COMPLETION_DIR)/pry.fish
+	ln -sf $(SELF_FISH_DIR)/completions/guix.fish $(FISH_COMPLETION_DIR)/guix.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pod.fish $(FISH_COMPLETION_DIR)/pod.fish
+	ln -sf $(SELF_FISH_DIR)/completions/pry.fish $(FISH_COMPLETION_DIR)/pry.fish
 	ln -sf $(SELF_FISH_DIR)/completions/skylark.fish $(FISH_COMPLETION_DIR)/skylark.fish
 	ln -sf $(SELF_FISH_DIR)/completions/solc.fish $(FISH_COMPLETION_DIR)/solc.fish
-	ln -sf $(SELF_FISH_DIR)/completions/zat.fish $(FISH_COMPLETION_DIR)/zat.fish
 	ln -sf $(SELF_FISH_DIR)/completions/terminal-notifier.fish $(FISH_COMPLETION_DIR)/terminal-notifier.fish
+	ln -sf $(SELF_FISH_DIR)/completions/tfenv.fish $(FISH_COMPLETION_DIR)/tfenv.fish
+	ln -sf $(SELF_FISH_DIR)/completions/zat.fish $(FISH_COMPLETION_DIR)/zat.fish
 	curl $(FISH_DOCKER_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/docker.fish
 	curl $(FISH_DOCKER_COMPOSE_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/docker-compose.fish
 	curl $(FISH_FISHER_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/fisher.fish
@@ -95,6 +96,7 @@ $(FISH_CONFIG_DIR):
 	ln -sf $(SELF_FISH_DIR)/conf.d/rust.fish $(FISH_CONFIG_DIR)/rust.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/shell.fish $(FISH_CONFIG_DIR)/shell.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/android.fish $(FISH_CONFIG_DIR)/android.fish
+	ln -sf $(SELF_FISH_DIR)/conf.d/terraform.fish $(FISH_CONFIG_DIR)/terraform.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/thefuck.fish $(FISH_CONFIG_DIR)/thefuck.fish
 
 .PHONY: fish-update
