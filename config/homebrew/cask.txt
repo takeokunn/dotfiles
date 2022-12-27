@@ -1,6 +1,0 @@
-alacritty
-alfred
-aquaskk
-keycastr
-neovim
-wireshark

@@ -4,12 +4,15 @@
 
 ### Initialize
 
+mac:
 ```shell
-$ bash bin/brew-init.sh # for homebrew
+$ brew bundle --file Brewfile
+```
+
+linux:
+```shell
 $ bash bin/apt-init.sh  # for ubuntu
 $ bash bin/pkg-init.sh  # for FreeBSD
-
-$ bash bin/brew-font-init.sh # for homebrew font
 ```
 
 ### Easy Install
