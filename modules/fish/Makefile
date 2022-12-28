@@ -69,6 +69,7 @@ $(FISH_COMPLETION_DIR):
 	ln -sf $(SELF_FISH_DIR)/completions/guix.fish $(FISH_COMPLETION_DIR)/guix.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pod.fish $(FISH_COMPLETION_DIR)/pod.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pry.fish $(FISH_COMPLETION_DIR)/pry.fish
+	ln -sf $(SELF_FISH_DIR)/completions/shellcheck.fish $(FISH_COMPLETION_DIR)/shellcheck.fish
 	ln -sf $(SELF_FISH_DIR)/completions/skylark.fish $(FISH_COMPLETION_DIR)/skylark.fish
 	ln -sf $(SELF_FISH_DIR)/completions/solc.fish $(FISH_COMPLETION_DIR)/solc.fish
 	ln -sf $(SELF_FISH_DIR)/completions/terminal-notifier.fish $(FISH_COMPLETION_DIR)/terminal-notifier.fish
