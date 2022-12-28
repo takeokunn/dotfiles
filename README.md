@@ -6,7 +6,7 @@
 
 mac:
 ```shell
-$ brew bundle --file Brewfile
+$ make brew-install
 ```
 
 linux:

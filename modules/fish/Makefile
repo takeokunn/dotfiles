@@ -60,6 +60,7 @@ $(FISH_FUNCTION_DIR):
 
 $(FISH_COMPLETION_DIR):
 	mkdir -p $(FISH_COMPLETION_DIR)
+	ln -sf $(SELF_FISH_DIR)/completions/actionlint.fish $(FISH_COMPLETION_DIR)/actionlint.fish
 	ln -sf $(SELF_FISH_DIR)/completions/aws.fish $(FISH_COMPLETION_DIR)/aws.fish
 	ln -sf $(SELF_FISH_DIR)/completions/cdk.fish $(FISH_COMPLETION_DIR)/cdk.fish
 	ln -sf $(SELF_FISH_DIR)/completions/clasp.fish $(FISH_COMPLETION_DIR)/clasp.fish
