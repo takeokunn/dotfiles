@@ -6,7 +6,7 @@ BREWFILE_TARGETS += brew-install
 .PHONY: brew-install
 brew-install: $(BREWFILE_DIR)
 	cat $(CONFIG_DIR)/brew/*.Brewfile > $(BREWFILE_DIR)/Brewfile
-	brew bundle install
+	brew bundle install --file ~/.config/brewfile/Brewfile
 
 $(BREWFILE_DIR):
 	mkdir -p $(BREWFILE_DIR)

@@ -16,7 +16,7 @@ if test (uname) = "Darwin"
     # openssl
     fish_add_path /usr/local/opt/openssl/bin
 
-    # homebrew editor
+    # editor
     set -x EDITOR "emacs -nw"
     set -x HOMEBREW_EDITOR "emacs -nw"
 
@@ -43,4 +43,7 @@ if test (uname) = "Darwin"
 
     # speedtest-cli
     alias speedtest 'speedtest --secure'
+
+    # homebrew
+    fish_add_path /opt/homebrew/bin
 end
