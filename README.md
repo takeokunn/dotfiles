@@ -163,6 +163,21 @@ $ make neofetch-install
 $ make neofetch-clean
 ```
 
+### gnupg
+
+```shell
+$ make neofetch-install
+$ make neofetch-clean
+```
+
+### composer
+
+```shell
+$ make composer-install
+$ make composer-clean
+$ make composer-update
+```
+
 ### all
 
 ```shell
