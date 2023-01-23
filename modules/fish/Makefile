@@ -29,6 +29,7 @@ $(FISH_DIR):
 
 $(FISH_FUNCTION_DIR):
 	mkdir -p $(FISH_FUNCTION_DIR)
+	ln -sf $(SELF_FISH_DIR)/functions/calculate_oidc_thumbprint.fish $(FISH_FUNCTION_DIR)/calculate_oidc_thumbprint.fish
 	ln -sf $(SELF_FISH_DIR)/functions/fish_prompt.fish $(FISH_FUNCTION_DIR)/fish_prompt.fish
 	ln -sf $(SELF_FISH_DIR)/functions/fish_user_key_bindings.fish $(FISH_FUNCTION_DIR)/fish_user_key_bindings.fish
 	ln -sf $(SELF_FISH_DIR)/functions/ghq_create.fish $(FISH_FUNCTION_DIR)/ghq_create.fish
