@@ -11,5 +11,6 @@ function growi_create_page
         -H "Content-Type: application/json"
 
     echo $base_url$path
+    echo $base_url$path | pbcopy
     open $base_url$path
 end
