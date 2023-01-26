@@ -8,5 +8,6 @@ function peco_growi
             | peco
     )
     echo $base_url$my_path
+    echo $base_url$my_path | pbcopy
     open $base_url$my_path
 end

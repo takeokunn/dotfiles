@@ -17,5 +17,6 @@ function peco_redmine_search_issue
     set -l issue_id (string match -r '\d+' $issue)
 
     echo $base_url"/issues/"$issue_id
+    echo $base_url"/issues/"$issue_id | pbcopy
     open $base_url"/issues/"$issue_id
 end
