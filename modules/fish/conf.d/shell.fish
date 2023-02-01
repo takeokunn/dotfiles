@@ -30,3 +30,8 @@ end
 if type -q broot
     alias tree 'broot -ips'
 end
+
+if type -q pass
+    set -x PASSWORD_STORE_DIR $HOME/.ghq/github.com/takeokunn/password-store
+    set -x PASSWORD_STORE_ENABLE_EXTENSIONS true
+end

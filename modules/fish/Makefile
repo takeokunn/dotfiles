@@ -84,6 +84,7 @@ $(FISH_COMPLETION_DIR):
 $(FISH_CONFIG_DIR):
 	mkdir -p $(FISH_CONFIG_DIR)
 	ln -sf $(SELF_FISH_DIR)/conf.d/direnv.fish $(FISH_CONFIG_DIR)/direnv.fish
+	ln -sf $(SELF_FISH_DIR)/conf.d/docker.fish $(FISH_CONFIG_DIR)/docker.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/gcloud.fish $(FISH_CONFIG_DIR)/gcloud.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/gh.fish $(FISH_CONFIG_DIR)/gh.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/go.fish $(FISH_CONFIG_DIR)/go.fish
