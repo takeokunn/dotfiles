@@ -1,5 +1,5 @@
 set encoding=utf-8
-set fileencoding=utf-8
+set fileencodings=utf-8,euc-jp,cp932
 set clipboard+=unnamed
 set backspace=2
 set tabstop=2
