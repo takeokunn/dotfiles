@@ -1,6 +1,3 @@
-filetype plugin indent on
-
-" settings
 set encoding=utf-8
 set fileencoding=utf-8
 set clipboard+=unnamed
@@ -30,3 +27,4 @@ nmap <Leader><Leader> V
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 syntax on
+filetype plugin indent on
