@@ -76,6 +76,7 @@ $(FISH_COMPLETION_DIR):
 	ln -sf $(SELF_FISH_DIR)/completions/solc.fish $(FISH_COMPLETION_DIR)/solc.fish
 	ln -sf $(SELF_FISH_DIR)/completions/terminal-notifier.fish $(FISH_COMPLETION_DIR)/terminal-notifier.fish
 	ln -sf $(SELF_FISH_DIR)/completions/tfenv.fish $(FISH_COMPLETION_DIR)/tfenv.fish
+	ln -sf $(SELF_FISH_DIR)/completions/waypoint.fish $(FISH_COMPLETION_DIR)/waypoint.fish
 	ln -sf $(SELF_FISH_DIR)/completions/zat.fish $(FISH_COMPLETION_DIR)/zat.fish
 	curl $(FISH_DOCKER_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/docker.fish
 	curl $(FISH_DOCKER_COMPOSE_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/docker-compose.fish
