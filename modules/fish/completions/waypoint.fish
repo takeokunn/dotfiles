@@ -34,10 +34,10 @@ complete -f -c waypoint -n '__fish_use_subcommand' -xa version -d "Prints the ve
 complete -f -c waypoint -n '__fish_use_subcommand' -xa workspace -d "Manage workspaces"
 
 # login option
-complete -c waypoint -n '__fish_seen_subcommand_from login' -l app
+complete -c waypoint -n '__fish_seen_subcommand_from login' -l app -s a
 complete -c waypoint -n '__fish_seen_subcommand_from login' -l plain
-complete -c waypoint -n '__fish_seen_subcommand_from login' -l project
-complete -c waypoint -n '__fish_seen_subcommand_from login' -l workspace
+complete -c waypoint -n '__fish_seen_subcommand_from login' -l project -s p
+complete -c waypoint -n '__fish_seen_subcommand_from login' -l workspace -s w
 complete -c waypoint -n '__fish_seen_subcommand_from login' -l server-addr
 complete -c waypoint -n '__fish_seen_subcommand_from login' -l server-tls
 complete -c waypoint -n '__fish_seen_subcommand_from login' -l server-tls-skip-verify
@@ -49,10 +49,10 @@ complete -c waypoint -n '__fish_seen_subcommand_from login' -l from-kubernetes-s
 complete -c waypoint -n '__fish_seen_subcommand_from login' -l token
 
 # build option
-complete -c waypoint -n '__fish_seen_subcommand_from build' -l app
+complete -c waypoint -n '__fish_seen_subcommand_from build' -l app -s a
 complete -c waypoint -n '__fish_seen_subcommand_from build' -l plain
-complete -c waypoint -n '__fish_seen_subcommand_from build' -l project
-complete -c waypoint -n '__fish_seen_subcommand_from build' -l workspace
+complete -c waypoint -n '__fish_seen_subcommand_from build' -l project -s p
+complete -c waypoint -n '__fish_seen_subcommand_from build' -l workspace -s w
 complete -c waypoint -n '__fish_seen_subcommand_from build' -l label
 complete -c waypoint -n '__fish_seen_subcommand_from build' -l local
 complete -c waypoint -n '__fish_seen_subcommand_from build' -l remote-source
@@ -61,10 +61,10 @@ complete -c waypoint -n '__fish_seen_subcommand_from build' -l var-file
 complete -c waypoint -n '__fish_seen_subcommand_from build' -l push
 
 # deploy option
-complete -c waypoint -n '__fish_seen_subcommand_from deploy' -l app
+complete -c waypoint -n '__fish_seen_subcommand_from deploy' -l app -s a
 complete -c waypoint -n '__fish_seen_subcommand_from deploy' -l plain
-complete -c waypoint -n '__fish_seen_subcommand_from deploy' -l project
-complete -c waypoint -n '__fish_seen_subcommand_from deploy' -l workspace
+complete -c waypoint -n '__fish_seen_subcommand_from deploy' -l project -s p
+complete -c waypoint -n '__fish_seen_subcommand_from deploy' -l workspace -s w
 complete -c waypoint -n '__fish_seen_subcommand_from deploy' -l label
 complete -c waypoint -n '__fish_seen_subcommand_from deploy' -l local
 complete -c waypoint -n '__fish_seen_subcommand_from deploy' -l remote-source
@@ -78,10 +78,10 @@ complete -c waypoint -n '__fish_seen_subcommand_from deploy' -l release
 complete -c waypoint -n '__fish_seen_subcommand_from release' -xa list
 
 # release option
-complete -c waypoint -n '__fish_seen_subcommand_from release' -l app
+complete -c waypoint -n '__fish_seen_subcommand_from release' -l app -s a
 complete -c waypoint -n '__fish_seen_subcommand_from release' -l plain
-complete -c waypoint -n '__fish_seen_subcommand_from release' -l project
-complete -c waypoint -n '__fish_seen_subcommand_from release' -l workspace
+complete -c waypoint -n '__fish_seen_subcommand_from release' -l project -s p
+complete -c waypoint -n '__fish_seen_subcommand_from release' -l workspace -s w
 complete -c waypoint -n '__fish_seen_subcommand_from release' -l label
 complete -c waypoint -n '__fish_seen_subcommand_from release' -l local
 complete -c waypoint -n '__fish_seen_subcommand_from release' -l remote-source
@@ -93,10 +93,10 @@ complete -c waypoint -n '__fish_seen_subcommand_from release' -l prune-retain
 complete -c waypoint -n '__fish_seen_subcommand_from release' -l repeat
 
 # status
-complete -c waypoint -n '__fish_seen_subcommand_from status' -l app
+complete -c waypoint -n '__fish_seen_subcommand_from status' -l app -s a
 complete -c waypoint -n '__fish_seen_subcommand_from status' -l plain
-complete -c waypoint -n '__fish_seen_subcommand_from status' -l project
-complete -c waypoint -n '__fish_seen_subcommand_from status' -l workspace
+complete -c waypoint -n '__fish_seen_subcommand_from status' -l project -s p
+complete -c waypoint -n '__fish_seen_subcommand_from status' -l workspace -s w
 complete -c waypoint -n '__fish_seen_subcommand_from status' -l label
 complete -c waypoint -n '__fish_seen_subcommand_from status' -l local
 complete -c waypoint -n '__fish_seen_subcommand_from status' -l remote-source
@@ -108,10 +108,10 @@ complete -c waypoint -n '__fish_seen_subcommand_from status' -l refresh
 complete -c waypoint -n '__fish_seen_subcommand_from status' -l verbose
 
 # up option
-complete -c waypoint -n '__fish_seen_subcommand_from up' -l app
+complete -c waypoint -n '__fish_seen_subcommand_from up' -l app -s a
 complete -c waypoint -n '__fish_seen_subcommand_from up' -l plain
-complete -c waypoint -n '__fish_seen_subcommand_from up' -l project
-complete -c waypoint -n '__fish_seen_subcommand_from up' -l workspace
+complete -c waypoint -n '__fish_seen_subcommand_from up' -l project -s p
+complete -c waypoint -n '__fish_seen_subcommand_from up' -l workspace -s w
 complete -c waypoint -n '__fish_seen_subcommand_from up' -l label
 complete -c waypoint -n '__fish_seen_subcommand_from up' -l local
 complete -c waypoint -n '__fish_seen_subcommand_from up' -l remote-source
@@ -156,10 +156,10 @@ complete -c waypoint -n '__fish_seen_subcommand_from deployment' -xa destroy -d 
 complete -c waypoint -n '__fish_seen_subcommand_from deployment' -xa list -d "List deployments."
 
 # destroy option
-complete -c waypoint -n '__fish_seen_subcommand_from destroy' -l app
+complete -c waypoint -n '__fish_seen_subcommand_from destroy' -l app -s a
 complete -c waypoint -n '__fish_seen_subcommand_from destroy' -l plain
-complete -c waypoint -n '__fish_seen_subcommand_from destroy' -l project
-complete -c waypoint -n '__fish_seen_subcommand_from destroy' -l workspace
+complete -c waypoint -n '__fish_seen_subcommand_from destroy' -l project -s p
+complete -c waypoint -n '__fish_seen_subcommand_from destroy' -l workspace -s w
 complete -c waypoint -n '__fish_seen_subcommand_from destroy' -l label
 complete -c waypoint -n '__fish_seen_subcommand_from destroy' -l local
 complete -c waypoint -n '__fish_seen_subcommand_from destroy' -l remote-source
@@ -168,10 +168,10 @@ complete -c waypoint -n '__fish_seen_subcommand_from destroy' -l var-file
 complete -c waypoint -n '__fish_seen_subcommand_from destroy' -l auto-approve
 
 # docs optioin
-complete -c waypoint -n '__fish_seen_subcommand_from docs' -l app
+complete -c waypoint -n '__fish_seen_subcommand_from docs' -l app -s a
 complete -c waypoint -n '__fish_seen_subcommand_from docs' -l plain
-complete -c waypoint -n '__fish_seen_subcommand_from docs' -l project
-complete -c waypoint -n '__fish_seen_subcommand_from docs' -l workspace
+complete -c waypoint -n '__fish_seen_subcommand_from docs' -l project -s p
+complete -c waypoint -n '__fish_seen_subcommand_from docs' -l workspace -s w
 complete -c waypoint -n '__fish_seen_subcommand_from docs' -l label
 complete -c waypoint -n '__fish_seen_subcommand_from docs' -l local
 complete -c waypoint -n '__fish_seen_subcommand_from docs' -l remote-source
@@ -184,10 +184,10 @@ complete -c waypoint -n '__fish_seen_subcommand_from docs' -l plugin
 complete -c waypoint -n '__fish_seen_subcommand_from docs' -l type
 
 # exec option
-complete -c waypoint -n '__fish_seen_subcommand_from exec' -l app
+complete -c waypoint -n '__fish_seen_subcommand_from exec' -l app -s a
 complete -c waypoint -n '__fish_seen_subcommand_from exec' -l plain
-complete -c waypoint -n '__fish_seen_subcommand_from exec' -l project
-complete -c waypoint -n '__fish_seen_subcommand_from exec' -l workspace
+complete -c waypoint -n '__fish_seen_subcommand_from exec' -l project -s p
+complete -c waypoint -n '__fish_seen_subcommand_from exec' -l workspace -s w
 complete -c waypoint -n '__fish_seen_subcommand_from exec' -l label
 complete -c waypoint -n '__fish_seen_subcommand_from exec' -l local
 complete -c waypoint -n '__fish_seen_subcommand_from exec' -l remote-source
@@ -196,10 +196,10 @@ complete -c waypoint -n '__fish_seen_subcommand_from exec' -l var-file
 complete -c waypoint -n '__fish_seen_subcommand_from exec' -l instance
 
 # fmt option
-complete -c waypoint -n '__fish_seen_subcommand_from fmt' -l app
+complete -c waypoint -n '__fish_seen_subcommand_from fmt' -l app -s a
 complete -c waypoint -n '__fish_seen_subcommand_from fmt' -l plain
-complete -c waypoint -n '__fish_seen_subcommand_from fmt' -l project
-complete -c waypoint -n '__fish_seen_subcommand_from fmt' -l workspace
+complete -c waypoint -n '__fish_seen_subcommand_from fmt' -l project -s p
+complete -c waypoint -n '__fish_seen_subcommand_from fmt' -l workspace -s w
 complete -c waypoint -n '__fish_seen_subcommand_from fmt' -l check
 complete -c waypoint -n '__fish_seen_subcommand_from fmt' -l write
 
@@ -209,19 +209,19 @@ complete -c waypoint -n '__fish_seen_subcommand_from hostname' -xa list -d "List
 complete -c waypoint -n '__fish_seen_subcommand_from hostname' -xa register -d "Register a hostname to route to your apps."
 
 # init option
-complete -c waypoint -n '__fish_seen_subcommand_from init' -l app
+complete -c waypoint -n '__fish_seen_subcommand_from init' -l app -s a
 complete -c waypoint -n '__fish_seen_subcommand_from init' -l plain
-complete -c waypoint -n '__fish_seen_subcommand_from init' -l project
-complete -c waypoint -n '__fish_seen_subcommand_from init' -l workspace
+complete -c waypoint -n '__fish_seen_subcommand_from init' -l project -s p
+complete -c waypoint -n '__fish_seen_subcommand_from init' -l workspace -s w
 complete -c waypoint -n '__fish_seen_subcommand_from init' -l from-project
 complete -c waypoint -n '__fish_seen_subcommand_from init' -l into
 complete -c waypoint -n '__fish_seen_subcommand_from init' -l update
 
 # install option
-complete -c waypoint -n '__fish_seen_subcommand_from install' -l app
+complete -c waypoint -n '__fish_seen_subcommand_from install' -l app -s a
 complete -c waypoint -n '__fish_seen_subcommand_from install' -l plain
-complete -c waypoint -n '__fish_seen_subcommand_from install' -l project
-complete -c waypoint -n '__fish_seen_subcommand_from install' -l workspace
+complete -c waypoint -n '__fish_seen_subcommand_from install' -l project -s p
+complete -c waypoint -n '__fish_seen_subcommand_from install' -l workspace -s w
 complete -c waypoint -n '__fish_seen_subcommand_from install' -l accept-tos
 complete -c waypoint -n '__fish_seen_subcommand_from install' -l context-create
 complete -c waypoint -n '__fish_seen_subcommand_from install' -l context-set-default
@@ -306,10 +306,10 @@ complete -c waypoint -n '__fish_seen_subcommand_from job' -xa inspect -d "Inspec
 complete -c waypoint -n '__fish_seen_subcommand_from job' -xa list -d "List all jobs in Waypoint"
 
 # logs option
-complete -c waypoint -n '__fish_seen_subcommand_from logs' -l app
+complete -c waypoint -n '__fish_seen_subcommand_from logs' -l app -s a
 complete -c waypoint -n '__fish_seen_subcommand_from logs' -l plain
-complete -c waypoint -n '__fish_seen_subcommand_from logs' -l project
-complete -c waypoint -n '__fish_seen_subcommand_from logs' -l workspace
+complete -c waypoint -n '__fish_seen_subcommand_from logs' -l project -s p
+complete -c waypoint -n '__fish_seen_subcommand_from logs' -l workspace -s w
 complete -c waypoint -n '__fish_seen_subcommand_from logs' -l label
 complete -c waypoint -n '__fish_seen_subcommand_from logs' -l local
 complete -c waypoint -n '__fish_seen_subcommand_from logs' -l remote-source
@@ -364,10 +364,10 @@ complete -c waypoint -n '__fish_seen_subcommand_from trigger' -xa list -d "List 
 complete -c waypoint -n '__fish_seen_subcommand_from trigger' -xa update -d "Update a registered trigger URL."
 
 # ui option
-complete -c waypoint -n '__fish_seen_subcommand_from ui' -l app
+complete -c waypoint -n '__fish_seen_subcommand_from ui' -l app -s a
 complete -c waypoint -n '__fish_seen_subcommand_from ui' -l plain
-complete -c waypoint -n '__fish_seen_subcommand_from ui' -l project
-complete -c waypoint -n '__fish_seen_subcommand_from ui' -l workspace
+complete -c waypoint -n '__fish_seen_subcommand_from ui' -l project -s p
+complete -c waypoint -n '__fish_seen_subcommand_from ui' -l workspace -s w
 complete -c waypoint -n '__fish_seen_subcommand_from ui' -l authenticate
 
 # user subcommand
