@@ -109,6 +109,7 @@ brew "jansson"
 brew "jasper"
 brew "jbig2dec"
 brew "jid"
+brew "jsonnet"
 brew "jpeg", link: true
 brew "jpeg-xl"
 brew "jq"
