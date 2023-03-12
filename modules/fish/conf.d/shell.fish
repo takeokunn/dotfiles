@@ -11,10 +11,6 @@ if type -q bat
     alias cat 'bat'
 end
 
-if type -q fd
-    alias find 'fd'
-end
-
 if type -q dog
     alias dig 'dog'
 end
