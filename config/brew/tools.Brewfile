@@ -113,7 +113,6 @@ brew "jid"
 brew "jpeg", link: true
 brew "jpeg-xl"
 brew "jq"
-brew "jsonnet"
 brew "krb5"
 brew "lame"
 brew "leptonica"
