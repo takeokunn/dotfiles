@@ -55,7 +55,3 @@ insteadOf = https://github.com/
 
 [init]
 defaultBranch = main
-
-[filter "ignore-npmrc"]
-smudge = cat
-clean = sed '/^\\/\\/registry\\.npmjs\\.org\\/:_authToken/d'
