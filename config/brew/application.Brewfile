@@ -1,4 +1,3 @@
-cask "alacritty"
 cask "alfred"
 cask "aquaskk"
 cask "chromedriver"
