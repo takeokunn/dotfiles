@@ -23,6 +23,7 @@ if test (uname) = "Darwin"
     # path
     fish_add_path /usr/local/sbin
     fish_add_path /usr/local/bin
+    fish_add_path $HOME/.local/bin
 
     # alias
     alias cdd 'cd ~/Desktop'

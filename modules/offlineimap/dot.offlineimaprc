@@ -1,6 +1,7 @@
 [general]
 accounts = Gmail
-maxsyncaccounts = 3
+maxsyncaccounts = 1
+pythonfile = ~/.offlineimap.py
 
 [Account Gmail]
 localrepository = Local
@@ -13,7 +14,8 @@ localfolders = ~/Maildir
 [Repository Remote]
 type = IMAP
 remotehost = imap.gmail.com
-remoteuser = @gmail.com
-remotepass = PASSWORD
+remoteuser = bararararatty@gmail.com
+remotepasseval = get_password()
 ssl = yes
 maxconnections = 1
+sslcacertfile = /usr/local/etc/openssl@3/cert.pem
