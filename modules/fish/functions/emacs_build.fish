@@ -1,5 +1,6 @@
 function emacs_build
     cd (ghq root)/git.sv.gnu.org/emacs
+    git pull
 
     # CLI
     ./autogen.sh
