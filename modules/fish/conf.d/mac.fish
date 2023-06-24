@@ -48,4 +48,7 @@ if test (uname) = "Darwin"
     # homebrew
     fish_add_path /opt/homebrew/bin
     fish_add_path /opt/homebrew/sbin
+
+    # gpg
+    fish_add_path /usr/local/opt/gnupg@2.2/bin
 end
