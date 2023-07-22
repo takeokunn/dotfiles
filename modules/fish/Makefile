@@ -21,6 +21,7 @@ fish-clean:
 
 .PHONY: fish-install
 fish-install: $(FISH_DIR) $(FISH_FUNCTION_DIR) $(FISH_COMPLETION_DIR) $(FISH_CONFIG_DIR)
+	ln -sf $(SELF_FISH_DIR)/conf.d/aws.fish $(FISH_CONFIG_DIR)/aws.fish
 
 $(FISH_DIR):
 	mkdir -p $(FISH_DIR)
@@ -87,6 +88,7 @@ $(FISH_COMPLETION_DIR):
 
 $(FISH_CONFIG_DIR):
 	mkdir -p $(FISH_CONFIG_DIR)
+		ln -sf $(SELF_FISH_DIR)/conf.d/aws.fish $(FISH_CONFIG_DIR)/aws.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/direnv.fish $(FISH_CONFIG_DIR)/direnv.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/docker.fish $(FISH_CONFIG_DIR)/docker.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/gcloud.fish $(FISH_CONFIG_DIR)/gcloud.fish
