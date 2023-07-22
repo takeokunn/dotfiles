@@ -166,8 +166,8 @@ $ make neofetch-clean
 ### gnupg
 
 ```shell
-$ make neofetch-install
-$ make neofetch-clean
+$ make gnupg-install
+$ make gnupg-clean
 ```
 
 ### composer
