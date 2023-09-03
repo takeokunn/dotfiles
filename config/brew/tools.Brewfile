@@ -90,7 +90,6 @@ brew "dav1d"
 brew "dbus"
 brew "deno"
 brew "direnv"
-brew "docutils", link: false
 brew "dog"
 brew "double-conversion"
 brew "dust"
