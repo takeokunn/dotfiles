@@ -1,8 +1,4 @@
 if test (uname) = "Darwin"
-    # lang
-    set -xg LANG en_US.UTF-8
-    set -xg LC_ALL en_US.UTF-8
-
     # libxml2
     set -gx LDFLAGS "-L/usr/local/opt/libxml2/lib"
     set -gx CPPFLAGS "-I/usr/local/opt/libxml2/include"

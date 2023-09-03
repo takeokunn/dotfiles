@@ -4,10 +4,6 @@ if type -q go
     fish_add_path $GOPATH/bin
 end
 
-if type -q goenv
-    set -x GOENV_ROOT $HOME/.goenv
-    fish_add_path $GOENV_ROOT/bin
-    source (goenv init - | psub)
-    fish_add_path $GOENV_ROOT/bin
-    fish_add_path $GOPATH/bin
+if type -q go; and type -q asdf
+    set -x ASDF_GOLANG_MOD_VERSION_ENABLED true
 end

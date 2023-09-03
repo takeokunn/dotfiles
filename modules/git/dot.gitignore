@@ -11,3 +11,4 @@ phpactor.log
 .ac-php-conf.json
 .metals/
 rector.private.php
+.tool-versions

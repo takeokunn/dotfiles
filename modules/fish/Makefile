@@ -10,6 +10,7 @@ FISH_DOCKER_COMPLETION_FILE = https://raw.githubusercontent.com/docker/docker-ce
 FISH_DOCKER_COMPOSE_COMPLETION_FILE = https://raw.githubusercontent.com/docker/compose/master/contrib/completion/fish/docker-compose.fish
 FISH_FISHER_COMPLETION_FILE = https://raw.githubusercontent.com/jorgebucaran/fisher/main/completions/fisher.fish
 FISH_GUIX_CONPLETION_FILE = https://raw.githubusercontent.com/lfam/guix/master/etc/completion/fish/guix.fish
+FISH_ASDF_CONPLETION_FILE = https://raw.githubusercontent.com/asdf-vm/asdf/master/completions/asdf.fish
 
 FISH_TARGETS += fish-install
 FISH_CLEAN_TARGETS += fish-clean
@@ -21,7 +22,6 @@ fish-clean:
 
 .PHONY: fish-install
 fish-install: $(FISH_DIR) $(FISH_FUNCTION_DIR) $(FISH_COMPLETION_DIR) $(FISH_CONFIG_DIR)
-	ln -sf $(SELF_FISH_DIR)/conf.d/aws.fish $(FISH_CONFIG_DIR)/aws.fish
 
 $(FISH_DIR):
 	mkdir -p $(FISH_DIR)
@@ -85,10 +85,12 @@ $(FISH_COMPLETION_DIR):
 	curl $(FISH_DOCKER_COMPOSE_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/docker-compose.fish
 	curl $(FISH_FISHER_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/fisher.fish
 	curl $(FISH_GUIX_CONPLETION_FILE) -o $(FISH_COMPLETION_DIR)/guix.fish
+	curl $(FISH_ASDF_CONPLETION_FILE) -o $(FISH_COMPLETION_DIR)/asdf.fish
 
 $(FISH_CONFIG_DIR):
 	mkdir -p $(FISH_CONFIG_DIR)
-		ln -sf $(SELF_FISH_DIR)/conf.d/aws.fish $(FISH_CONFIG_DIR)/aws.fish
+	ln -sf $(SELF_FISH_DIR)/conf.d/aws.fish $(FISH_CONFIG_DIR)/aws.fish
+	ln -sf $(SELF_FISH_DIR)/conf.d/asdf.fish $(FISH_CONFIG_DIR)/asdf.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/direnv.fish $(FISH_CONFIG_DIR)/direnv.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/docker.fish $(FISH_CONFIG_DIR)/docker.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/gcloud.fish $(FISH_CONFIG_DIR)/gcloud.fish
@@ -101,12 +103,10 @@ $(FISH_CONFIG_DIR):
 	ln -sf $(SELF_FISH_DIR)/conf.d/mac.fish $(FISH_CONFIG_DIR)/mac.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/nodejs.fish $(FISH_CONFIG_DIR)/nodejs.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/php.fish $(FISH_CONFIG_DIR)/php.fish
-	ln -sf $(SELF_FISH_DIR)/conf.d/python.fish $(FISH_CONFIG_DIR)/python.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/ruby.fish $(FISH_CONFIG_DIR)/ruby.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/rust.fish $(FISH_CONFIG_DIR)/rust.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/shell.fish $(FISH_CONFIG_DIR)/shell.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/android.fish $(FISH_CONFIG_DIR)/android.fish
-	ln -sf $(SELF_FISH_DIR)/conf.d/terraform.fish $(FISH_CONFIG_DIR)/terraform.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/thefuck.fish $(FISH_CONFIG_DIR)/thefuck.fish
 
 .PHONY: fish-update

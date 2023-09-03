@@ -1,8 +1,6 @@
 cask "alfred"
 cask "aquaskk"
 cask "chromedriver"
-cask "clipy"
-cask "flutter"
 cask "keycastr"
 cask "ngrok"
 cask "qmk-toolbox"
