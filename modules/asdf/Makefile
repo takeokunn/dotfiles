@@ -12,7 +12,7 @@ asdf-clean:
 asdf-install: $(ASDF_DIR)
 
 $(ASDF_DIR):
-	git clone --depth 1 https://github.com/asdf-vm/asdf.git ~/.asdf
+	git clone --depth 1 https://github.com/asdf-vm/asdf.git $(ASDF_DIR)
 	fish -c 'asdf plugin-add php https://github.com/asdf-community/asdf-php.git'
 	fish -c 'asdf plugin-add ruby'
 	fish -c 'asdf plugin-add nodejs'
