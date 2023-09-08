@@ -1,8 +1,4 @@
 function tmux_attach_session_if_needed
-    if not type -q tmux
-        return
-    end
-
     set ID (tmux list-sessions)
     if test -z "$ID"
         tmux new-session
