@@ -23,3 +23,7 @@ if type -q pass
     set -x PASSWORD_STORE_DIR $HOME/.password-store
     set -x PASSWORD_STORE_ENABLE_EXTENSIONS true
 end
+
+if test -d $HOME/.ghq/github.com/OfflineIMAP/offlineimap3/bin
+    fish_add_path $HOME/.ghq/github.com/OfflineIMAP/offlineimap3/bin
+end
