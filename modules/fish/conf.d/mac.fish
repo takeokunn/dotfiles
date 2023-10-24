@@ -1,16 +1,16 @@
 if test (uname) = "Darwin"
     # libxml2
-    set -gx LDFLAGS "-L/usr/local/opt/libxml2/lib"
-    set -gx CPPFLAGS "-I/usr/local/opt/libxml2/include"
-    set -gx PKG_CONFIG_PATH "/usr/local/opt/libxml2/lib/pkgconfig"
-    fish_add_path /usr/local/opt/libxml2/bin
+    set -gx LDFLAGS "-L$(brew --prefix libxml2)/lib"
+    set -gx CPPFLAGS "-I$(brew --prefix libxml2)/include -I$(brew --prefix zlib)/include"
+    set -gx PKG_CONFIG_PATH "$(brew --prefix libxml2)/lib/pkgconfig"
+    fish_add_path (brew --prefix libxml2)/bin
 
     # libgccjit
     set -xg LIBRARY_PATH (brew --prefix libgccjit)/lib/gcc/current
     set -x NATIVE_FULL_AOT 1
 
     # openssl
-    fish_add_path /usr/local/opt/openssl/bin
+    fish_add_path (brew --prefix openssl)/bin
 
     # editor
     set -x EDITOR "emacs -nw"
@@ -30,13 +30,13 @@ if test (uname) = "Darwin"
     set -xg LSP_USE_PLISTS true
 
     # texinfo
-    fish_add_path /usr/local/opt/texinfo/bin
+    fish_add_path (brew --prefix texinfo)/bin
 
     # bison
-    fish_add_path /usr/local/opt/bison/bin
+    fish_add_path (brew --prefix bison)/bin
 
     # libiconv
-    fish_add_path /usr/local/opt/libiconv/bin
+    fish_add_path (brew --prefix libiconv)/bin
 
     # speedtest-cli
     alias speedtest 'speedtest --secure'
@@ -46,5 +46,5 @@ if test (uname) = "Darwin"
     fish_add_path /opt/homebrew/sbin
 
     # gpg
-    fish_add_path /usr/local/opt/gnupg@2.2/bin
+    fish_add_path (brew --prefix gnupg@2.2)/bin
 end
