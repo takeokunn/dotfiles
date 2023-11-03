@@ -77,6 +77,7 @@ $(FISH_COMPLETION_DIR):
 	ln -sf $(SELF_FISH_DIR)/completions/shellcheck.fish $(FISH_COMPLETION_DIR)/shellcheck.fish
 	ln -sf $(SELF_FISH_DIR)/completions/skylark.fish $(FISH_COMPLETION_DIR)/skylark.fish
 	ln -sf $(SELF_FISH_DIR)/completions/solc.fish $(FISH_COMPLETION_DIR)/solc.fish
+	ln -sf $(SELF_FISH_DIR)/completions/tbls.fish $(FISH_COMPLETION_DIR)/tbls.fish
 	ln -sf $(SELF_FISH_DIR)/completions/terminal-notifier.fish $(FISH_COMPLETION_DIR)/terminal-notifier.fish
 	ln -sf $(SELF_FISH_DIR)/completions/tfenv.fish $(FISH_COMPLETION_DIR)/tfenv.fish
 	ln -sf $(SELF_FISH_DIR)/completions/waypoint.fish $(FISH_COMPLETION_DIR)/waypoint.fish

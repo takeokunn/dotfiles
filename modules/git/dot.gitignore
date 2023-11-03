@@ -12,3 +12,5 @@ phpactor.log
 .metals/
 rector.private.php
 .tool-versions
+.tbls.private.yml
+dbdoc-private/
