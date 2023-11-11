@@ -14,3 +14,4 @@ rector.private.php
 .tool-versions
 .tbls.private.yml
 dbdoc-private/
+.rubocop.private.yml
