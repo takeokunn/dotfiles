@@ -15,3 +15,5 @@ rector.private.php
 .tbls.private.yml
 dbdoc-private/
 .rubocop.private.yml
+supervisor.private.conf
+docker-compose.private.yml
