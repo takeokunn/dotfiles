@@ -17,3 +17,4 @@ dbdoc-private/
 .rubocop.private.yml
 supervisor.private.conf
 docker-compose.private.yml
+dump.private.sql
