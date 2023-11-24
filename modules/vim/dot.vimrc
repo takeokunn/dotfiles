@@ -22,9 +22,9 @@ set incsearch
 set ignorecase
 set smartcase
 
-nmap / /\v
-nmap <Leader><Leader> V
-nmap <Esc><Esc> :nohlsearch<CR><Esc>
+nnoremap / /\v
+nnoremap <Leader><Leader> V
+nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
 
 syntax on
 filetype plugin indent on
