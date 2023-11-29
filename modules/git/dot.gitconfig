@@ -17,6 +17,8 @@ br = branch
 co = commit
 ch = checkout
 ad = add
+rs = restore
+sw = switch
 fix = commit --amend --no-edit
 
 [user]
