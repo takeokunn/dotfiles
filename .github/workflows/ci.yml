@@ -10,21 +10,12 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
       - name: setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
-      - name: cache ./node_modules
-        id: cache-npm
-        uses: actions/cache@v3
-        with:
-          path: ./node_modules
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: ${{ runner.os }}-yarn-
-      - name: npm install
-        if: steps.cache-npm.outputs.cache-hit != 'true'
-        run: npm install
+          node-version: latest
+          cache: npm
+      - name: npm ci
+        run: npm ci
       - name: Run secretlint
         run: npx secretlint "./*"
