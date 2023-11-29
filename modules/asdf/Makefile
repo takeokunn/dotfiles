@@ -38,6 +38,7 @@ asdf-update:
 
 	fish -c 'asdf install nodejs 16.13.0'
 	fish -c 'asdf install nodejs 18.15.0'
+	fish -c 'asdf install nodejs 20.10.0'
 	fish -c 'asdf install nodejs latest'
 	fish -c 'asdf global nodejs latest'
 
