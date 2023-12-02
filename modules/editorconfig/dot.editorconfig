@@ -49,3 +49,6 @@ indent_size = 4
 
 [*.jsonnet]
 indent_size = 2
+
+[*.nix]
+indent_size = 2
