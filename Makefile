@@ -111,6 +111,7 @@ ASDF_CLEAN_TARGETS +=
 
 # nix
 NIX_TARGETS +=
+NIX_UPDATE_TARGETS +=
 NIX_CLEAN_TARGETS +=
 
 ####################
