@@ -25,7 +25,7 @@
 
     # for gnupg
     pinentry
-    gnupg
+    gnupg22
 
     # for build tools
     autoconf
@@ -36,7 +36,6 @@
     coreutils
     gnutls
     icu
-    libgcc
     libgccjit
     libiconv
     libmng
