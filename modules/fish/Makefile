@@ -103,6 +103,7 @@ $(FISH_CONFIG_DIR):
 	ln -sf $(SELF_FISH_DIR)/conf.d/llvm.fish $(FISH_CONFIG_DIR)/llvm.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/mac.fish $(FISH_CONFIG_DIR)/mac.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/nodejs.fish $(FISH_CONFIG_DIR)/nodejs.fish
+	ln -sf $(SELF_FISH_DIR)/conf.d/nix.fish $(FISH_CONFIG_DIR)/nix.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/php.fish $(FISH_CONFIG_DIR)/php.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/ruby.fish $(FISH_CONFIG_DIR)/ruby.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/rust.fish $(FISH_CONFIG_DIR)/rust.fish
