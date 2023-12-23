@@ -17,7 +17,8 @@
     lua
     nodejs
     perl
-    php
+    php83
+    php83Packages.composer
     python3
     roswell
     ruby
@@ -30,7 +31,6 @@
     tflint
     tfupdate
     terraform-ls
-    php83Packages.composer
 
     # for gnupg
     pinentry
