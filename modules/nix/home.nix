@@ -63,7 +63,9 @@
 
     # for basic tools
     actionlint
+    bettercap
     exiftool
+    direnv
     ffmpeg
     gping
     graphviz
