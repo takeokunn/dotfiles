@@ -8,8 +8,10 @@
 
   home.packages = with pkgs; [
     # for lanaguage
+    clojure
     deno
     gauche
+    go
     guile
     jsonnet
     lua
@@ -23,6 +25,13 @@
     vlang
     zig
 
+    # for language specific
+    tfsec
+    tflint
+    tfupdate
+    terraform-ls
+    php83Packages.composer
+
     # for gnupg
     pinentry
     gnupg22
@@ -32,20 +41,30 @@
     automake
     binutils
     bison
+    boost
     cmake
     coreutils
     gnutls
     icu
+    libcxx
+    libcxxrt
     libgccjit
     libiconv
+    libllvm
     libmng
     libpng
+    librsvg
     libxml2
+    libzip
+    meson
     pkg-config
+    stunnel
+    sqldef
     texinfo
 
     # for essential tools
     bat
+    csvq
     eza
     fd
     fzf
@@ -55,6 +74,7 @@
     htop
     jq
     peco
+    pv
     ripgrep
     rlwrap
     tmux
@@ -63,8 +83,10 @@
 
     # for basic tools
     actionlint
+    awscli
     bettercap
     exiftool
+    extract_url
     direnv
     ffmpeg
     gping
@@ -84,9 +106,13 @@
     sqlite
     terminal-notifier
     tig
+    tokei
+    unixtools.procps
+    unixtools.watch
 
     # for editor
     emacs
+    editorconfig-core-c
     micro
     nano
     neovim
@@ -101,6 +127,7 @@
 
     # for jokes
     asciiquarium
+    cmatrix
     gibo
     sl
 

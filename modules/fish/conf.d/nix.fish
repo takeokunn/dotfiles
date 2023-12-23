@@ -8,4 +8,5 @@ end
 
 if type -q nix
     set -x NIXPKGS_ALLOW_UNFREE 1
+    set -x NIXPKGS_ALLOW_INSECURE 1
 end

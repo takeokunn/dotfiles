@@ -33,11 +33,11 @@ end
 
 if test (uname) = "Darwin"
     # libgccjit
-    set -x NATIVE_FULL_AOT 1
+    set -gx NATIVE_FULL_AOT 1
 
     # editor
-    set -x EDITOR "emacs -nw"
-    set -x HOMEBREW_EDITOR "emacs -nw"
+    set -gx EDITOR "emacs -nw"
+    set -gx HOMEBREW_EDITOR "emacs -nw"
 
     # path
     fish_add_path /usr/local/sbin
@@ -50,5 +50,9 @@ if test (uname) = "Darwin"
 
     # emacs
     alias emacs 'emacs -nw'
-    set -xg LSP_USE_PLISTS true
+    set -gx LSP_USE_PLISTS true
+
+    # compiler
+    set -gx C clang
+    set -gx CXX clang++
 end
