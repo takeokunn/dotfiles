@@ -85,6 +85,7 @@
     actionlint
     awscli
     bettercap
+    cacert
     exiftool
     extract_url
     direnv
@@ -94,6 +95,7 @@
     hadolint
     hugo
     imagemagick
+    mu
     ncurses
     neofetch
     nkf
@@ -104,6 +106,7 @@
     SDL2
     shellcheck
     sqlite
+    ssm-session-manager-plugin
     terminal-notifier
     tig
     tokei
