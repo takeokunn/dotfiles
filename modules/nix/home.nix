@@ -1,10 +1,11 @@
 { config, pkgs, ... }:
 
 {
+  programs.home-manager.enable = true;
+
   home.username = "obara";
   home.homeDirectory = "/Users/obara";
   home.stateVersion = "23.11";
-  programs.home-manager.enable = true;
 
   home.packages = with pkgs; [
     # for lanaguage
@@ -45,6 +46,7 @@
     cmake
     coreutils
     gnutls
+    glib
     icu
     libcxx
     libcxxrt
@@ -107,6 +109,7 @@
     shellcheck
     sqlite
     ssm-session-manager-plugin
+    tbls
     terminal-notifier
     tig
     tokei
