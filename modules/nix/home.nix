@@ -13,7 +13,10 @@
     deno
     gauche
     go
+    ghc
     guile
+    erlang
+    fsharp
     jsonnet
     lua
     nodejs
@@ -32,6 +35,7 @@
     tflint
     tfupdate
     terraform-ls
+    yarn
 
     # for gnupg
     pinentry
@@ -75,6 +79,7 @@
     git
     htop
     jq
+    nkf
     peco
     pv
     ripgrep
@@ -84,6 +89,7 @@
     yq
 
     # for basic tools
+    act
     actionlint
     awscli
     bettercap
@@ -100,7 +106,6 @@
     mu
     ncurses
     neofetch
-    nkf
     offlineimap
     openssl
     pass
