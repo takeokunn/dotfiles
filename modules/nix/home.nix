@@ -31,6 +31,7 @@
     zig
 
     # for language specific
+    jsonnet-language-server
     tfsec
     tflint
     tfupdate
