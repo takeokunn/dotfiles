@@ -13,11 +13,11 @@
     deno
     gauche
     go
+    go-jsonnet
     ghc
     guile
     erlang
     fsharp
-    jsonnet
     lua
     nodejs
     perl
