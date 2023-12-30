@@ -31,6 +31,8 @@
     zig
 
     # for language specific
+    typescript
+    nodePackages_latest.typescript-language-server
     jsonnet-language-server
     tfsec
     tflint
