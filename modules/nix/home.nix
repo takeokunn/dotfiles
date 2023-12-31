@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   programs.home-manager.enable = true;
@@ -31,6 +31,7 @@
     zig
 
     # for language specific
+    nil
     typescript
     nodePackages_latest.typescript-language-server
     jsonnet-language-server
