@@ -38,6 +38,7 @@
     tflint
     tfupdate
     terraform-ls
+    rye
     yarn
 
     # for gnupg
@@ -115,6 +116,7 @@
     pwgen
     SDL2
     shellcheck
+    speedtest-cli
     sqlite
     ssm-session-manager-plugin
     tbls
@@ -144,6 +146,9 @@
     cmatrix
     gibo
     sl
+
+    # for ai
+    ollama
 
     # for font
     hackgen-font

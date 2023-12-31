@@ -20,9 +20,6 @@ if test -d brew
     # libiconv
     fish_add_path (brew --prefix libiconv)/bin
 
-    # speedtest-cli
-    alias speedtest 'speedtest --secure'
-
     # homebrew
     fish_add_path /opt/homebrew/bin
     fish_add_path /opt/homebrew/sbin
