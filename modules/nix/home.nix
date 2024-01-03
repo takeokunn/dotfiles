@@ -23,6 +23,7 @@
     perl
     php83
     php83Packages.composer
+    php83Extensions.redis
     python3
     roswell
     ruby
