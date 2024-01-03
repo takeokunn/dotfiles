@@ -97,13 +97,11 @@
     act
     actionlint
     awscli
-    bettercap
     cacert
     exiftool
     extract_url
     direnv
     ffmpeg
-    gping
     graphviz
     hadolint
     hugo
@@ -117,15 +115,18 @@
     pwgen
     SDL2
     shellcheck
-    speedtest-cli
-    sqlite
     ssm-session-manager-plugin
-    tbls
     terminal-notifier
     tig
     tokei
     unixtools.procps
     unixtools.watch
+
+    # for network
+    bettercap
+    gping
+    speedtest-cli
+    tcpdump
 
     # for editor
     emacs
@@ -141,6 +142,8 @@
     # for DB
     redis
     mysql
+    sqlite
+    tbls
 
     # for jokes
     asciiquarium
