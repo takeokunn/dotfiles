@@ -3,27 +3,36 @@
 {
   programs.home-manager.enable = true;
 
+  nixpkgs.config.allowUnfree = true;
+  nixpkgs.overlays = [
+    (import (builtins.fetchTarball {
+      url = "https://github.com/nix-community/emacs-overlay/archive/master.tar.gz";
+    }))
+    (import (builtins.fetchTarball {
+      url = "https://github.com/nix-community/neovim-nightly-overlay/archive/master.tar.gz";
+    }))
+  ];
+
   home.username = "obara";
   home.homeDirectory = "/Users/obara";
   home.stateVersion = "23.11";
-
   home.packages = with pkgs; [
     # for lanaguage
     clojure
     deno
-    gauche
-    go
-    go-jsonnet
-    ghc
-    guile
     erlang
     fsharp
+    gauche
+    ghc
+    go
+    go-jsonnet
+    guile
     lua
     nodejs
     perl
     php83
-    php83Packages.composer
     php83Extensions.redis
+    php83Packages.composer
     python3
     roswell
     ruby
@@ -32,15 +41,17 @@
     zig
 
     # for language specific
-    nil
-    typescript
-    nodePackages_latest.typescript-language-server
+    hadolint
     jsonnet-language-server
-    tfsec
-    tflint
-    tfupdate
-    terraform-ls
+    nil
+    nodePackages_latest.typescript-language-server
     rye
+    shellcheck
+    terraform-ls
+    tflint
+    tfsec
+    tfupdate
+    typescript
     yarn
 
     # for gnupg
@@ -55,8 +66,8 @@
     boost
     cmake
     coreutils
-    gnutls
     glib
+    gnutls
     icu
     libcxx
     libcxxrt
@@ -70,8 +81,8 @@
     libzip
     meson
     pkg-config
-    stunnel
     sqldef
+    stunnel
     texinfo
 
     # for essential tools
@@ -95,16 +106,15 @@
     yq
 
     # for basic tools
+    SDL2
     act
     actionlint
-    awscli
     cacert
+    direnv
     exiftool
     extract_url
-    direnv
     ffmpeg
     graphviz
-    hadolint
     hugo
     imagemagick
     mu
@@ -114,14 +124,15 @@
     openssl
     pass
     pwgen
-    SDL2
-    shellcheck
-    ssm-session-manager-plugin
     terminal-notifier
     tig
     tokei
     unixtools.procps
     unixtools.watch
+
+    # for cloud
+    awscli
+    ssm-session-manager-plugin
 
     # for network
     bettercap
@@ -130,12 +141,13 @@
     tcpdump
 
     # for editor
-    emacs
+    emacs-git
     editorconfig-core-c
     micro
     nano
-    neovim
+    neovim-nightly
     tree-sitter
+    tree-sitter-grammars.tree-sitter-php
 
     # for shell
     fish
@@ -164,5 +176,23 @@
     noto-fonts-emoji-blob-bin
     noto-fonts-lgc-plus
     noto-fonts-monochrome-emoji
+
+    # for application
+    discord
+    gimp
+    raycast
+    slack
   ];
+
+  launchd.agents = {
+    ollama = {
+      enable = true;
+      config = {
+        Label = "dev.takeokunn.ollama";
+        ProgramArguments = ["${pkgs.ollama}/bin/ollama" "serve"];
+        RunAtLoad = true;
+        KeepAlive = true;
+      };
+    };
+  };
 }
