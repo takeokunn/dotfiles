@@ -94,6 +94,7 @@
     gh
     ghq
     git
+    gitflow
     htop
     jq
     nkf
@@ -130,6 +131,7 @@
     unixtools.watch
 
     # for pass
+    bitwarden-cli
     pass
     passExtensions.pass-otp
     passExtensions.pass-audit
