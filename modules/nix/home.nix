@@ -122,13 +122,17 @@
     neofetch
     offlineimap
     openssl
-    pass
     pwgen
     terminal-notifier
     tig
     tokei
     unixtools.procps
     unixtools.watch
+
+    # for pass
+    pass
+    passExtensions.pass-otp
+    passExtensions.pass-audit
 
     # for cloud
     awscli
