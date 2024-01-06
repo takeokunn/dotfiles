@@ -132,9 +132,7 @@
 
     # for pass
     bitwarden-cli
-    pass
-    passExtensions.pass-otp
-    passExtensions.pass-audit
+    (pass.withExtensions (extensions: with extensions; [ pass-otp ]))
 
     # for cloud
     awscli
@@ -152,8 +150,7 @@
     micro
     nano
     neovim-nightly
-    tree-sitter
-    tree-sitter-grammars.tree-sitter-php
+    (tree-sitter.withPlugins (p: builtins.attrValues p))
 
     # for shell
     fish
