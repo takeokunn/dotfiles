@@ -103,6 +103,7 @@
     ripgrep
     rlwrap
     tmux
+    tree
     wget
     yq
 
@@ -112,6 +113,7 @@
     actionlint
     cacert
     direnv
+    du-dust
     exiftool
     extract_url
     ffmpeg
