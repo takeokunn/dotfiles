@@ -28,7 +28,7 @@
     go-jsonnet
     guile
     lua
-    nodejs
+    nodejs_21
     perl
     php83
     php83Extensions.redis
@@ -124,6 +124,7 @@
     offlineimap
     openssl
     pwgen
+    silicon
     terminal-notifier
     tig
     tokei
@@ -150,6 +151,7 @@
     micro
     nano
     neovim-nightly
+    tree-sitter
     (tree-sitter.withPlugins (p: builtins.attrValues p))
 
     # for shell
