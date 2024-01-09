@@ -7,6 +7,7 @@ if test -d ~/.nix-profile/bin
 end
 
 if type -q nix
-    set -x NIXPKGS_ALLOW_UNFREE 1
-    set -x NIXPKGS_ALLOW_INSECURE 1
+    set -gx NIXPKGS_ALLOW_UNFREE 1
+    set -gx NIXPKGS_ALLOW_INSECURE 1
+    set -gx NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM 1
 end
