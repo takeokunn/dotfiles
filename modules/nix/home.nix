@@ -170,6 +170,7 @@
     cmatrix
     gibo
     sl
+    genact
 
     # for ai
     ollama
