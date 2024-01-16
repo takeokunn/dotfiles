@@ -11,6 +11,7 @@ FISH_DOCKER_COMPOSE_COMPLETION_FILE = https://raw.githubusercontent.com/docker/c
 FISH_FISHER_COMPLETION_FILE = https://raw.githubusercontent.com/jorgebucaran/fisher/main/completions/fisher.fish
 FISH_GUIX_CONPLETION_FILE = https://raw.githubusercontent.com/lfam/guix/master/etc/completion/fish/guix.fish
 FISH_ASDF_CONPLETION_FILE = https://raw.githubusercontent.com/asdf-vm/asdf/master/completions/asdf.fish
+FISH_HOME_MANAGER_CONPLETION_FILE = https://raw.githubusercontent.com/nix-community/home-manager/master/home-manager/completion.fish
 
 FISH_TARGETS += fish-install
 FISH_CLEAN_TARGETS += fish-clean
@@ -88,6 +89,7 @@ $(FISH_COMPLETION_DIR):
 	curl $(FISH_FISHER_COMPLETION_FILE) -o $(FISH_COMPLETION_DIR)/fisher.fish
 	curl $(FISH_GUIX_CONPLETION_FILE) -o $(FISH_COMPLETION_DIR)/guix.fish
 	curl $(FISH_ASDF_CONPLETION_FILE) -o $(FISH_COMPLETION_DIR)/asdf.fish
+	curl $(FISH_HOME_MANAGER_CONPLETION_FILE) -o $(FISH_COMPLETION_DIR)/home-manager.fish
 
 $(FISH_CONFIG_DIR):
 	mkdir -p $(FISH_CONFIG_DIR)

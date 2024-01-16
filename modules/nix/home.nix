@@ -41,10 +41,14 @@
     zig
 
     # for language specific
+    cargo
     hadolint
     jsonnet-language-server
     nil
+    nixpkgs-fmt
     nodePackages_latest.typescript-language-server
+    rust-analyzer
+    rustc
     rye
     shellcheck
     terraform-ls
