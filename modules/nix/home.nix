@@ -116,6 +116,7 @@
     act
     actionlint
     cacert
+    cmigemo
     direnv
     du-dust
     exiftool
@@ -198,7 +199,7 @@
 
   launchd.agents = {
     ollama = {
-      enable = true;
+      enable = false;
       config = {
         Label = "dev.takeokunn.ollama";
         ProgramArguments = ["${pkgs.ollama}/bin/ollama" "serve"];
