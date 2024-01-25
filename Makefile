@@ -110,6 +110,10 @@ NIX_TARGETS +=
 NIX_UPDATE_TARGETS +=
 NIX_CLEAN_TARGETS +=
 
+# cargo
+CARGO_TARGETS +=
+CARGO_CLEAN_TARGETS +=
+
 ####################
 #      include     #
 ####################
@@ -212,6 +216,10 @@ ALL_CLEAN_TARGETS += ASDF_CLEAN_TARGETS
 # nix
 ALL_TARGETS += NIX_TARGETS
 ALL_CLEAN_TARGETS += NIX_CLEAN_TARGETS
+
+# cargo
+ALL_TARGETS += CARGO_TARGETS
+ALL_CLEAN_TARGETS += CARGO_CLEAN_TARGETS
 
 ####################
 #     commands     #

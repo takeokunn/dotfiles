@@ -41,14 +41,12 @@
     zig
 
     # for language specific
-    cargo
     hadolint
     jsonnet-language-server
     nil
     nixpkgs-fmt
     nodePackages_latest.typescript-language-server
-    rust-analyzer
-    rustc
+    rustup
     rye
     shellcheck
     terraform-ls
@@ -70,6 +68,7 @@
     boost
     cmake
     coreutils
+    foreman
     glib
     gnutls
     icu
@@ -124,6 +123,7 @@
     ffmpeg
     graphviz
     hugo
+    iftop
     imagemagick
     mu
     ncurses
