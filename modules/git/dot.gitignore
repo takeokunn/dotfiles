@@ -3,7 +3,6 @@
 *.fasl
 *~
 .DS_Store
-.envrc
 .log
 .dir-locals-2.el
 phpactor.log
