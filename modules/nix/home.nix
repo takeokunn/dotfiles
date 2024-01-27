@@ -11,6 +11,14 @@
     (import (builtins.fetchTarball {
       url = "https://github.com/nix-community/neovim-nightly-overlay/archive/master.tar.gz";
     }))
+    (final: prev: {
+      gnupg = prev.gnupg.overrideAttrs (old: {
+        src = prev.fetchurl {
+          url = "mirror://gnupg/gnupg/gnupg-2.4.4.tar.bz2";
+          hash = "sha256-Z+vgFsqQ+naIzmejh+vYLGJh6ViX23sj3yT/M1voW8Y=";
+        };
+      });
+    })
   ];
 
   home.username = "obara";
@@ -35,15 +43,17 @@
     php83Packages.composer
     python3
     roswell
-    ruby
     terraform
     vlang
     zig
 
     # for language specific
+    gopls
+    gotools
     hadolint
     jsonnet-language-server
     nil
+    niv
     nixpkgs-fmt
     nodePackages_latest.typescript-language-server
     rustup
@@ -58,7 +68,7 @@
 
     # for gnupg
     pinentry
-    gnupg22
+    gnupg
 
     # for build tools
     autoconf
