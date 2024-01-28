@@ -30,6 +30,7 @@ in
   home.packages = with pkgs; [
     # debug
     personal.ecspresso
+    personal.isucrud
 
     # for lanaguage
     clojure
