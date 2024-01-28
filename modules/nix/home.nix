@@ -1,5 +1,8 @@
 { pkgs, ... }:
 
+let
+  personal = import <personal> {};
+in
 {
   programs.home-manager.enable = true;
 
@@ -25,6 +28,9 @@
   home.homeDirectory = "/Users/obara";
   home.stateVersion = "23.11";
   home.packages = with pkgs; [
+    # debug
+    personal.ecspresso
+
     # for lanaguage
     clojure
     deno
