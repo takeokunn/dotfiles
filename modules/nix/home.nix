@@ -28,10 +28,6 @@ in
   home.homeDirectory = "/Users/obara";
   home.stateVersion = "23.11";
   home.packages = with pkgs; [
-    # debug
-    personal.ecspresso
-    personal.isucrud
-
     # for lanaguage
     clojure
     deno
@@ -147,8 +143,10 @@ in
     neofetch
     offlineimap
     openssl
+    personal.isucrud
     pwgen
     silicon
+    sqldef
     terminal-notifier
     tig
     tokei
@@ -160,6 +158,7 @@ in
     (pass.withExtensions (extensions: with extensions; [ pass-otp ]))
 
     # for cloud
+    personal.ecspresso
     awscli
     ssm-session-manager-plugin
 
