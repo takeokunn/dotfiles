@@ -58,6 +58,9 @@ in
     nil
     niv
     nixpkgs-fmt
+    nix-prefetch
+    nix-prefetch-git
+    nix-prefetch-github
     nodePackages_latest.typescript-language-server
     rustup
     rye
@@ -93,6 +96,7 @@ in
     libmng
     libpng
     librsvg
+    libsixel
     libxml2
     libzip
     meson
@@ -118,7 +122,7 @@ in
     pv
     ripgrep
     rlwrap
-    tmux
+    personal.tmux-sixel
     tree
     wget
     yq
@@ -127,6 +131,7 @@ in
     SDL2
     act
     actionlint
+    android-tools
     cacert
     cmigemo
     direnv
@@ -211,6 +216,7 @@ in
     gimp
     raycast
     slack
+    iterm2
   ];
 
   launchd.agents = {
