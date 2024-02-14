@@ -56,6 +56,7 @@ in
     php83Extensions.redis
     php83Packages.composer
     python3
+    ruby
     roswell
     terraform
     vlang
