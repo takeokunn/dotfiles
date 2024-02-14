@@ -73,6 +73,7 @@ $(FISH_COMPLETION_DIR):
 	ln -sf $(SELF_FISH_DIR)/completions/ecschedule.fish $(FISH_COMPLETION_DIR)/ecschedule.fish
 	ln -sf $(SELF_FISH_DIR)/completions/ecspresso.fish $(FISH_COMPLETION_DIR)/ecspresso.fish
 	ln -sf $(SELF_FISH_DIR)/completions/guix.fish $(FISH_COMPLETION_DIR)/guix.fish
+	ln -sf $(SELF_FISH_DIR)/completions/mitamae.fish $(FISH_COMPLETION_DIR)/mitamae.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pass.fish $(FISH_COMPLETION_DIR)/pass.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pod.fish $(FISH_COMPLETION_DIR)/pod.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pry.fish $(FISH_COMPLETION_DIR)/pry.fish
