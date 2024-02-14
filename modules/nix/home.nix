@@ -21,6 +21,17 @@ in
           hash = "sha256-Z+vgFsqQ+naIzmejh+vYLGJh6ViX23sj3yT/M1voW8Y=";
         };
       });
+      gotools = prev.gotools.overrideAttrs (old: {
+        postPatch = ''
+          # The gopls folder contains a Go submodule which causes a build failure
+          # and lives in its own package named gopls.
+          rm -r gopls
+          # getgo is an experimental go installer which adds generic named server and client binaries to $out/bin
+          rm -r cmd/getgo
+          # remove bundle
+          rm -r cmd/bundle
+        '';
+      });
     })
   ];
 
@@ -148,6 +159,7 @@ in
     neofetch
     offlineimap
     openssl
+    personal.mitamae
     personal.isucrud
     pwgen
     silicon
