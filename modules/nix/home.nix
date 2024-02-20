@@ -66,14 +66,7 @@ in
     gopls
     gotools
     hadolint
-    jsonnet-language-server
-    nil
-    niv
     nixpkgs-fmt
-    nix-prefetch
-    nix-prefetch-git
-    nix-prefetch-github
-    nodePackages_latest.typescript-language-server
     rustup
     rye
     shellcheck
@@ -83,6 +76,23 @@ in
     tfupdate
     typescript
     yarn
+
+    # for nix
+    niv
+    nix-prefetch
+    nix-prefetch-git
+    nix-prefetch-github
+
+    # for language server
+    haskell-language-server
+    jsonnet-language-server
+    nil
+    nodePackages_latest.bash-language-server
+    nodePackages_latest.intelephense
+    nodePackages_latest.typescript-language-server
+    nodePackages_latest.vim-language-server
+    rubyPackages.solargraph
+    yaml-language-server
 
     # for gnupg
     pinentry

@@ -18,4 +18,4 @@ supervisor.private.conf
 docker-compose.private.yml
 dump.private.sql
 db-private/
-.direnv/
+.phpactor.json
