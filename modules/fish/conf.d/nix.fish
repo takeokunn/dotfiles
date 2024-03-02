@@ -2,6 +2,10 @@ if test -d /nix/var/nix/profiles/default/bin
     fish_add_path /nix/var/nix/profiles/default/bin
 end
 
+if test -d /etc/profiles/per-user/obara/bin
+    fish_add_path /etc/profiles/per-user/obara/bin
+end
+
 if test -d ~/.nix-profile/bin
     fish_add_path ~/.nix-profile/bin
 end

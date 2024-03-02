@@ -179,13 +179,6 @@ $ make asdf-clean
 $ make asdf-update
 ```
 
-### nix
-
-```shell
-$ make nix-install
-$ make nix-clean
-```
-
 ### all
 
 ```shell
