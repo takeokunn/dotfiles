@@ -32,7 +32,6 @@ $(FISH_DIR):
 $(FISH_FUNCTION_DIR):
 	mkdir -p $(FISH_FUNCTION_DIR)
 	ln -sf $(SELF_FISH_DIR)/functions/calculate_oidc_thumbprint.fish $(FISH_FUNCTION_DIR)/calculate_oidc_thumbprint.fish
-	ln -sf $(SELF_FISH_DIR)/functions/emacs_build.fish $(FISH_FUNCTION_DIR)/emacs_build.fish
 	ln -sf $(SELF_FISH_DIR)/functions/fish_prompt.fish $(FISH_FUNCTION_DIR)/fish_prompt.fish
 	ln -sf $(SELF_FISH_DIR)/functions/fish_user_key_bindings.fish $(FISH_FUNCTION_DIR)/fish_user_key_bindings.fish
 	ln -sf $(SELF_FISH_DIR)/functions/ghq_create.fish $(FISH_FUNCTION_DIR)/ghq_create.fish
@@ -47,7 +46,6 @@ $(FISH_FUNCTION_DIR):
 	ln -sf $(SELF_FISH_DIR)/functions/logo.fish $(FISH_FUNCTION_DIR)/logo.fish
 	ln -sf $(SELF_FISH_DIR)/functions/loop.fish $(FISH_FUNCTION_DIR)/loop.fish
 	ln -sf $(SELF_FISH_DIR)/functions/ll.fish $(FISH_FUNCTION_DIR)/ll.fish
-	ln -sf $(SELF_FISH_DIR)/functions/magit.fish $(FISH_FUNCTION_DIR)/magit.fish
 	ln -sf $(SELF_FISH_DIR)/functions/myip.fish $(FISH_FUNCTION_DIR)/myip.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_genact.fish $(FISH_FUNCTION_DIR)/peco_genact.fish
 	ln -sf $(SELF_FISH_DIR)/functions/peco_growi.fish $(FISH_FUNCTION_DIR)/peco_growi.fish
