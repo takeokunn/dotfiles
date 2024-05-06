@@ -1,3 +1,0 @@
-[filter "ignore-npmrc"]
-smudge = cat
-clean = sed '/^\\/\\/registry\\.npmjs\\.org\\/:_authToken/d'
