@@ -20,3 +20,4 @@ dump.private.sql
 db-private/
 .phpactor.json
 .direnv/
+.devbox/
