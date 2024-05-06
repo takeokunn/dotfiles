@@ -1,3 +1,6 @@
+[include]
+path = ~/.gitconfig.private
+
 [core]
 excludesfile = ~/.gitignore
 editor = emacs -nw
@@ -64,5 +67,5 @@ insteadOf = https://github.com/
 [init]
 defaultBranch = main
 
-[include]
-path = ~/.gitconfig.private
+[rerere]
+enabled = true
