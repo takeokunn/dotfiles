@@ -21,3 +21,4 @@ db-private/
 .phpactor.json
 .direnv/
 .devbox/
+devbox.d/
