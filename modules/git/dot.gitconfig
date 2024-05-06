@@ -6,6 +6,8 @@ ignorecase = false
 safecrlf = true
 autocrlf = false
 precomposeunicode = true
+untrackedCache = true
+fsmonitor = true
 
 [commit]
 template = ~/.gitmessage
@@ -31,6 +33,7 @@ root = ~/.ghq
 
 [fetch]
 prune = true
+writeCommitGraph= true
 
 [pull]
 rebase = false
@@ -60,3 +63,6 @@ insteadOf = https://github.com/
 
 [init]
 defaultBranch = main
+
+[include]
+path = ~/.gitconfig.private
