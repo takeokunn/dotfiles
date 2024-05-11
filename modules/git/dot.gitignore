@@ -22,3 +22,4 @@ db-private/
 .direnv/
 .devbox/
 devbox.d/
+.neotree
