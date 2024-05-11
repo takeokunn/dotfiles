@@ -8,3 +8,4 @@ tmp/*
 *.log
 .ac-php-conf.json
 node_modules
+.devbox/
