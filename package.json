@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "lint": "npx secretlint \"**/*\""
+    "lint": "npx secretlint --secretlintignore .gitignore \"**/*\""
   },
   "devDependencies": {
     "@secretlint/secretlint-rule-preset-recommend": "^8.2.4",
