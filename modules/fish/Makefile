@@ -103,7 +103,6 @@ $(FISH_CONFIG_DIR):
 	ln -sf $(SELF_FISH_DIR)/conf.d/gpg.fish $(FISH_CONFIG_DIR)/gpg.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/java.fish $(FISH_CONFIG_DIR)/java.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/lisp.fish $(FISH_CONFIG_DIR)/lisp.fish
-	ln -sf $(SELF_FISH_DIR)/conf.d/llvm.fish $(FISH_CONFIG_DIR)/llvm.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/mac.fish $(FISH_CONFIG_DIR)/mac.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/nodejs.fish $(FISH_CONFIG_DIR)/nodejs.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/nix.fish $(FISH_CONFIG_DIR)/nix.fish
