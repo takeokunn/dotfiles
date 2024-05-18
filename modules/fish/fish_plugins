@@ -11,3 +11,4 @@ lgathy/google-cloud-sdk-fish-completion
 takeokunn/fish-dart-completions
 takeokunn/fish-ecs-cli-completions
 lilyball/nix-env.fish
+kidonng/nix-completions.fish
