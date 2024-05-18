@@ -7,7 +7,7 @@ if type -q eza
 end
 
 if type -q bat
-    set -x MANPAGER 'col -bx | bat -l man -p'
+    set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
     alias cat 'bat'
 end
 
