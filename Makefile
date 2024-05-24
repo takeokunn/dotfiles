@@ -105,6 +105,10 @@ ASDF_CLEAN_TARGETS +=
 CARGO_TARGETS +=
 CARGO_CLEAN_TARGETS +=
 
+# bottom
+BOTTOM_TARGETS +=
+BOTTOM_CLEAN_TARGETS +=
+
 ####################
 #      include     #
 ####################
@@ -203,6 +207,10 @@ ALL_CLEAN_TARGETS += ASDF_CLEAN_TARGETS
 # cargo
 ALL_TARGETS += CARGO_TARGETS
 ALL_CLEAN_TARGETS += CARGO_CLEAN_TARGETS
+
+# bottom
+ALL_TARGETS += BOTTOM_TARGETS
+ALL_CLEAN_TARGETS += BOTTOM_CLEAN_TARGETS
 
 ####################
 #     commands     #
