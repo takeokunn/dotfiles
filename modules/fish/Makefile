@@ -74,6 +74,7 @@ $(FISH_COMPLETION_DIR):
 	ln -sf $(SELF_FISH_DIR)/completions/guix.fish $(FISH_COMPLETION_DIR)/guix.fish
 	ln -sf $(SELF_FISH_DIR)/completions/mitamae.fish $(FISH_COMPLETION_DIR)/mitamae.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pass.fish $(FISH_COMPLETION_DIR)/pass.fish
+	ln -sf $(SELF_FISH_DIR)/completions/rain.fish $(FISH_COMPLETION_DIR)/rain.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pod.fish $(FISH_COMPLETION_DIR)/pod.fish
 	ln -sf $(SELF_FISH_DIR)/completions/pry.fish $(FISH_COMPLETION_DIR)/pry.fish
 	ln -sf $(SELF_FISH_DIR)/completions/shellcheck.fish $(FISH_COMPLETION_DIR)/shellcheck.fish
