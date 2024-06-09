@@ -1,7 +1,0 @@
-tmux
-build-essential
-rlwrap
-nodejs
-silversearcher-ag
-xclip
-jq

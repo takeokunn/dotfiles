@@ -1,20 +1,5 @@
 # dotfiles
-
 ## Setup
-
-### Initialize
-
-mac:
-```shell
-$ make brew-install
-```
-
-linux:
-```shell
-$ bash bin/apt-init.sh  # for ubuntu
-$ bash bin/pkg-init.sh  # for FreeBSD
-```
-
 ### Easy Install
 
 ```shell

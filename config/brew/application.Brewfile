@@ -1,7 +1,0 @@
-cask "aquaskk"
-cask "chromedriver"
-cask "keycastr"
-cask "qmk-toolbox"
-cask "sequel-ace"
-cask "wireshark"
-cask "xquartz"

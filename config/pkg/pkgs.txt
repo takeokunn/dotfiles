@@ -1,7 +1,0 @@
-build-essential
-emacs
-fish
-neovim
-ripgrep
-tmux
-wget
