@@ -171,14 +171,6 @@ $ make composer-clean
 $ make composer-update
 ```
 
-### asdf
-
-```shell
-$ make asdf-install
-$ make asdf-clean
-$ make asdf-update
-```
-
 ### all
 
 ```shell
