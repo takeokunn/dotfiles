@@ -24,6 +24,14 @@ $ make core
 $ make core-clean
 ```
 
+### all
+
+```shell
+$ make all
+$ make clean
+$ make update
+```
+
 * dotfiles
 
 ### bash
@@ -154,12 +162,4 @@ $ make gnupg-clean
 $ make composer-install
 $ make composer-clean
 $ make composer-update
-```
-
-### all
-
-```shell
-$ make all
-$ make clean
-$ make update
 ```
