@@ -69,3 +69,8 @@ defaultBranch = main
 
 [rerere]
 enabled = true
+
+[rebase]
+autoStash = true
+abbreviateCommands = true
+autosquash = true
