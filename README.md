@@ -1,4 +1,8 @@
 # dotfiles
+# This repository is archived
+
+Move: [takeokunn/nixos-configuration](https://github.com/takeokunn/nixos-configuration)
+
 ## Setup
 ### Easy Install
 
